@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/esri-es/twitter-rt-service/issues"
   },
-  "homepage": "https://github.com/esri-es/twitter-rt-service#readme"
+  "homepage": "https://github.com/esri-es/twitter-rt-service#readme",
+  "devDependencies": {
+    "twitter": "^1.7.1"
+  },
+  "dependencies": {
+    "csv-writer": "^1.3.0",
+    "jsonpath": "^1.0.1"
+  }
 }

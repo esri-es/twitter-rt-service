@@ -1,10 +1,11 @@
-var config = require('./config.json');
-var Twitter = require('twitter');
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;
-var jp = require('jsonpath');
-var request = require('request');
+const   config = require('./config.json'),
+        Twitter = require('twitter'),
+        createCsvWriter = require('csv-writer').createObjectCsvWriter,
+        jp = require('jsonpath'),
+        fs = require('fs'),
+        geocode = require('./src/geocoders');
 
-var client = new Twitter({
+const client = new Twitter({
     consumer_key: config.consumer_key,
     consumer_secret: config.consumer_secret,
     access_token_key: config.access_token_key,
@@ -14,9 +15,9 @@ var client = new Twitter({
 const csvWriter = createCsvWriter({
     path: 'tweets.csv',
     header: [
-        {id: 'tweet_url', title: 'Tweet_URL'},
         {id: 'username', title: 'Username'},
         {id: 'screename', title: 'Screenmae'},
+        {id: 'profile_image_url_https', title: 'Avatar'},
         {id: 'geo', title: 'Geo'},
         {id: 'location', title: 'Location'},
         {id: 'created_at', title: 'Created_at'},
@@ -24,21 +25,30 @@ const csvWriter = createCsvWriter({
         {id: 'reply_count', title: 'Reply_count'},
         {id: 'retweet_count', title: 'Retweet_count'},
         {id: 'favorite_count', title: 'Favorite_count'},
+        {id: 'tweet_url', title: 'Tweet_URL'}
     ],
     // append:true
 });
 
-var stream = client.stream('statuses/filter', {track: 'FelizLunes'});
+var stream = client.stream('statuses/filter', {track: 'ELDEBATEenRTVE'});
 
 stream.on('data', function(tweet) {
-    if(!tweet.geo && !tweet.user.location){
+    if(!tweet.geo && tweet.user && !tweet.user.location){
         console.log('Non-localizable tweet');
+        // fs.appendFile('data/unlocated.js', JSON.stringify(tweet, null, 4), function (err) {
+        //   if (err) throw err;
+        //   console.log('Saved!');
+        // });
         return 0;
     }
+    // else{
+    //     console.log('Localizable tweet:',tweet.user.location);
+    // }
     // write some data with a base64 encoding
     var data = {
         'username': tweet.user.name,
         'screename': tweet.user.screen_name,
+        'profile_image_url_https': tweet.user.profile_image_url_https,
         'geo': tweet.geo,
         'location': tweet.user.location,
         // tweet.user.virtualLocation <- generado por nosotros,
@@ -70,30 +80,18 @@ stream.on('data', function(tweet) {
 });
 
 function geolocateTweet(location){
-    const geocoder = 'https://cloudlab.esri.es/server/rest/services/ESP_AdminPlaces/GeocodeServer/findAddressCandidates';
-    if(typeof location === 'string'){
-        propertiesObject = {
-            'SingleLineCityName': location,
-            'f': 'json',
-            'outSR': '{"wkid":4326,"latestWkid":4326}',
-            'maxLocations': '1'
-        };
 
-        request({url:geocoder, qs:propertiesObject}, function(err, response, body) {
-          if(err) { console.log(err); return; }
-          var obj = JSON.parse(response.body);
-          if(obj.candidates.length === 0){
-              console.log(`Location ${location} not found`);
-          }else{
-              newLocation = obj.candidates[0].location;
-              console.log(`Location ${location} = ${JSON.stringify(newLocation)}`);
-          }
+    if(typeof location === 'string'){
+        geocode.find(location,'osm').then((coordinates) => {
+            console.log(`Location ${location}: ${JSON.stringify(coordinates)}`);
         });
 
     }else if(typeof location !== 'obj'){
         console.log("Valid location!: ", location);
     }
 }
+
+
 
 stream.on('error', function(error) {
     throw error;

@@ -1,3 +1,5 @@
 config.json
 node_modules/
 tweets.csv
+data/unlocated.js
+data/notfound.txt

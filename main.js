@@ -2,6 +2,7 @@ var config = require('./config.json');
 var Twitter = require('twitter');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 var jp = require('jsonpath');
+var request = require('request');
 
 var client = new Twitter({
     consumer_key: config.consumer_key,
@@ -30,6 +31,10 @@ const csvWriter = createCsvWriter({
 var stream = client.stream('statuses/filter', {track: 'FelizLunes'});
 
 stream.on('data', function(tweet) {
+    if(!tweet.geo && !tweet.user.location){
+        console.log('Non-localizable tweet');
+        return 0;
+    }
     // write some data with a base64 encoding
     var data = {
         'username': tweet.user.name,
@@ -50,12 +55,45 @@ stream.on('data', function(tweet) {
         data.tweet_url = `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
     }
 
+    if(data.geo){
+        geolocateTweet(data.geo);
+    }else if(data.location){
+        geolocateTweet(data.location);
+    }else{
+        console.log('This should never happen');
+    }
+
     csvWriter.writeRecords([data]).then(() => {
-        console.log('The CSV file was written successfully');
+        // console.log('The CSV file was written successfully');
     });
 
-
 });
+
+function geolocateTweet(location){
+    const geocoder = 'https://cloudlab.esri.es/server/rest/services/ESP_AdminPlaces/GeocodeServer/findAddressCandidates';
+    if(typeof location === 'string'){
+        propertiesObject = {
+            'SingleLineCityName': location,
+            'f': 'json',
+            'outSR': '{"wkid":4326,"latestWkid":4326}',
+            'maxLocations': '1'
+        };
+
+        request({url:geocoder, qs:propertiesObject}, function(err, response, body) {
+          if(err) { console.log(err); return; }
+          var obj = JSON.parse(response.body);
+          if(obj.candidates.length === 0){
+              console.log(`Location ${location} not found`);
+          }else{
+              newLocation = obj.candidates[0].location;
+              console.log(`Location ${location} = ${JSON.stringify(newLocation)}`);
+          }
+        });
+
+    }else if(typeof location !== 'obj'){
+        console.log("Valid location!: ", location);
+    }
+}
 
 stream.on('error', function(error) {
     throw error;

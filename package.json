@@ -1,0 +1,23 @@
+{
+  "name": "twitter-rt-service",
+  "version": "1.0.0",
+  "description": "Real Time Service for Twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esri-es/twitter-rt-service.git"
+  },
+  "keywords": [
+    "arcgis",
+    "esri"
+  ],
+  "author": "Raul Jimenez Ortega <raul.jimenez@esri.es>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/esri-es/twitter-rt-service/issues"
+  },
+  "homepage": "https://github.com/esri-es/twitter-rt-service#readme"
+}

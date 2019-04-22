@@ -8,6 +8,18 @@ const db = low(adapter)
 
 db.defaults({ addresses: [], user: {}, count: 0 }).write();
 
+
+/*
+    - Comprueba en una DB local si ha sido ya geocodificado
+    - Si lo está
+        - Devuelve la ubicación & bounding box
+    - Sino:
+        - geolocalizar user.location con el geocoder indicado:
+            - [arcgis](https://cloudlab.esri.es/server/rest/services/ESP_AdminPlaces/GeocodeServer)
+            - [osm](https://nominatim.openstreetmap.org/search)
+            - ...
+        - Guardar en DB local el resultado
+*/
 function geocode(location, geocoder){
     // For performance, use .value() instead of .write() if you're only reading from db
     var address = db.get('addresses')
@@ -37,9 +49,6 @@ function geocode(location, geocoder){
         };
 
         var p = new Promise(function(resolve, reject) {
-
-            // Do async job
-
             request({url:arcgisGeocoder, qs:arcgisOptions}, function(err, response, body) {
                 if(err) {
                     console.log(err);
@@ -54,11 +63,15 @@ function geocode(location, geocoder){
                     });
                     resolve(null);
                 }else{
+                    var obj = {
+                        location: location,
+                        coordinates: obj.candidates[0].location
+                        // TODO: add boundingbox
+                    };
                     db.get('addresses')
-                      .push({ location: location, coordinates: obj.candidates[0].location})
+                      .push(obj)
                       .write();
-                    newLocation = obj.candidates[0].location;
-                    resolve(newLocation);
+                    resolve(obj);
                 }
             });
 
@@ -93,14 +106,18 @@ function geocode(location, geocoder){
                         });
                         resolve(null);
                     }else{
-                        newLocation = {
-                            lat: obj[0].lat,
-                            lon: obj[0].lon
+                        var obj = {
+                            location: location,
+                            coordinates: {
+                                lat: obj[0].lat,
+                                lon: obj[0].lon
+                            },
+                            boundingbox: obj[0].boundingbox
                         };
                         db.get('addresses')
-                          .push({ location: location, coordinates: newLocation, boundingbox: obj[0].boundingbox})
+                          .push(obj)
                           .write();
-                        resolve(newLocation);
+                        resolve(obj);
                     }
                 }catch(err){
                     console.log("Error: ", err);

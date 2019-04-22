@@ -4,6 +4,7 @@ const   config = require('./config.json'),
         jp = require('jsonpath'),
         fs = require('fs'),
         geocode = require('./src/geocoders');
+        locationUtils = require('./src/locationUtils');
 
 const client = new Twitter({
     consumer_key: config.consumer_key,
@@ -13,7 +14,7 @@ const client = new Twitter({
 });
 
 const csvWriter = createCsvWriter({
-    path: 'tweets.csv',
+    path: 'data/tweets.csv',
     header: [
         {id: 'username', title: 'Username'},
         {id: 'screename', title: 'Screenmae'},
@@ -25,7 +26,9 @@ const csvWriter = createCsvWriter({
         {id: 'reply_count', title: 'Reply_count'},
         {id: 'retweet_count', title: 'Retweet_count'},
         {id: 'favorite_count', title: 'Favorite_count'},
-        {id: 'tweet_url', title: 'Tweet_URL'}
+        {id: 'tweet_url', title: 'Tweet_URL'},
+        {id: 'lat', title: 'lat'},
+        {id: 'lon', title: 'lon'}
     ],
     // append:true
 });
@@ -47,7 +50,6 @@ stream.on('data', function(tweet) {
         'profile_image_url_https': tweet.user.profile_image_url_https,
         'geo': tweet.geo,
         'location': tweet.user.location,
-        // tweet.user.virtualLocation <- generado por nosotros,
         'created_at': tweet.created_at,
         'id_str': tweet.id_str,
         'reply_count': tweet.reply_count,
@@ -61,32 +63,58 @@ stream.on('data', function(tweet) {
         data.tweet_url = `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
     }
 
-    if(data.geo){
-        geolocateTweet(data.geo);
-    }else if(data.location){
-        geolocateTweet(data.location);
+    if(data.geo || data.location){
+        location = data.geo? data.geo : data.location;
+        geolocateTweet(location).then((coordinates) => {
+            // Now it's time to add a random value to its location and ensure it falls in land
+            var virtualLocation = locationUtils.randomize(coordinates);
+
+            // Write in the CSV the received and geolocated tweets
+            data.lat = virtualLocation.lat;
+            data.lon = virtualLocation.lon;
+            csvWriter.writeRecords([data]).then(() => {
+                // console.log('The CSV file was written successfully');
+            });
+        },function(err){
+            console.log("Error: ", err);
+        })
     }else{
         console.log('This should never happen');
     }
 
-    csvWriter.writeRecords([data]).then(() => {
-        // console.log('The CSV file was written successfully');
-    });
-
 });
 
 function geolocateTweet(location){
-    if(typeof location === 'string'){
-        geocode.find(location,'osm').then((coordinates) => {
-            console.log(`Location ${location}: ${JSON.stringify(coordinates)}`);
-        });
+    return new Promise(function(resolve, reject) {
+        if(typeof location === 'string'){
+            geocode.find(location,'osm').then((coordinates) => {
+                console.log(`Location ${location}: ${JSON.stringify(coordinates)}`);
+                resolve(coordinates);
+            },function(err){
+                reject(err);
+            });
+        }else if(typeof location !== 'obj'){
+            try{
+                /*
+                    TODO: Check twitter location format and change to
+                    {
+                        location: location,
+                        coordinates: {
+                            lat: obj[0].lat,
+                            lon: obj[0].lon
+                        },
+                        boundingbox: obj[0].boundingbox
+                    }
+                */
+                console.log("Valid location!: ", location);
+                resolve(location);
+            }catch(err){
+                reject(err);
+            }
+        }
+    });
 
-    }else if(typeof location !== 'obj'){
-        console.log("Valid location!: ", location);
-    }
 }
-
-
 
 stream.on('error', function(error) {
     throw error;

@@ -3,3 +3,4 @@ node_modules/
 tweets.csv
 data/unlocated.js
 data/notfound.txt
+data/tweets.csv

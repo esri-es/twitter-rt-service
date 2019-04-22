@@ -1,7 +1,26 @@
-const   request = require('request'),
-        fs = require('fs');
+const request = require('request');
+const fs = require('fs');
+const low = require('lowdb')
+const FileSync = require('lowdb/adapters/FileSync')
+
+const adapter = new FileSync('data/db.json')
+const db = low(adapter)
+
+db.defaults({ addresses: [], user: {}, count: 0 }).write();
 
 function geocode(location, geocoder){
+    // For performance, use .value() instead of .write() if you're only reading from db
+    var address = db.get('addresses')
+      .find({ location: location })
+      .value();
+
+    if(address){
+        return new Promise(function(resolve, reject) {
+            console.log(`Address found for ${location}!: ${JSON.stringify(address)}`);
+            resolve(address.coordinates);
+        });
+    }
+
     if(!geocoder){
         console.log('Please specify a geocoder');
         return -1;
@@ -35,6 +54,9 @@ function geocode(location, geocoder){
                     });
                     resolve(null);
                 }else{
+                    db.get('addresses')
+                      .push({ location: location, coordinates: obj.candidates[0].location})
+                      .write();
                     newLocation = obj.candidates[0].location;
                     resolve(newLocation);
                 }
@@ -75,6 +97,9 @@ function geocode(location, geocoder){
                             lat: obj[0].lat,
                             lon: obj[0].lon
                         };
+                        db.get('addresses')
+                          .push({ location: location, coordinates: newLocation, boundingbox: obj[0].boundingbox})
+                          .write();
                         resolve(newLocation);
                     }
                 }catch(err){

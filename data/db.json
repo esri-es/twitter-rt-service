@@ -1,0 +1,45 @@
+{
+  "addresses": [
+    {
+      "location": "República Pirata",
+      "coordinates": {
+        "lat": "47.7075538",
+        "lon": "-3.3554683"
+      },
+      "boundingbox": [
+        "47.7075038",
+        "47.7076038",
+        "-3.3555183",
+        "-3.3554183"
+      ]
+    },
+    {
+      "location": "Madrid, Comunidad de Madrid",
+      "coordinates": {
+        "lat": "40.4167047",
+        "lon": "-3.7035825"
+      },
+      "boundingbox": [
+        "40.3119774",
+        "40.6437293",
+        "-3.8889539",
+        "-3.5179163"
+      ]
+    },
+    {
+      "location": "Santiago de Compostela",
+      "coordinates": {
+        "lat": "42.8804219",
+        "lon": "-8.5458608"
+      },
+      "boundingbox": [
+        "42.8241442",
+        "42.989631",
+        "-8.6320116",
+        "-8.3896425"
+      ]
+    }
+  ],
+  "user": {},
+  "count": 0
+}

@@ -34,17 +34,13 @@ var stream = client.stream('statuses/filter', {track: 'ELDEBATEenRTVE'});
 
 stream.on('data', function(tweet) {
     if(!tweet.geo && tweet.user && !tweet.user.location){
-        console.log('Non-localizable tweet');
-        // fs.appendFile('data/unlocated.js', JSON.stringify(tweet, null, 4), function (err) {
-        //   if (err) throw err;
-        //   console.log('Saved!');
-        // });
+        fs.appendFile('data/unlocated.js', JSON.stringify(tweet, null, 4), function (err) {
+          if (err) throw err;
+          console.log('Non-localizable tweet saved at data/unlocated.js');
+        });
         return 0;
     }
-    // else{
-    //     console.log('Localizable tweet:',tweet.user.location);
-    // }
-    // write some data with a base64 encoding
+
     var data = {
         'username': tweet.user.name,
         'screename': tweet.user.screen_name,
@@ -80,7 +76,6 @@ stream.on('data', function(tweet) {
 });
 
 function geolocateTweet(location){
-
     if(typeof location === 'string'){
         geocode.find(location,'osm').then((coordinates) => {
             console.log(`Location ${location}: ${JSON.stringify(coordinates)}`);

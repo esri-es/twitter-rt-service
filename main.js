@@ -1,11 +1,18 @@
-const   config = require('./config.json'),
-        Twitter = require('twitter'),
-        createCsvWriter = require('csv-writer').createObjectCsvWriter,
-        jp = require('jsonpath'),
-        fs = require('fs'),
-        geocode = require('./src/geocoders');
-        locationUtils = require('./src/locationUtils'),
-        colors = require('colors');
+const config = require('./config.json');
+const Twitter = require('twitter');
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+const jp = require('jsonpath');
+const fs = require('fs');
+const geocode = require('./src/geocoders');
+const locationUtils = require('./src/locationUtils');
+const colors = require('colors');
+const low = require('lowdb');
+const FileSync = require('lowdb/adapters/FileSync');
+
+const adapter = new FileSync('data/notFoundLocations.json');
+const db = low(adapter);
+
+db.defaults({ "locations": [] }).write();
 
 
 const client = new Twitter({
@@ -94,9 +101,9 @@ function geolocateTweet(location){
             // TODO: Fallback (local, arcgis, osm, ...)
             geocode.find(location).then((coordinates) => {
                 if(coordinates === null){
-                    fs.appendFile('data/notfound.txt', location + '\n', function (err) {
-                      if (err) throw err;
-                    });
+                    db.get('locations')
+                      .push({name: location})
+                      .write();
                 }
                 // console.log(`Location ${location}: ${JSON.stringify(coordinates)}`.green);
                 resolve(coordinates);

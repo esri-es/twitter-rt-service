@@ -7,8 +7,10 @@ colors = require('colors');
 const adapter = new FileSync('data/db.json');
 const db = low(adapter);
 
-db.defaults({ addresses: [], user: {}, count: 0 }).write();
+const notFoundDB = low(new FileSync('data/notFoundLocations.json'));
 
+// File database to store locations already geocoded
+db.defaults({ "type": "FeatureCollection", features: [] }).write();
 
 /*
     - Comprueba en una DB local si ha sido ya geocodificado
@@ -26,7 +28,7 @@ function geocode(location, geocoderIndex){
     const geocoderFallback = ["arcgis", /*"osm",*/ "arcgisGlobal"];
     const i = geocoderIndex? geocoderIndex : 0;
 
-    var address = db.get('addresses')
+    var address = db.get('features')
       .find({ location: location })
       .value();
 
@@ -34,6 +36,17 @@ function geocode(location, geocoderIndex){
         return new Promise(function(resolve, reject) {
             console.log(`Address found for "${location}" in the local DB: ${JSON.stringify(address)}`.green);
             resolve(address);
+        });
+    }
+
+    var falseAddress = notFoundDB.get('locations')
+      .find({ name: location })
+      .value();
+
+    if(falseAddress){
+        return new Promise(function(resolve, reject) {
+            console.log(`False address "${location}" in the local DB`.red);
+            resolve(null);
         });
     }
 
@@ -80,7 +93,7 @@ function geocode(location, geocoderIndex){
                         geocoder: 'ArcGIS Local'
                     };
                     console.log(`Location "${location}" found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`.green);
-                    db.get('addresses')
+                    db.get('features')
                       .push(obj)
                       .write();
                     resolve(obj);
@@ -145,7 +158,7 @@ function geocode(location, geocoderIndex){
                             geocoder: 'OSM'
                         };
                         console.log(`Location "${location}" found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`.green);
-                        db.get('addresses')
+                        db.get('features')
                           .push(obj)
                           .write();
                         resolve(obj);
@@ -200,7 +213,7 @@ function geocode(location, geocoderIndex){
                         geocoder: 'ArcGIS Global'
                     };
                     console.log(`Location "${location}" found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`.green);
-                    db.get('addresses')
+                    db.get('features')
                       .push(obj)
                       .write();
                     resolve(obj);

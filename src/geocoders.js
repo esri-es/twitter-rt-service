@@ -1,10 +1,11 @@
 const request = require('request');
 const fs = require('fs');
-const low = require('lowdb')
-const FileSync = require('lowdb/adapters/FileSync')
+const low = require('lowdb');
+const FileSync = require('lowdb/adapters/FileSync');
+colors = require('colors');
 
-const adapter = new FileSync('data/db.json')
-const db = low(adapter)
+const adapter = new FileSync('data/db.json');
+const db = low(adapter);
 
 db.defaults({ addresses: [], user: {}, count: 0 }).write();
 
@@ -18,24 +19,25 @@ db.defaults({ addresses: [], user: {}, count: 0 }).write();
             - [arcgis](https://cloudlab.esri.es/server/rest/services/ESP_AdminPlaces/GeocodeServer)
             - [osm](https://nominatim.openstreetmap.org/search)
             - ...
-        - Guardar en DB local el resultado
+        - si consigo geolocalizar con alguno de los locators
+            - Guardar en DB local el resultado
 */
 function geocode(location, geocoderIndex){
-    const geocoderFallback = ["osm", "arcgisGlobal", "arcgis"];
+    const geocoderFallback = ["arcgis", /*"osm",*/ "arcgisGlobal"];
     const i = geocoderIndex? geocoderIndex : 0;
-    location = "Entre Baltimore y Getafe";
 
-    // For performance, use .value() instead of .write() if you're only reading from db
     var address = db.get('addresses')
       .find({ location: location })
       .value();
 
     if(address){
         return new Promise(function(resolve, reject) {
-            console.log(`Address found for ${location}!: ${JSON.stringify(address)}`);
-            resolve(address.coordinates);
+            console.log(`Address found for "${location}" in the local DB: ${JSON.stringify(address)}`.green);
+            resolve(address);
         });
     }
+
+    // TODO: check if exists in db/notfound.txt, if so, resolve(null) & return
 
     switch(geocoderFallback[i]){
         case 'arcgis':
@@ -50,17 +52,18 @@ function geocode(location, geocoderIndex){
         var p = new Promise(function(resolve, reject) {
             request({url:arcgisGeocoder, qs:arcgisOptions}, function(err, response, body) {
                 if(err) {
-                    console.log(err);
-                    return;
+                    console.log(`Error: ${err.red}`.red);
                     reject(err);
+                    return;
                 }
                 var obj = JSON.parse(response.body);
                 if(obj.candidates.length === 0){
-                    console.log(`Location ${location} not found with Local ArcGIS`);
+                    console.log(`Location "${location}" not found with Local ArcGIS`.red);
                     if(geocoderFallback.length > i+1){
-                        debugger
                         geocode(location,i+1).then((coordinates) => {
-                            console.log(`Location ${location} found with ${geocoderFallback[i+1]}: ${JSON.stringify(coordinates)}`);
+                            if(coordinates != null){
+                                console.log(`Location "${location}" found with ${geocoderFallback[i+1]}: ${JSON.stringify(coordinates)}`.green);
+                            }
                             resolve(coordinates);
                         },function(err){
                             reject(err);
@@ -72,9 +75,11 @@ function geocode(location, geocoderIndex){
                     var obj = {
                         location: location,
                         coordinates: obj.candidates[0].location,
-                        boundingbox: obj.candidates[0].extent
+                        boundingbox: obj.candidates[0].extent,
+                        match: obj.candidates[0].address,
+                        geocoder: 'ArcGIS Local'
                     };
-                    console.log(`Location ${location} found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`);
+                    console.log(`Location "${location}" found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`.green);
                     db.get('addresses')
                       .push(obj)
                       .write();
@@ -100,26 +105,27 @@ function geocode(location, geocoderIndex){
 
             request({url:osmGeocoder, qs:osmOptions}, function(err, response, body) {
                 if(err) {
-                    console.log(err);
+                    console.log(`Error: ${err}`.red);
                     return;
                     reject(err);
                 }
                 try{
                     var obj = JSON.parse(response.body);
                     if(obj.length === 0){
-                        console.log(`Location ${location} not found with OSM`);
-                        console.log(`i=${i}, geocoderFallback=${geocoderFallback}, geocoderFallback.length=${geocoderFallback.length}`)
+                        console.log(`Location "${location}" not found with OSM`.red);
+                        // console.log(`i=${i}, geocoderFallback=${geocoderFallback}, geocoderFallback.length=${geocoderFallback.length}`.yellow)
                         if(geocoderFallback.length > i+1){
-                            console.log(`Geocodificamos ahora con ${geocoderFallback[i+1]}`)
-                            debugger
+                            // console.log(`Geocodificamos ahora con ${geocoderFallback[i+1]}`.yellow)
+
                             geocode(location,i+1).then((coordinates) => {
-                                console.log(`Location ${location} found with ${geocoderFallback[i+1]}: ${JSON.stringify(coordinates)}`);
+                                if(coordinates != null){
+                                    console.log(`Location "${location}" found with ${geocoderFallback[i+1]}: ${JSON.stringify(coordinates)}`.green);
+                                }
                                 resolve(coordinates);
                             },function(err){
                                 reject(err);
                             });
                         }else{
-                            console.log("Nooooooo!")
                             resolve(null);
                         }
                     }else{
@@ -134,16 +140,18 @@ function geocode(location, geocoderIndex){
                                 ymax: obj[0].boundingbox[1],
                                 xmin: obj[0].boundingbox[2],
                                 xmax: obj[0].boundingbox[3]
-                            }
+                            },
+                            match: obj[0].display_name,
+                            geocoder: 'OSM'
                         };
-                        console.log(`Location ${location} found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`);
+                        console.log(`Location "${location}" found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`.green);
                         db.get('addresses')
                           .push(obj)
                           .write();
                         resolve(obj);
                     }
                 }catch(err){
-                    console.log("Error: ", err);
+                    console.log(`Error: ${err}`.red);
                 }
             });
 
@@ -162,17 +170,19 @@ function geocode(location, geocoderIndex){
         var p = new Promise(function(resolve, reject) {
             request({url:arcgisWorldGeocoder, qs:arcgisGlobalOptions}, function(err, response, body) {
                 if(err) {
-                    console.log(err);
+                    console.log(`Error: ${err}`.red);
                     return;
                     reject(err);
                 }
                 var obj = JSON.parse(response.body);
                 if(obj.candidates.length === 0){
-                    console.log(`Location ${location} not found Global ArcGIS`);
+                    console.log(`Location "${location}" not found Global ArcGIS`.red);
                     if(geocoderFallback.length > i+1){
                         debugger
                         geocode(location,i+1).then((coordinates) => {
-                            console.log(`Location ${location} found with ${geocoderFallback[i+1]}: ${JSON.stringify(coordinates)}`);
+                            if(coordinates != null){
+                                console.log(`Location "${location}" found with ${geocoderFallback[i+1]}: ${JSON.stringify(coordinates)}`.green);
+                            }
                             resolve(coordinates);
                         },function(err){
                             reject(err);
@@ -185,9 +195,11 @@ function geocode(location, geocoderIndex){
                     var obj = {
                         location: location,
                         coordinates: obj.candidates[0].location,
-                        boundingbox: obj.candidates[0].extent
+                        boundingbox: obj.candidates[0].extent,
+                        match: obj.candidates[0].address,
+                        geocoder: 'ArcGIS Global'
                     };
-                    console.log(`Location ${location} found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`);
+                    console.log(`Location "${location}" found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`.green);
                     db.get('addresses')
                       .push(obj)
                       .write();

@@ -4,7 +4,9 @@ const   config = require('./config.json'),
         jp = require('jsonpath'),
         fs = require('fs'),
         geocode = require('./src/geocoders');
-        locationUtils = require('./src/locationUtils');
+        locationUtils = require('./src/locationUtils'),
+        colors = require('colors');
+
 
 const client = new Twitter({
     consumer_key: config.consumer_key,
@@ -30,7 +32,7 @@ const csvWriter = createCsvWriter({
         {id: 'lat', title: 'lat'},
         {id: 'lon', title: 'lon'}
     ],
-    // append:true
+    append:true
 });
 
 var stream = client.stream('statuses/filter', {track: 'ELDEBATEenRTVE'});
@@ -39,7 +41,7 @@ stream.on('data', function(tweet) {
     if(!tweet.geo && tweet.user && !tweet.user.location){
         fs.appendFile('data/unlocated.js', JSON.stringify(tweet, null, 4), function (err) {
           if (err) throw err;
-          console.log('Non-localizable tweet saved at data/unlocated.js');
+          // console.log('Non-localizable tweet saved at data/unlocated.js'.yellow);
         });
         return 0;
     }
@@ -67,19 +69,21 @@ stream.on('data', function(tweet) {
         location = data.geo? data.geo : data.location;
         geolocateTweet(location).then((coordinates) => {
             // Now it's time to add a random value to its location and ensure it falls in land
-            var virtualLocation = locationUtils.randomize(coordinates);
+            if(coordinates != null){
+                var virtualLocation = locationUtils.randomize(coordinates);
 
-            // Write in the CSV the received and geolocated tweets
-            data.lat = virtualLocation.lat;
-            data.lon = virtualLocation.lon;
-            csvWriter.writeRecords([data]).then(() => {
-                // console.log('The CSV file was written successfully');
-            });
+                // Write in the CSV the received and geolocated tweets
+                data.lat = virtualLocation.lat;
+                data.lon = virtualLocation.lon;
+                csvWriter.writeRecords([data]).then(() => {
+                    // console.log('The CSV file was written successfully'.yellow);
+                });
+            }
         },function(err){
-            console.log("Error: ", err);
+            console.log(`Error: ${err}`.red);
         })
     }else{
-        console.log('This should never happen');
+        console.log('This should never happen'.red);
     }
 
 });
@@ -87,8 +91,14 @@ stream.on('data', function(tweet) {
 function geolocateTweet(location){
     return new Promise(function(resolve, reject) {
         if(typeof location === 'string'){
-            geocode.find(location,'osm').then((coordinates) => {
-                console.log(`Location ${location}: ${JSON.stringify(coordinates)}`);
+            // TODO: Fallback (local, arcgis, osm, ...)
+            geocode.find(location).then((coordinates) => {
+                if(coordinates === null){
+                    fs.appendFile('data/notfound.txt', location + '\n', function (err) {
+                      if (err) throw err;
+                    });
+                }
+                // console.log(`Location ${location}: ${JSON.stringify(coordinates)}`.green);
                 resolve(coordinates);
             },function(err){
                 reject(err);
@@ -106,14 +116,13 @@ function geolocateTweet(location){
                         boundingbox: obj[0].boundingbox
                     }
                 */
-                console.log("Valid location!: ", location);
+                console.log(`Valid location!: ${location}`.blue);
                 resolve(location);
             }catch(err){
                 reject(err);
             }
         }
     });
-
 }
 
 stream.on('error', function(error) {

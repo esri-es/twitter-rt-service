@@ -1,56 +1,316 @@
 {
   "addresses": [
     {
-      "location": "República Pirata",
+      "location": "País Vasco, España",
       "coordinates": {
-        "lat": "47.7075538",
-        "lon": "-3.3554683"
+        "lat": "42.9911816",
+        "lon": "-2.5543023"
       },
-      "boundingbox": [
-        "47.7075038",
-        "47.7076038",
-        "-3.3555183",
-        "-3.3554183"
-      ]
+      "boundingbox": {
+        "ymin": "42.4714249",
+        "ymax": "43.4568595",
+        "xmin": "-3.4503463",
+        "xmax": "-1.7292688"
+      }
     },
     {
-      "location": "Madrid, Comunidad de Madrid",
+      "location": "Barcelona",
       "coordinates": {
-        "lat": "40.4167047",
-        "lon": "-3.7035825"
+        "lat": "41.3828939",
+        "lon": "2.1774322"
       },
-      "boundingbox": [
-        "40.3119774",
-        "40.6437293",
-        "-3.8889539",
-        "-3.5179163"
-      ]
+      "boundingbox": {
+        "ymin": "41.3170353",
+        "ymax": "41.4679135",
+        "xmin": "2.0524977",
+        "xmax": "2.2283555"
+      }
     },
     {
-      "location": "Santiago de Compostela",
+      "location": "Barcelona",
       "coordinates": {
-        "lat": "42.8804219",
-        "lon": "-8.5458608"
+        "lat": "41.3828939",
+        "lon": "2.1774322"
       },
-      "boundingbox": [
-        "42.8241442",
-        "42.989631",
-        "-8.6320116",
-        "-8.3896425"
-      ]
+      "boundingbox": {
+        "ymin": "41.3170353",
+        "ymax": "41.4679135",
+        "xmin": "2.0524977",
+        "xmax": "2.2283555"
+      }
     },
     {
-      "location": "Cádiz, España",
+      "location": "Vivo en mi casa",
       "coordinates": {
-        "lat": "36.5298292",
-        "lon": "-6.2925679"
+        "lat": "22.7915201",
+        "lon": "-82.9304868"
       },
-      "boundingbox": [
-        "36.4436702",
-        "36.5455042",
-        "-6.3175068",
-        "-6.2256636"
-      ]
+      "boundingbox": {
+        "ymin": "22.7704597",
+        "ymax": "22.8118548",
+        "xmin": "-82.9368383",
+        "xmax": "-82.9254695"
+      }
+    },
+    {
+      "location": "Gerona, España",
+      "coordinates": {
+        "lat": "41.9793006",
+        "lon": "2.8199439"
+      },
+      "boundingbox": {
+        "ymin": "41.9383698",
+        "ymax": "42.0297266",
+        "xmin": "2.7831004",
+        "xmax": "2.8982394"
+      }
+    },
+    {
+      "location": "En mi Norte Particular ",
+      "coordinates": {
+        "lat": "40.8706283",
+        "lon": "-3.6078279"
+      },
+      "boundingbox": {
+        "ymin": "40.8705331",
+        "ymax": "40.8706487",
+        "xmin": "-3.6079117",
+        "xmax": "-3.6069719"
+      }
+    },
+    {
+      "location": "Valencia, España",
+      "coordinates": {
+        "lat": "39.4699014",
+        "lon": "-0.3759513"
+      },
+      "boundingbox": {
+        "ymin": "39.2784496",
+        "ymax": "39.5666202",
+        "xmin": "-0.4325512",
+        "xmax": "-0.2725205"
+      }
+    },
+    {
+      "location": "Madriz",
+      "coordinates": {
+        "lat": "13.510956",
+        "lon": "-86.3423061"
+      },
+      "boundingbox": {
+        "ymin": "13.1915274",
+        "ymax": "13.66303",
+        "xmin": "-86.7698964",
+        "xmax": "-86.067695"
+      }
+    },
+    {
+      "location": "Valladolid / Zamora",
+      "coordinates": {
+        "lat": "41.3994363",
+        "lon": "-4.645358"
+      },
+      "boundingbox": {
+        "ymin": "41.3894363",
+        "ymax": "41.4094363",
+        "xmin": "-4.655358",
+        "xmax": "-4.635358"
+      }
+    },
+    {
+      "location": "L'Alfàs del Pi, España",
+      "coordinates": {
+        "lat": "38.5786027",
+        "lon": "-0.1006738"
+      },
+      "boundingbox": {
+        "ymin": "38.546049",
+        "ymax": "38.6059183",
+        "xmin": "-0.121298",
+        "xmax": "-0.0486006"
+      }
+    },
+    {
+      "location": "Almansa (Albacete)",
+      "coordinates": {
+        "lat": "38.8682065",
+        "lon": "-1.0978627"
+      },
+      "boundingbox": {
+        "ymin": "38.7362307",
+        "ymax": "38.9494543",
+        "xmin": "-1.2983529",
+        "xmax": "-0.9235911"
+      }
+    },
+    {
+      "location": "Mérida",
+      "coordinates": {
+        "lat": "38.9174665",
+        "lon": "-6.3443977"
+      },
+      "boundingbox": {
+        "ymin": "38.8934818",
+        "ymax": "38.9403228",
+        "xmin": "-6.3959958",
+        "xmax": "-6.3211801"
+      }
+    },
+    {
+      "location": "Nerja, España",
+      "coordinates": {
+        "lat": "36.7468565",
+        "lon": "-3.8790164"
+      },
+      "boundingbox": {
+        "ymin": "36.73756",
+        "ymax": "36.8418374",
+        "xmin": "-3.9135136",
+        "xmax": "-3.7659671"
+      }
+    },
+    {
+      "location": "Pallejà, España",
+      "coordinates": {
+        "lat": "41.4223425",
+        "lon": "1.9969904"
+      },
+      "boundingbox": {
+        "ymin": "41.4058003",
+        "ymax": "41.4398245",
+        "xmin": "1.9446442",
+        "xmax": "2.0093866"
+      }
+    },
+    {
+      "location": "Vilanova i la Geltrú",
+      "coordinates": {
+        "lat": "41.2241992",
+        "lon": "1.7256327"
+      },
+      "boundingbox": {
+        "ymin": "41.2017248",
+        "ymax": "41.2716922",
+        "xmin": "1.6681779",
+        "xmax": "1.751551"
+      }
+    },
+    {
+      "location": "A Coruña, Galicia",
+      "coordinates": {
+        "lat": "43.0565609",
+        "lon": "-8.5296941"
+      },
+      "boundingbox": {
+        "ymin": "42.4629169",
+        "ymax": "43.790422",
+        "xmin": "-9.3015367",
+        "xmax": "-7.661797"
+      }
+    },
+    {
+      "location": "Zaragoza, España",
+      "coordinates": {
+        "lat": "41.84004695",
+        "lon": "-1.16950900924476"
+      },
+      "boundingbox": {
+        "ymin": "40.9362157",
+        "ymax": "42.744126",
+        "xmin": "-2.1736713",
+        "xmax": "0.3856642"
+      }
+    },
+    {
+      "location": "Granada, España",
+      "coordinates": {
+        "lat": "37.183054",
+        "lon": "-3.6021928"
+      },
+      "boundingbox": {
+        "ymin": "37.1367032",
+        "ymax": "37.2250172",
+        "xmin": "-3.7003616",
+        "xmax": "-3.4963241"
+      }
+    },
+    {
+      "location": "Barcelona, España",
+      "coordinates": {
+        "lat": "41.3828939",
+        "lon": "2.1774322"
+      },
+      "boundingbox": {
+        "ymin": "41.3170353",
+        "ymax": "41.4679135",
+        "xmin": "2.0524977",
+        "xmax": "2.2283555"
+      }
+    },
+    {
+      "location": "Euskal Herria",
+      "coordinates": {
+        "lat": "42.9911816",
+        "lon": "-2.5543023"
+      },
+      "boundingbox": {
+        "ymin": "42.4714249",
+        "ymax": "43.4568595",
+        "xmin": "-3.4503463",
+        "xmax": "-1.7292688"
+      }
+    },
+    {
+      "location": "Málaga",
+      "coordinates": {
+        "lat": "36.7213028",
+        "lon": "-4.4216366"
+      },
+      "boundingbox": {
+        "ymin": "36.6345688",
+        "ymax": "36.8940412",
+        "xmin": "-4.5878887",
+        "xmax": "-4.2604897"
+      }
+    },
+    {
+      "location": "Jerez de la Frontera (Cádiz)",
+      "coordinates": {
+        "lat": "36.6816936",
+        "lon": "-6.1377402"
+      },
+      "boundingbox": {
+        "ymin": "36.5162096",
+        "ymax": "36.8637895",
+        "xmin": "-6.3061225",
+        "xmax": "-5.4557904"
+      }
+    },
+    {
+      "location": "Gijón",
+      "coordinates": {
+        "lat": "43.51403535",
+        "lon": "-5.68674864058679"
+      },
+      "boundingbox": {
+        "ymin": "43.4415087",
+        "ymax": "43.5867678",
+        "xmin": "-5.8213224",
+        "xmax": "-5.5631197"
+      }
+    },
+    {
+      "location": "Comunidad de Madrid, España",
+      "coordinates": {
+        "lat": "40.5248319",
+        "lon": "-3.77156277545181"
+      },
+      "boundingbox": {
+        "ymin": "39.8845834",
+        "ymax": "41.1657381",
+        "xmin": "-4.5790058",
+        "xmax": "-3.0529852"
+      }
     },
     {
       "location": "España",
@@ -58,168 +318,558 @@
         "lat": "39.3262345",
         "lon": "-4.8380649"
       },
-      "boundingbox": [
-        "27.4335426",
-        "43.9933088",
-        "-18.3936845",
-        "4.5918885"
-      ]
+      "boundingbox": {
+        "ymin": "27.4335426",
+        "ymax": "43.9933088",
+        "xmin": "-18.3936845",
+        "xmax": "4.5918885"
+      }
     },
     {
-      "location": "Valladolid, España",
+      "location": "España",
       "coordinates": {
-        "lat": "41.6521328",
-        "lon": "-4.728562"
+        "lat": "39.3262345",
+        "lon": "-4.8380649"
       },
-      "boundingbox": [
-        "41.5233289",
-        "41.8155086",
-        "-4.9281803",
-        "-4.6308688"
-      ]
+      "boundingbox": {
+        "ymin": "27.4335426",
+        "ymax": "43.9933088",
+        "xmin": "-18.3936845",
+        "xmax": "4.5918885"
+      }
     },
     {
-      "location": "Ibiza. Illes Balears. 🇪🇸🇪🇺",
+      "location": "Almería, España",
       "coordinates": {
-        "lat": "38.9743901",
-        "lon": "1.41974631785153"
+        "lat": "36.8414197",
+        "lon": "-2.4628135"
       },
-      "boundingbox": [
-        "38.830416",
-        "39.1184135",
-        "1.2132739",
-        "1.6215867"
-      ]
+      "boundingbox": {
+        "ymin": "35.9376398",
+        "ymax": "37.0000125",
+        "xmin": "-3.0372135",
+        "xmax": "-2.2021315"
+      }
     },
     {
-      "location": "Madrid, España",
+      "location": "Monte Alto",
+      "coordinates": {
+        "lat": "43.926443",
+        "lon": "7.6053958"
+      },
+      "boundingbox": {
+        "ymin": "43.926393",
+        "ymax": "43.926493",
+        "xmin": "7.6053458",
+        "xmax": "7.6054458"
+      }
+    },
+    {
+      "location": "Molina de Segura, España",
+      "coordinates": {
+        "lat": "38.0580379",
+        "lon": "-1.206233"
+      },
+      "boundingbox": {
+        "ymin": "38.0019403",
+        "ymax": "38.2716817",
+        "xmin": "-1.2735574",
+        "xmax": "-1.1314993"
+      }
+    },
+    {
+      "location": "Oviedo, España",
+      "coordinates": {
+        "lat": "43.3533424",
+        "lon": "-5.87951433952683"
+      },
+      "boundingbox": {
+        "ymin": "43.2791499",
+        "ymax": "43.4273246",
+        "xmin": "-6.0169359",
+        "xmax": "-5.742394"
+      }
+    },
+    {
+      "location": "Zaragoza, Aragón",
+      "coordinates": {
+        "lat": "41.84004695",
+        "lon": "-1.16950900924476"
+      },
+      "boundingbox": {
+        "ymin": "40.9362157",
+        "ymax": "42.744126",
+        "xmin": "-2.1736713",
+        "xmax": "0.3856642"
+      }
+    },
+    {
+      "location": "Madrid, Spain",
       "coordinates": {
         "lat": "40.4167047",
         "lon": "-3.7035825"
       },
-      "boundingbox": [
-        "40.3119774",
-        "40.6437293",
-        "-3.8889539",
-        "-3.5179163"
-      ]
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      }
     },
     {
-      "location": "Navarra, Comunidad Foral de Na",
+      "location": "Madrid, Spain",
       "coordinates": {
-        "lat": "42.61254875",
-        "lon": "-1.83078768299155"
+        "lat": "40.4167047",
+        "lon": "-3.7035825"
       },
-      "boundingbox": [
-        "41.9098937",
-        "43.3149461",
-        "-2.4999443",
-        "-0.7233368"
-      ]
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      }
     },
     {
-      "location": "Cordoba, España",
+      "location": "Elche, España",
       "coordinates": {
-        "lat": "37.8845813",
-        "lon": "-4.7760138"
+        "lat": "38.2653181",
+        "lon": "-0.6988488"
       },
-      "boundingbox": [
-        "37.6658228",
-        "38.0315171",
-        "-4.9985994",
-        "-4.3514283"
-      ]
+      "boundingbox": {
+        "ymin": "38.127912",
+        "ymax": "38.3447961",
+        "xmin": "-0.7818076",
+        "xmax": "-0.5101842"
+      }
     },
     {
-      "location": "Galicia, España",
+      "location": "Iles Balears",
       "coordinates": {
-        "lat": "42.61946",
-        "lon": "-7.863112"
+        "lat": "39.5491347",
+        "lon": "3.3682465"
       },
-      "boundingbox": [
-        "41.8073667",
-        "43.790422",
-        "-9.3015367",
-        "-6.7339533"
-      ]
+      "boundingbox": {
+        "ymin": "38.6404498",
+        "ymax": "40.0945867",
+        "xmin": "1.1572738",
+        "xmax": "4.327927"
+      }
     },
     {
-      "location": "Málaga, España",
+      "location": "De Madrid",
       "coordinates": {
-        "lat": "36.7213028",
-        "lon": "-4.4216366"
+        "lat": "32.5241991",
+        "lon": "-116.9828386"
       },
-      "boundingbox": [
-        "36.6345688",
-        "36.8940412",
-        "-4.5878887",
-        "-4.2604897"
-      ]
+      "boundingbox": {
+        "ymin": "32.5241991",
+        "ymax": "32.5242774",
+        "xmin": "-116.9831883",
+        "xmax": "-116.9828386"
+      }
     },
     {
-      "location": "Nueva España, Madrid",
+      "location": "Almería",
       "coordinates": {
-        "lat": "20.7430591",
-        "lon": "-103.3437862"
+        "lat": "36.8414197",
+        "lon": "-2.4628135"
       },
-      "boundingbox": [
-        "20.7424082",
-        "20.7445817",
-        "-103.3455787",
-        "-103.3411139"
-      ]
+      "boundingbox": {
+        "ymin": "35.9376398",
+        "ymax": "37.0000125",
+        "xmin": "-3.0372135",
+        "xmax": "-2.2021315"
+      }
     },
     {
-      "location": "barna",
+      "location": "Santa Cruz de Tenerife, Islas ",
+      "coordinates": {
+        "lat": "28.44648385",
+        "lon": "-16.2973641195081"
+      },
+      "boundingbox": {
+        "ymin": "28.4464001",
+        "ymax": "28.446562",
+        "xmin": "-16.2974717",
+        "xmax": "-16.2972788"
+      }
+    },
+    {
+      "location": "Spain",
+      "coordinates": {
+        "lat": "39.3262345",
+        "lon": "-4.8380649"
+      },
+      "boundingbox": {
+        "ymin": "27.4335426",
+        "ymax": "43.9933088",
+        "xmin": "-18.3936845",
+        "xmax": "4.5918885"
+      }
+    },
+    {
+      "location": "Mairena del Alcor. Sevilla",
+      "coordinates": {
+        "lat": "37.3731974",
+        "lon": "-5.7474665"
+      },
+      "boundingbox": {
+        "ymin": "37.2981283",
+        "ymax": "37.396435",
+        "xmin": "-5.8099209",
+        "xmax": "-5.6738405"
+      }
+    },
+    {
+      "location": "A Coruña, España",
+      "coordinates": {
+        "lat": "43.0565609",
+        "lon": "-8.5296941"
+      },
+      "boundingbox": {
+        "ymin": "42.4629169",
+        "ymax": "43.790422",
+        "xmin": "-9.3015367",
+        "xmax": "-7.661797"
+      }
+    },
+    {
+      "location": "Lugo",
+      "coordinates": {
+        "lat": "43.0462247",
+        "lon": "-7.4739921"
+      },
+      "boundingbox": {
+        "ymin": "42.3260122",
+        "ymax": "43.761761",
+        "xmin": "-7.9997779",
+        "xmax": "-6.8140568"
+      }
+    },
+    {
+      "location": "Jerez de la Frontera, España",
+      "coordinates": {
+        "lat": "36.6816936",
+        "lon": "-6.1377402"
+      },
+      "boundingbox": {
+        "ymin": "36.5162096",
+        "ymax": "36.8637895",
+        "xmin": "-6.3061225",
+        "xmax": "-5.4557904"
+      }
+    },
+    {
+      "location": "Badalona, España",
+      "coordinates": {
+        "lat": "41.4493539",
+        "lon": "2.248254"
+      },
+      "boundingbox": {
+        "ymin": "41.4260929",
+        "ymax": "41.4929167",
+        "xmin": "2.2110511",
+        "xmax": "2.2700263"
+      }
+    },
+    {
+      "location": "Alcorcón, España",
+      "coordinates": {
+        "lat": "40.3492998",
+        "lon": "-3.8284295"
+      },
+      "boundingbox": {
+        "ymin": "40.3239373",
+        "ymax": "40.4030979",
+        "xmin": "-3.8789402",
+        "xmax": "-3.7879049"
+      }
+    },
+    {
+      "location": "Esplugues de Llobregat, España",
+      "coordinates": {
+        "lat": "41.3776796",
+        "lon": "2.0899722"
+      },
+      "boundingbox": {
+        "ymin": "41.365868",
+        "ymax": "41.3943869",
+        "xmin": "2.0755718",
+        "xmax": "2.1027527"
+      }
+    },
+    {
+      "location": "honeymoon ave",
+      "coordinates": {
+        "lat": "28.739251",
+        "lon": "-81.867991"
+      },
+      "boundingbox": {
+        "ymin": "28.738269",
+        "ymax": "28.740778",
+        "xmin": "-81.870269",
+        "xmax": "-81.867345"
+      }
+    },
+    {
+      "location": "Madrid ",
+      "coordinates": {
+        "lat": "40.4167047",
+        "lon": "-3.7035825"
+      },
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      }
+    },
+    {
+      "location": "Molina de Segura",
+      "coordinates": {
+        "lat": "38.0580379",
+        "lon": "-1.206233"
+      },
+      "boundingbox": {
+        "ymin": "38.0019403",
+        "ymax": "38.2716817",
+        "xmin": "-1.2735574",
+        "xmax": "-1.1314993"
+      }
+    },
+    {
+      "location": "Jaén, España",
+      "coordinates": {
+        "lat": "37.7728858",
+        "lon": "-3.7883289"
+      },
+      "boundingbox": {
+        "ymin": "37.6281116",
+        "ymax": "37.9537372",
+        "xmin": "-3.8731178",
+        "xmax": "-3.6114971"
+      }
+    },
+    {
+      "location": "Villamalea",
+      "coordinates": {
+        "lat": "39.3623057",
+        "lon": "-1.5991795"
+      },
+      "boundingbox": {
+        "ymin": "39.3008283",
+        "ymax": "39.4229815",
+        "xmin": "-1.6741808",
+        "xmax": "-1.4480179"
+      }
+    },
+    {
+      "location": "Paiporta",
+      "coordinates": {
+        "lat": "39.4288431",
+        "lon": "-0.4193767"
+      },
+      "boundingbox": {
+        "ymin": "39.4128711",
+        "ymax": "39.4366953",
+        "xmin": "-0.4259009",
+        "xmax": "-0.4016524"
+      }
+    },
+    {
+      "location": "Barcelona ",
       "coordinates": {
         "lat": "41.3828939",
         "lon": "2.1774322"
       },
-      "boundingbox": [
-        "41.3170353",
-        "41.4679135",
-        "2.0524977",
-        "2.2283555"
-      ]
+      "boundingbox": {
+        "ymin": "41.3170353",
+        "ymax": "41.4679135",
+        "xmin": "2.0524977",
+        "xmax": "2.2283555"
+      }
     },
     {
-      "location": "Cortes de la Frontera (Málaga)",
+      "location": "Madrid, Comunidad de Madrid",
       "coordinates": {
-        "lat": "36.6170845",
-        "lon": "-5.3426714"
+        "lat": "40.4167047",
+        "lon": "-3.7035825"
       },
-      "boundingbox": [
-        "36.4977123",
-        "36.6733941",
-        "-5.6117767",
-        "-5.3042268"
-      ]
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      }
     },
     {
-      "location": "Algeciras, España",
+      "location": "BCN",
       "coordinates": {
-        "lat": "36.1310804",
-        "lon": "-5.4487055"
+        "lat": "41.40646725",
+        "lon": "2.16306377154439"
       },
-      "boundingbox": [
-        "36.049994",
-        "36.175491",
-        "-5.5511032",
-        "-5.4223022"
-      ]
+      "boundingbox": {
+        "ymin": "41.3170353",
+        "ymax": "41.4929167",
+        "xmin": "2.0524977",
+        "xmax": "2.2700263"
+      }
     },
     {
-      "location": "Antequera  Málaga",
+      "location": "A Coruña - Galicia - España",
       "coordinates": {
-        "lat": "37.0183652",
-        "lon": "-4.5596649"
+        "lat": "43.0565609",
+        "lon": "-8.5296941"
       },
-      "boundingbox": [
-        "36.893688",
-        "37.2310775",
-        "-4.8277892",
-        "-4.3469291"
-      ]
+      "boundingbox": {
+        "ymin": "42.4629169",
+        "ymax": "43.790422",
+        "xmin": "-9.3015367",
+        "xmax": "-7.661797"
+      }
+    },
+    {
+      "location": "Burgos City",
+      "coordinates": {
+        "lat": "42.343926",
+        "lon": "-3.696977"
+      },
+      "boundingbox": {
+        "ymin": "42.2852754",
+        "ymax": "42.4042841",
+        "xmin": "-3.7943724",
+        "xmax": "-3.5853379"
+      }
+    },
+    {
+      "location": "C/Escorial (Villarrobledo) ",
+      "coordinates": {
+        "lat": "39.2672782",
+        "lon": "-2.6164591"
+      },
+      "boundingbox": {
+        "ymin": "39.2672782",
+        "ymax": "39.2672898",
+        "xmin": "-2.6171417",
+        "xmax": "-2.6153432"
+      }
+    },
+    {
+      "location": "Área 51",
+      "coordinates": {
+        "lat": "37.2363038",
+        "lon": "-115.8120572"
+      },
+      "boundingbox": {
+        "ymin": "37.2213038",
+        "ymax": "37.2513038",
+        "xmin": "-115.8270572",
+        "xmax": "-115.7970572"
+      }
+    },
+    {
+      "location": "mad",
+      "coordinates": {
+        "lat": "48.1918518",
+        "lon": "21.2742214"
+      },
+      "boundingbox": {
+        "ymin": "48.1711777",
+        "ymax": "48.244887",
+        "xmin": "21.2435856",
+        "xmax": "21.3455685"
+      }
+    },
+    {
+      "location": "Toledo",
+      "coordinates": {
+        "lat": "41.6786754",
+        "lon": "-83.5127283"
+      },
+      "boundingbox": {
+        "ymin": "41.580266",
+        "ymax": "41.7328519",
+        "xmin": "-83.694237",
+        "xmax": "-83.4546108"
+      }
+    },
+    {
+      "location": "Córdoba tierra judia",
+      "coordinates": {
+        "lat": "39.3378071",
+        "lon": "-6.8378299"
+      },
+      "boundingbox": {
+        "ymin": "39.3278071",
+        "ymax": "39.3478071",
+        "xmin": "-6.8478299",
+        "xmax": "-6.8278299"
+      }
+    },
+    {
+      "location": "Gran Canaria",
+      "coordinates": {
+        "lat": "27.9580004",
+        "lon": "-15.6062305376665"
+      },
+      "boundingbox": {
+        "ymin": "27.7345839",
+        "ymax": "28.181426",
+        "xmin": "-15.8346547",
+        "xmax": "-15.358281"
+      }
+    },
+    {
+      "location": "Yecla",
+      "coordinates": {
+        "lat": "38.6136138",
+        "lon": "-1.1156761"
+      },
+      "boundingbox": {
+        "ymin": "38.4379292",
+        "ymax": "38.7550852",
+        "xmin": "-1.3443232",
+        "xmax": "-1.0015689"
+      }
+    },
+    {
+      "location": "Closer",
+      "coordinates": {
+        "lat": "39.9089543",
+        "lon": "8.5891044"
+      },
+      "boundingbox": {
+        "ymin": "39.9089043",
+        "ymax": "39.9090043",
+        "xmin": "8.5890544",
+        "xmax": "8.5891544"
+      }
+    },
+    {
+      "location": "Huelva",
+      "coordinates": {
+        "lat": "37.2575874",
+        "lon": "-6.9484945"
+      },
+      "boundingbox": {
+        "ymin": "37.1078343",
+        "ymax": "37.3672858",
+        "xmin": "-7.0055804",
+        "xmax": "-6.8320233"
+      }
+    },
+    {
+      "location": "Mi mundo",
+      "coordinates": {
+        "lat": "32.570434",
+        "lon": "-116.638969"
+      },
+      "boundingbox": {
+        "ymin": "32.570384",
+        "ymax": "32.570484",
+        "xmin": "-116.639019",
+        "xmax": "-116.638919"
+      }
     },
     {
       "location": "Madrid",
@@ -227,25 +877,792 @@
         "lat": "40.4167047",
         "lon": "-3.7035825"
       },
-      "boundingbox": [
-        "40.3119774",
-        "40.6437293",
-        "-3.8889539",
-        "-3.5179163"
-      ]
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      }
     },
     {
-      "location": "vigo",
+      "location": "Galicia, Spain",
       "coordinates": {
-        "lat": "42.2376602",
-        "lon": "-8.7247205"
+        "lat": "42.61946",
+        "lon": "-7.863112"
       },
-      "boundingbox": [
-        "42.1324303",
-        "42.2647112",
-        "-8.9182906",
-        "-8.6270302"
-      ]
+      "boundingbox": {
+        "ymin": "41.8073667",
+        "ymax": "43.790422",
+        "xmin": "-9.3015367",
+        "xmax": "-6.7339533"
+      }
+    },
+    {
+      "location": "Barcelona, Cataluña",
+      "coordinates": {
+        "lat": "41.3828939",
+        "lon": "2.1774322"
+      },
+      "boundingbox": {
+        "ymin": "41.3170353",
+        "ymax": "41.4679135",
+        "xmin": "2.0524977",
+        "xmax": "2.2283555"
+      }
+    },
+    {
+      "location": "Cambados, Galicia",
+      "coordinates": {
+        "lat": "42.51439",
+        "lon": "-8.8138414"
+      },
+      "boundingbox": {
+        "ymin": "42.4588057",
+        "ymax": "42.5410703",
+        "xmin": "-8.8378369",
+        "xmax": "-8.7561681"
+      }
+    },
+    {
+      "location": "Madrid/España/Europa/Mundo",
+      "coordinates": {
+        "lat": "40.4382689",
+        "lon": "-3.7921505"
+      },
+      "boundingbox": {
+        "ymin": "40.4382189",
+        "ymax": "40.4383189",
+        "xmin": "-3.7922005",
+        "xmax": "-3.7921005"
+      }
+    },
+    {
+      "location": "Vic, Catalunya",
+      "coordinates": {
+        "lat": "41.9302021",
+        "lon": "2.2545943"
+      },
+      "boundingbox": {
+        "ymin": "41.8816625",
+        "ymax": "41.9597347",
+        "xmin": "2.1660984",
+        "xmax": "2.286518"
+      }
+    },
+    {
+      "location": "Castilla y León, España",
+      "coordinates": {
+        "lat": "41.8037172",
+        "lon": "-4.7471726"
+      },
+      "boundingbox": {
+        "ymin": "40.0824504",
+        "ymax": "43.2386327",
+        "xmin": "-7.0770536",
+        "xmax": "-1.7753716"
+      }
+    },
+    {
+      "location": "Cádiz, Andalucía ",
+      "coordinates": {
+        "lat": "36.5298292",
+        "lon": "-6.2925679"
+      },
+      "boundingbox": {
+        "ymin": "36.4436702",
+        "ymax": "36.5455042",
+        "xmin": "-6.3175068",
+        "xmax": "-6.2256636"
+      }
+    },
+    {
+      "location": "Caceres, Spain",
+      "coordinates": {
+        "lat": "39.4745175",
+        "lon": "-6.3716761"
+      },
+      "boundingbox": {
+        "ymin": "39.1552618",
+        "ymax": "39.6488278",
+        "xmin": "-6.8020698",
+        "xmax": "-6.0787446"
+      }
+    },
+    {
+      "location": "Catalunya",
+      "coordinates": {
+        "lat": "41.8523094",
+        "lon": "1.5745043"
+      },
+      "boundingbox": {
+        "ymin": "40.5230524",
+        "ymax": "42.8615226",
+        "xmin": "0.1594133",
+        "xmax": "3.3222508"
+      }
+    },
+    {
+      "location": "Fuerteventura",
+      "coordinates": {
+        "lat": "28.40037685",
+        "lon": "-14.0048697135422"
+      },
+      "boundingbox": {
+        "ymin": "28.0435142",
+        "ymax": "28.765988",
+        "xmin": "-14.5097459",
+        "xmax": "-13.8107514"
+      }
+    },
+    {
+      "location": "GALIZA ",
+      "coordinates": {
+        "lat": "42.61946",
+        "lon": "-7.863112"
+      },
+      "boundingbox": {
+        "ymin": "41.8073667",
+        "ymax": "43.790422",
+        "xmin": "-9.3015367",
+        "xmax": "-6.7339533"
+      }
+    },
+    {
+      "location": "València",
+      "coordinates": {
+        "lat": "39.4699014",
+        "lon": "-0.3759513"
+      },
+      "boundingbox": {
+        "ymin": "39.2784496",
+        "ymax": "39.5666202",
+        "xmin": "-0.4325512",
+        "xmax": "-0.2725205"
+      }
+    },
+    {
+      "location": "Galiza",
+      "coordinates": {
+        "lat": "42.61946",
+        "lon": "-7.863112"
+      },
+      "boundingbox": {
+        "ymin": "41.8073667",
+        "ymax": "43.790422",
+        "xmin": "-9.3015367",
+        "xmax": "-6.7339533"
+      }
+    },
+    {
+      "location": "Ceceñas, Medio Cudeyo",
+      "coordinates": {
+        "lat": "43.3764975",
+        "lon": "-3.7180463"
+      },
+      "boundingbox": {
+        "ymin": "43.3764475",
+        "ymax": "43.3765475",
+        "xmin": "-3.7180963",
+        "xmax": "-3.7179963"
+      }
+    },
+    {
+      "location": "Valladolid, España",
+      "coordinates": {
+        "lat": "41.6521328",
+        "lon": "-4.728562"
+      },
+      "boundingbox": {
+        "ymin": "41.5233289",
+        "ymax": "41.8155086",
+        "xmin": "-4.9281803",
+        "xmax": "-4.6308688"
+      }
+    },
+    {
+      "location": "Ávila",
+      "coordinates": {
+        "lat": "42.6075172",
+        "lon": "-8.4714942"
+      },
+      "boundingbox": {
+        "ymin": "41.8639288",
+        "ymax": "42.8601571",
+        "xmin": "-8.9496301",
+        "xmax": "-7.861428"
+      }
+    },
+    {
+      "location": "Catalunya",
+      "coordinates": {
+        "lat": "43.8396283",
+        "lon": "2.1661528"
+      },
+      "boundingbox": {
+        "ymin": "43.8196283",
+        "ymax": "43.8596283",
+        "xmin": "2.1461528",
+        "xmax": "2.1861528"
+      }
+    },
+    {
+      "location": "Catalunya",
+      "coordinates": {
+        "lat": "37.3886303",
+        "lon": "-5.9953403"
+      },
+      "boundingbox": {
+        "ymin": "37.3002036",
+        "ymax": "37.4529579",
+        "xmin": "-6.0329183",
+        "xmax": "-5.8191571"
+      }
+    },
+    {
+      "location": "Catalunya",
+      "coordinates": {
+        "lat": "40.656478",
+        "lon": "-4.7002172"
+      },
+      "boundingbox": {
+        "ymin": "40.5607574",
+        "ymax": "40.7536666",
+        "xmin": "-4.8164528",
+        "xmax": "-4.4536129"
+      }
+    },
+    {
+      "location": "Catalunya",
+      "coordinates": {
+        "lat": "41.3828939",
+        "lon": "2.1774322"
+      },
+      "boundingbox": {
+        "ymin": "41.3170353",
+        "ymax": "41.4679135",
+        "xmin": "2.0524977",
+        "xmax": "2.2283555"
+      }
+    },
+    {
+      "location": "Catalunya",
+      "coordinates": {
+        "lat": "41.8523094",
+        "lon": "1.5745043"
+      },
+      "boundingbox": {
+        "ymin": "40.5230524",
+        "ymax": "42.8615226",
+        "xmin": "0.1594133",
+        "xmax": "3.3222508"
+      }
+    },
+    {
+      "location": "Barcelona",
+      "coordinates": {
+        "lat": "41.3828939",
+        "lon": "2.1774322"
+      },
+      "boundingbox": {
+        "ymin": "41.3170353",
+        "ymax": "41.4679135",
+        "xmin": "2.0524977",
+        "xmax": "2.2283555"
+      }
+    },
+    {
+      "location": "Madrid, Comunidad de Madrid",
+      "coordinates": {
+        "lat": "28.0690357",
+        "lon": "-15.5726441"
+      },
+      "boundingbox": {
+        "ymin": "28.0689857",
+        "ymax": "28.0690857",
+        "xmin": "-15.5726941",
+        "xmax": "-15.5725941"
+      }
+    },
+    {
+      "location": "Madrid, Comunidad de Madrid",
+      "coordinates": {
+        "lat": "43.3133868",
+        "lon": "-5.94192"
+      },
+      "boundingbox": {
+        "ymin": "42.8825428",
+        "ymax": "43.6645113",
+        "xmin": "-7.1831688",
+        "xmax": "-4.5105944"
+      }
+    },
+    {
+      "location": "Madrid, Comunidad de Madrid",
+      "coordinates": {
+        "lat": "40.3811929",
+        "lon": "-3.73797568773365"
+      },
+      "boundingbox": {
+        "ymin": "40.3572614",
+        "ymax": "40.4055319",
+        "xmin": "-3.7713925",
+        "xmax": "-3.7046325"
+      }
+    },
+    {
+      "location": "Madrid, Comunidad de Madrid",
+      "coordinates": {
+        "lat": "37.3399964",
+        "lon": "-4.5811614"
+      },
+      "boundingbox": {
+        "ymin": "35.9376398",
+        "ymax": "38.7290874",
+        "xmin": "-7.5226863",
+        "xmax": "-1.6298"
+      }
+    },
+    {
+      "location": "Madrid, Comunidad de Madrid",
+      "coordinates": {
+        "lat": "41.3828939",
+        "lon": "2.1774322"
+      },
+      "boundingbox": {
+        "ymin": "41.3170353",
+        "ymax": "41.4679135",
+        "xmin": "2.0524977",
+        "xmax": "2.2283555"
+      }
+    },
+    {
+      "location": "Persiguiendo rubios",
+      "coordinates": {
+        "lat": "40.4167047",
+        "lon": "-3.7035825"
+      },
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      }
+    },
+    {
+      "location": "Zaragoza",
+      "coordinates": {
+        "lat": "41.84004695",
+        "lon": "-1.16950900924476"
+      },
+      "boundingbox": {
+        "ymin": "40.9362157",
+        "ymax": "42.744126",
+        "xmin": "-2.1736713",
+        "xmax": "0.3856642"
+      }
+    },
+    {
+      "location": "CARTAGENA",
+      "coordinates": {
+        "lat": "1.38417695",
+        "lon": "103.74803074727"
+      },
+      "boundingbox": {
+        "ymin": "1.3832638",
+        "ymax": "1.3850656",
+        "xmin": "103.7472681",
+        "xmax": "103.7489104"
+      }
+    },
+    {
+      "location": "España, Sevilla",
+      "coordinates": {
+        "lat": "37.1431197",
+        "lon": "-3.6277259"
+      },
+      "boundingbox": {
+        "ymin": "37.1337537",
+        "ymax": "37.1610646",
+        "xmin": "-3.6322836",
+        "xmax": "-3.6055066"
+      }
+    },
+    {
+      "location": "España, Sevilla",
+      "coordinates": {
+        "lat": "37.6267868",
+        "lon": "-1.0006184"
+      },
+      "boundingbox": {
+        "ymin": "37.53386",
+        "ymax": "37.7308788",
+        "xmin": "-1.2261481",
+        "xmax": "-0.6471606"
+      }
+    },
+    {
+      "location": "España, Sevilla",
+      "coordinates": {
+        "lat": "37.3886303",
+        "lon": "-5.9953403"
+      },
+      "boundingbox": {
+        "ymin": "37.3002036",
+        "ymax": "37.4529579",
+        "xmin": "-6.0329183",
+        "xmax": "-5.8191571"
+      }
+    },
+    {
+      "location": "Melilla, España",
+      "coordinates": {
+        "lat": "39.1590075",
+        "lon": "-3.0215098"
+      },
+      "boundingbox": {
+        "ymin": "39.0900596",
+        "ymax": "39.3508993",
+        "xmin": "-3.0559037",
+        "xmax": "-2.8743583"
+      }
+    },
+    {
+      "location": "Volando",
+      "coordinates": {
+        "lat": "60.6339269",
+        "lon": "25.3188193"
+      },
+      "boundingbox": {
+        "ymin": "60.5016307",
+        "ymax": "60.840852",
+        "xmin": "25.045334",
+        "xmax": "25.5254155"
+      }
+    },
+    {
+      "location": "México, Número preferido 2040",
+      "coordinates": {
+        "lat": "37.183054",
+        "lon": "-3.6021928"
+      },
+      "boundingbox": {
+        "ymin": "37.1367032",
+        "ymax": "37.2250172",
+        "xmin": "-3.7003616",
+        "xmax": "-3.4963241"
+      }
+    },
+    {
+      "location": "Pais Bananero",
+      "coordinates": {
+        "lat": "25.5321443",
+        "lon": "-103.409195"
+      },
+      "boundingbox": {
+        "ymin": "25.5319523",
+        "ymax": "25.5321762",
+        "xmin": "-103.4098904",
+        "xmax": "-103.4087043"
+      }
+    },
+    {
+      "location": "Pais Bananero",
+      "coordinates": {
+        "lat": "35.2919028",
+        "lon": "-2.9407146"
+      },
+      "boundingbox": {
+        "ymin": "35.1319028",
+        "ymax": "35.4519028",
+        "xmin": "-3.1007146",
+        "xmax": "-2.7807146"
+      }
+    },
+    {
+      "location": "mad | zrz",
+      "coordinates": {
+        "lat": "37.1375027",
+        "lon": "-3.6612345"
+      },
+      "boundingbox": {
+        "ymin": "37.1374527",
+        "ymax": "37.1375527",
+        "xmin": "-3.6612845",
+        "xmax": "-3.6611845"
+      }
+    },
+    {
+      "location": "mad | zrz",
+      "coordinates": {
+        "lat": "41.9793006",
+        "lon": "2.8199439"
+      },
+      "boundingbox": {
+        "ymin": "41.9383698",
+        "ymax": "42.0297266",
+        "xmin": "2.7831004",
+        "xmax": "2.8982394"
+      }
+    },
+    {
+      "location": "mad | zrz",
+      "coordinates": {
+        "lat": "38.032808",
+        "lon": "-0.82467"
+      },
+      "boundingbox": {
+        "ymin": "38.032808",
+        "ymax": "38.0328292",
+        "xmin": "-0.8254371",
+        "xmax": "-0.82467"
+      }
+    },
+    {
+      "location": "TOKIO",
+      "coordinates": {
+        "lat": "41.1172364",
+        "lon": "1.2546057"
+      },
+      "boundingbox": {
+        "ymin": "41.0786393",
+        "ymax": "41.1655218",
+        "xmin": "1.1870606",
+        "xmax": "1.3752339"
+      }
+    },
+    {
+      "location": "TOKIO",
+      "coordinates": {
+        "lat": "37.9923795",
+        "lon": "-1.1305431"
+      },
+      "boundingbox": {
+        "ymin": "37.7158719",
+        "ymax": "38.1179185",
+        "xmin": "-1.3848335",
+        "xmax": "-0.8508899"
+      }
+    },
+    {
+      "location": "Caracas - Venezuela",
+      "coordinates": {
+        "lat": "42.4430836",
+        "lon": "-83.2653081"
+      },
+      "boundingbox": {
+        "ymin": "42.4430718",
+        "ymax": "42.4431328",
+        "xmin": "-83.2657753",
+        "xmax": "-83.2628006"
+      }
+    },
+    {
+      "location": "Caracas - Venezuela",
+      "coordinates": {
+        "lat": "39.3262345",
+        "lon": "-4.8380649"
+      },
+      "boundingbox": {
+        "ymin": "27.4335426",
+        "ymax": "43.9933088",
+        "xmin": "-18.3936845",
+        "xmax": "4.5918885"
+      }
+    },
+    {
+      "location": "Caracas - Venezuela",
+      "coordinates": {
+        "lat": "35.6828387",
+        "lon": "139.7594549"
+      },
+      "boundingbox": {
+        "ymin": "35.5228387",
+        "ymax": "35.8428387",
+        "xmin": "139.5994549",
+        "xmax": "139.9194549"
+      }
+    },
+    {
+      "location": "Madrid",
+      "coordinates": {
+        "lat": "8.0018709",
+        "lon": "-66.1109318"
+      },
+      "boundingbox": {
+        "ymin": "0.647529",
+        "ymax": "15.9158431",
+        "xmin": "-73.3529632",
+        "xmax": "-59.5427079"
+      }
+    },
+    {
+      "location": "Madrid",
+      "coordinates": {
+        "lat": "10.506098",
+        "lon": "-66.9146017"
+      },
+      "boundingbox": {
+        "ymin": "10.346098",
+        "ymax": "10.666098",
+        "xmin": "-67.0746017",
+        "xmax": "-66.7546017"
+      }
+    },
+    {
+      "location": "Alcoi - València",
+      "coordinates": {
+        "lat": "40.4167047",
+        "lon": "-3.7035825"
+      },
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      }
+    },
+    {
+      "location": "Alcoi - València",
+      "coordinates": {
+        "lat": "39.4699014",
+        "lon": "-0.3759513"
+      },
+      "boundingbox": {
+        "ymin": "39.2784496",
+        "ymax": "39.5666202",
+        "xmin": "-0.4325512",
+        "xmax": "-0.2725205"
+      }
+    },
+    {
+      "location": "Alcoi - València",
+      "coordinates": {
+        "lat": "38.7005237",
+        "lon": "-0.479220414521687"
+      },
+      "boundingbox": {
+        "ymin": "38.6855388",
+        "ymax": "38.7152426",
+        "xmin": "-0.4977663",
+        "xmax": "-0.4594576"
+      }
+    },
+    {
+      "location": "Tapia de Casariego (Asturias)",
+      "coordinates": {
+        "lat": "32.1067371",
+        "lon": "20.102473"
+      },
+      "boundingbox": {
+        "ymin": "32.1066871",
+        "ymax": "32.1067871",
+        "xmin": "20.102423",
+        "xmax": "20.102523"
+      }
+    },
+    {
+      "location": "Madrid",
+      "coordinates": {
+        "lat": "43.5692581",
+        "lon": "-6.9436488"
+      },
+      "boundingbox": {
+        "ymin": "43.4624638",
+        "ymax": "43.57504",
+        "xmin": "-6.9955753",
+        "xmax": "-6.8726107"
+      }
+    },
+    {
+      "location": "Madrid",
+      "coordinates": {
+        "lat": "40.4167047",
+        "lon": "-3.7035825"
+      },
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      }
+    },
+    {
+      "location": "Indonesia",
+      "coordinates": {
+        "lat": "36.3177479",
+        "lon": "-5.25121130970116"
+      },
+      "boundingbox": {
+        "ymin": "36.3176451",
+        "ymax": "36.3178257",
+        "xmin": "-5.2513308",
+        "xmax": "-5.2510852"
+      }
+    },
+    {
+      "location": "Málaga, España",
+      "coordinates": {
+        "lat": "-2.49579265",
+        "lon": "120.200071716612"
+      },
+      "boundingbox": {
+        "ymin": "-11.2085669",
+        "ymax": "6.2744496",
+        "xmin": "94.7717124",
+        "xmax": "141.0200345"
+      }
+    },
+    {
+      "location": "Málaga, España",
+      "coordinates": {
+        "lat": "-2.49579265",
+        "lon": "120.200071716612"
+      },
+      "boundingbox": {
+        "ymin": "-11.2085669",
+        "ymax": "6.2744496",
+        "xmin": "94.7717124",
+        "xmax": "141.0200345"
+      }
+    },
+    {
+      "location": "Costa Rica",
+      "coordinates": {
+        "lat": "36.7213028",
+        "lon": "-4.4216366"
+      },
+      "boundingbox": {
+        "ymin": "36.6345688",
+        "ymax": "36.8940412",
+        "xmin": "-4.5878887",
+        "xmax": "-4.2604897"
+      }
+    },
+    {
+      "location": "Costa Rica",
+      "coordinates": {
+        "lat": "10.2735633",
+        "lon": "-84.0739102"
+      },
+      "boundingbox": {
+        "ymin": "5.3329698",
+        "ymax": "11.2195684",
+        "xmin": "-87.2722647",
+        "xmax": "-82.5060208"
+      }
+    },
+    {
+      "location": "Madrid ",
+      "coordinates": {
+        "lat": "40.4167047",
+        "lon": "-3.7035825"
+      },
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      }
     }
   ],
   "user": {},

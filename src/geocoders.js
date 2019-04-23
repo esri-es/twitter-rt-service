@@ -36,126 +36,171 @@ function geocode(location, geocoderIndex){
             resolve(address.coordinates);
         });
     }
-    var p = new Promise(function(resolve, reject) {
-        _osmGeocoder.then((coordinates) => {
-            if(coordinates != null){
-                console.log(`Location ${location} found with OSM => ${JSON.stringify(coordinates)}`)
-                resolve(coordinates);
-            }else{
-                _arcgisGeocoder('global').then((coordinates) => {
-                    if(coordinates != null){
-                        console.log(`Location ${location} found with ArcGIS Global => ${JSON.stringify(coordinates)}`)
-                        resolve(coordinates);
+
+    switch(geocoderFallback[i]){
+        case 'arcgis':
+        const arcgisGeocoder = 'https://cloudlab.esri.es/server/rest/services/ESP_AdminPlaces/GeocodeServer/findAddressCandidates';
+        const arcgisOptions = {
+            'SingleLineCityName': location,
+            'f': 'json',
+            'outSR': '{"wkid":4326,"latestWkid":4326}',
+            'maxLocations': '1'
+        };
+
+        var p = new Promise(function(resolve, reject) {
+            request({url:arcgisGeocoder, qs:arcgisOptions}, function(err, response, body) {
+                if(err) {
+                    console.log(err);
+                    return;
+                    reject(err);
+                }
+                var obj = JSON.parse(response.body);
+                if(obj.candidates.length === 0){
+                    console.log(`Location ${location} not found with Local ArcGIS`);
+                    if(geocoderFallback.length > i+1){
+                        debugger
+                        geocode(location,i+1).then((coordinates) => {
+                            console.log(`Location ${location} found with ${geocoderFallback[i+1]}: ${JSON.stringify(coordinates)}`);
+                            resolve(coordinates);
+                        },function(err){
+                            reject(err);
+                        });
                     }else{
                         resolve(null);
                     }
-                },function(err){
-                    reject(err);
-                })
-            }
-        },function(err){
-            reject(err);
-        });
-    });
-
-    return p;
-
-}
-
-function _osmGeocoder(){
-    const osmGeocoder = 'https://nominatim.openstreetmap.org/search';
-    const osmOptions = {
-        q: location,
-        email: 'hhkaos@gmail.com',
-        limit: 1,
-        format: 'json'
-    };
-
-    var p = new Promise(function(resolve, reject) {
-
-        // Do async job
-
-        request({url:osmGeocoder, qs:osmOptions}, function(err, response, body) {
-            if(err) {
-                console.log(err);
-                return;
-                reject(err);
-            }
-            try{
-                var obj = JSON.parse(response.body);
-                if(obj.length === 0){
-                    console.log(`Location ${location} not found with OSM`);
-                    resolve(null);
                 }else{
                     var obj = {
                         location: location,
-                        coordinates: {
-                            lat: obj[0].lat,
-                            lon: obj[0].lon
-                        },
-                        boundingbox: {
-                            ymin: obj[0].boundingbox[0],
-                            ymax: obj[0].boundingbox[1],
-                            xmin: obj[0].boundingbox[2],
-                            xmax: obj[0].boundingbox[3]
-                        }
+                        coordinates: obj.candidates[0].location,
+                        boundingbox: obj.candidates[0].extent
                     };
+                    console.log(`Location ${location} found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`);
                     db.get('addresses')
                       .push(obj)
                       .write();
                     resolve(obj);
                 }
-            }catch(err){
-                console.log("Error: ", err);
-            }
+            });
+
         });
+        break;
 
-    });
+        case 'osm':
+        const osmGeocoder = 'https://nominatim.openstreetmap.org/search';
+        const osmOptions = {
+            q: location,
+            email: 'hhkaos@gmail.com',
+            limit: 1,
+            format: 'json'
+        };
 
-    return p;
-}
+        var p = new Promise(function(resolve, reject) {
 
-function _arcgisGeocoder(server){
-    const arcgisGeocoder = null;
-    if(server === 'local'){
-        arcgisGeocoder = 'https://cloudlab.esri.es/server/rest/services/ESP_AdminPlaces/GeocodeServer/findAddressCandidates';
-    }else{
-        arcgisGeocoder = 'https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates';
+            // Do async job
+
+            request({url:osmGeocoder, qs:osmOptions}, function(err, response, body) {
+                if(err) {
+                    console.log(err);
+                    return;
+                    reject(err);
+                }
+                try{
+                    var obj = JSON.parse(response.body);
+                    if(obj.length === 0){
+                        console.log(`Location ${location} not found with OSM`);
+                        console.log(`i=${i}, geocoderFallback=${geocoderFallback}, geocoderFallback.length=${geocoderFallback.length}`)
+                        if(geocoderFallback.length > i+1){
+                            console.log(`Geocodificamos ahora con ${geocoderFallback[i+1]}`)
+                            debugger
+                            geocode(location,i+1).then((coordinates) => {
+                                console.log(`Location ${location} found with ${geocoderFallback[i+1]}: ${JSON.stringify(coordinates)}`);
+                                resolve(coordinates);
+                            },function(err){
+                                reject(err);
+                            });
+                        }else{
+                            console.log("Nooooooo!")
+                            resolve(null);
+                        }
+                    }else{
+                        var obj = {
+                            location: location,
+                            coordinates: {
+                                lat: obj[0].lat,
+                                lon: obj[0].lon
+                            },
+                            boundingbox: {
+                                ymin: obj[0].boundingbox[0],
+                                ymax: obj[0].boundingbox[1],
+                                xmin: obj[0].boundingbox[2],
+                                xmax: obj[0].boundingbox[3]
+                            }
+                        };
+                        console.log(`Location ${location} found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`);
+                        db.get('addresses')
+                          .push(obj)
+                          .write();
+                        resolve(obj);
+                    }
+                }catch(err){
+                    console.log("Error: ", err);
+                }
+            });
+
+        });
+        break;
+
+        case 'arcgisGlobal':
+        const arcgisWorldGeocoder = 'https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates';
+        const arcgisGlobalOptions = {
+            'SingleLineCityName': location,
+            'f': 'json',
+            'outSR': '{"wkid":4326,"latestWkid":4326}',
+            'maxLocations': '1'
+        };
+
+        var p = new Promise(function(resolve, reject) {
+            request({url:arcgisWorldGeocoder, qs:arcgisGlobalOptions}, function(err, response, body) {
+                if(err) {
+                    console.log(err);
+                    return;
+                    reject(err);
+                }
+                var obj = JSON.parse(response.body);
+                if(obj.candidates.length === 0){
+                    console.log(`Location ${location} not found Global ArcGIS`);
+                    if(geocoderFallback.length > i+1){
+                        debugger
+                        geocode(location,i+1).then((coordinates) => {
+                            console.log(`Location ${location} found with ${geocoderFallback[i+1]}: ${JSON.stringify(coordinates)}`);
+                            resolve(coordinates);
+                        },function(err){
+                            reject(err);
+                        });
+                    }else{
+                        resolve(null);
+                    }
+
+                }else{
+                    var obj = {
+                        location: location,
+                        coordinates: obj.candidates[0].location,
+                        boundingbox: obj.candidates[0].extent
+                    };
+                    console.log(`Location ${location} found with ${geocoderFallback[i]}: ${JSON.stringify(obj)}`);
+                    db.get('addresses')
+                      .push(obj)
+                      .write();
+                    resolve(obj);
+                }
+            });
+
+        });
+        break;
     }
-    const arcgisOptions = {
-        'SingleLineCityName': location,
-        'f': 'json',
-        'outSR': '{"wkid":4326,"latestWkid":4326}',
-        'maxLocations': '1'
-    };
-
-    var p = new Promise(function(resolve, reject) {
-        request({url:arcgisGeocoder, qs:arcgisOptions}, function(err, response, body) {
-            if(err) {
-                console.log(err);
-                return;
-                reject(err);
-            }
-            var obj = JSON.parse(response.body);
-            if(obj.candidates.length === 0){
-                console.log(`Location ${location} not found with Local ArcGIS`);
-                resolve(null);
-            }else{
-                var obj = {
-                    location: location,
-                    coordinates: obj.candidates[0].location,
-                    boundingbox: obj.candidates[0].extent
-                };
-                db.get('addresses')
-                  .push(obj)
-                  .write();
-                resolve(obj);
-            }
-        });
-
-    });
 
     return p;
+
 }
 
 module.exports = {

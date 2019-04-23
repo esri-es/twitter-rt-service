@@ -87,7 +87,13 @@ stream.on('data', function(tweet) {
 function geolocateTweet(location){
     return new Promise(function(resolve, reject) {
         if(typeof location === 'string'){
-            geocode.find(location,'osm').then((coordinates) => {
+            // TODO: Fallback (local, arcgis, osm, ...)
+            geocode.find(location).then((coordinates) => {
+                if(coordinates === null){
+                    fs.appendFile('data/notfound.txt', location, function (err) {
+                      if (err) throw err;
+                    });
+                }
                 console.log(`Location ${location}: ${JSON.stringify(coordinates)}`);
                 resolve(coordinates);
             },function(err){

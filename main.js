@@ -26,7 +26,8 @@ const csvWriter = createCsvWriter({
     path: 'data/tweets.csv',
     header: [
         {id: 'username', title: 'Username'},
-        {id: 'screename', title: 'Screenmae'},
+        {id: 'screename', title: 'Screename'},
+        {id: 'text', title: 'Text'},
         {id: 'profile_image_url_https', title: 'Avatar'},
         {id: 'geo', title: 'Geo'},
         {id: 'location', title: 'Location'},
@@ -56,6 +57,7 @@ stream.on('data', function(tweet) {
     var data = {
         'username': tweet.user.name,
         'screename': tweet.user.screen_name,
+        'text': tweet.text,
         'profile_image_url_https': tweet.user.profile_image_url_https,
         'geo': tweet.geo,
         'location': tweet.user.location,

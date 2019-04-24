@@ -1,29 +1,24 @@
-
-const Twitter = require('twitter-stream-api');
-const es = require('event-stream');
+const colors = require('colors');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+const es = require('event-stream');
+const low = require('lowdb');
+const twitterStream = require('twitter-stream-api');
+const websocket = require('websocket-stream')
 const fs = require('fs');
+
 const geocode = require('./src/geocoders');
 const locationUtils = require('./src/locationUtils');
-const colors = require('colors');
-const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 const config = require('./config.json');
+
 const adapter = new FileSync('data/notFoundLocations.json');
 const db = low(adapter);
 db.defaults({ "locations": [] }).write();
 
-
 const WS_URL = 'ws://localhost:9000'
-var websocket = require('websocket-stream')
 var ws = websocket(WS_URL);
 
-const client = new Twitter({
-    consumer_key: config.consumer_key,
-    consumer_secret: config.consumer_secret,
-    token: config.access_token_key,
-    token_secret: config.access_token_secret
-}, true);
+const client = new twitterStream(config.twitter_credentials, true);
 
 const csvWriter = createCsvWriter({
     path: 'data/tweets.csv',

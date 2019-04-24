@@ -85,7 +85,7 @@ function geolocateTweet(location){
 
 
 
-client.stream('statuses/filter', {track: 'ELDEBATEenRTVE'});
+client.stream('statuses/filter', {track: 'DebatTV3'});
 
 client.pipe(es.map(function (tweet, callback) {
       if(!tweet.geo && tweet.user && !tweet.user.location){
@@ -137,7 +137,7 @@ client.pipe(es.map(function (tweet, callback) {
                   });
 
                   // TODO: send tweet by socket connection
-                  callback(null,Buffer.from(JSON.stringify(data)));
+                  callback(null,Buffer(JSON.stringify(data)));
               }
           },function(err){
               console.log(`Error: ${err}`.red);

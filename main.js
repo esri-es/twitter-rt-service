@@ -8,6 +8,51 @@ const locationUtils = require('./src/locationUtils');
 const colors = require('colors');
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
+const WebSocketServer = require('websocket').server;
+const http = require('http');
+
+const PORT = 7070;
+
+var server = http.createServer(function(request, response) {
+    console.log((new Date()) + ' Received request for ' + request.url);
+    response.writeHead(404);
+    response.end();
+});
+
+server.listen(PORT, function() {
+    console.log((new Date()) + ` Server is listening on port ${PORT}`);
+});
+
+wsServer = new WebSocketServer({
+    httpServer: server,
+    autoAcceptConnections: false
+});
+
+function originIsAllowed(origin) {
+  // put logic here to detect whether the specified origin is allowed.
+  return true;
+}
+
+wsServer.on('request', function(request) {
+    if (!originIsAllowed(request.origin)) {
+      // Make sure we only accept requests from an allowed origin
+      request.reject();
+      console.log((new Date()) + ' Connection from origin ' + request.origin + ' rejected.');
+      return;
+    }
+
+    var connection = request.accept('echo-protocol', request.origin);
+    console.log((new Date()) + ' Connection accepted.');
+
+    // var interval = setInterval(function(client, arr) {
+    //   connection.sendUTF(JSON.stringify(arr.shift()));
+    // }, TIME_INTERVAL, connection,[...messagesArr]);
+
+
+    connection.on('close', function(reasonCode, description) {
+        console.log((new Date()) + ' Peer ' + connection.remoteAddress + ' disconnected.');
+    });
+});
 
 const adapter = new FileSync('data/notFoundLocations.json');
 const db = low(adapter);
@@ -87,6 +132,9 @@ stream.on('data', function(tweet) {
                 csvWriter.writeRecords([data]).then(() => {
                     // console.log('The CSV file was written successfully'.yellow);
                 });
+
+                // TODO: send tweet by socket connection
+
             }
         },function(err){
             console.log(`Error: ${err}`.red);
@@ -100,9 +148,9 @@ stream.on('data', function(tweet) {
 function geolocateTweet(location){
     return new Promise(function(resolve, reject) {
         if(typeof location === 'string'){
-            // TODO: Fallback (local, arcgis, osm, ...)
             geocode.find(location).then((coordinates) => {
                 if(coordinates === null){
+                    // TODO: save also which geocoders has been tried to geocode the address
                     db.get('locations')
                       .push({name: location})
                       .write();

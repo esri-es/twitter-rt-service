@@ -25,7 +25,7 @@ db.defaults({ "type": "FeatureCollection", features: [] }).write();
             - Guardar en DB local el resultado
 */
 function geocode(location, geocoderIndex){
-    const geocoderFallback = ["arcgis", /*"osm",*/ "arcgisGlobal"];
+    const geocoderFallback = ["arcgis", /*"osm", "arcgisGlobal"*/];
     const i = geocoderIndex? geocoderIndex : 0;
 
     var address = db.get('features')

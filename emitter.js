@@ -18,6 +18,7 @@ db.defaults({ "locations": [] }).write();
 const WS_URL = 'ws://localhost:9000'
 var ws = websocket(WS_URL);
 
+const TRACK = process.argv[2] || "FelizJueves";
 const client = new twitterStream(config.twitter_credentials, true);
 
 const csvWriter = createCsvWriter({
@@ -80,70 +81,76 @@ function geolocateTweet(location){
     });
 }
 
+function mapTweet(tweet, callback) {
+  console.log(tweet);
+    var data = {
+        'username': tweet.user.name,
+        'screename': tweet.user.screen_name,
+        'text': tweet.text,
+        'profile_image_url_https': tweet.user.profile_image_url_https,
+        'geo': tweet.geo,
+        'location': tweet.user.location,
+        'created_at': tweet.created_at,
+        'id_str': tweet.id_str,
+        'reply_count': tweet.reply_count,
+        'retweet_count': tweet.retweet_count,
+        'favorite_count': tweet.favorite_count,
+        'tweet_url' : tweet.retweeted_status
+            ? `https://twitter.com/${tweet.retweeted_status.user.screen_name}/status/${tweet.retweeted_status.id_str}`
+            : `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`
+    };
+
+    location = data.geo? data.geo : data.location;
+    geolocateTweet(location).then((coordinates) => {
+        // Now it's time to add a random value to its location and ensure it falls in land
+        let wsTweetData = coordinates != null
+          ? {...data}
+          : virtualLocTweet(data);
+
+        if (coordinates !== null) {
+          saveCsv(wsTweetData);
+        }
+        // TODO: send tweet by socket connection
+        callback(null,Buffer(JSON.stringify(wsTweetData)));
+    },function(err){
+        console.log(`Error: ${err}`.red);
+        callback(true,err);
+    })
+
+}
+
+function saveCsv(tdata) {
+  csvWriter.writeRecords([tdata]).then(() => {
+      // console.log('The CSV file was written successfully'.yellow);
+  });
+}
+
+function virtualLocTweet (t) {
+  let virtualLocation = locationUtils.randomize(coordinates);
+  return {...t, lat: virtualLocation.lat, lon: virtualLocation.lon};
+}
 
 
+function saveUnlocated (t) {
+  fs.appendFile('data/unlocated.js', JSON.stringify(t, null, 4), function (err) {
+    if (err) throw err;
+    // console.log('Non-localizable tweet saved at data/unlocated.js'.yellow);
+  });
+}
+
+function isGeoTweet(t) {
+  let unlocated = !t.geo && t.user && !t.user.location;
+  if (unlocated) {
+    saveUnlocated(t);
+  }
+  // Si unlocated es false , es que tiene info para geolocalizar y tiramos pa'lante
+  return !unlocated;
+}
 
 
+client.stream('statuses/filter', {track: TRACK});
 
-client.stream('statuses/filter', {track: 'ElDebateDecisivo'});
-
-client.pipe(es.map(function (tweet, callback) {
-
-        var data = {
-            'username': tweet.user.name,
-            'screename': tweet.user.screen_name,
-            'text': tweet.text,
-            'profile_image_url_https': tweet.user.profile_image_url_https,
-            'geo': tweet.geo,
-            'location': tweet.user.location,
-            'created_at': tweet.created_at,
-            'id_str': tweet.id_str,
-            'reply_count': tweet.reply_count,
-            'retweet_count': tweet.retweet_count,
-            'favorite_count': tweet.favorite_count
-        };
-
-      if(!tweet.geo && tweet.user && !tweet.user.location){
-          fs.appendFile('data/unlocated.js', JSON.stringify(tweet, null, 4), function (err) {
-            if (err) throw err;
-            // console.log('Non-localizable tweet saved at data/unlocated.js'.yellow);
-          });
-          callback(null,Buffer(JSON.stringify(data)));
-      }else{
-
-
-
-          if(tweet.retweeted_status){
-              data.tweet_url = `https://twitter.com/${tweet.retweeted_status.user.screen_name}/status/${tweet.retweeted_status.id_str}`;
-          }else{
-              data.tweet_url = `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
-          }
-
-          if(data.geo || data.location){
-              location = data.geo? data.geo : data.location;
-              geolocateTweet(location).then((coordinates) => {
-                  // Now it's time to add a random value to its location and ensure it falls in land
-                  if(coordinates != null){
-                      var virtualLocation = locationUtils.randomize(coordinates);
-
-                      // Write in the CSV the received and geolocated tweets
-                      data.lat = virtualLocation.lat;
-                      data.lon = virtualLocation.lon;
-                      csvWriter.writeRecords([data]).then(() => {
-                          // console.log('The CSV file was written successfully'.yellow);
-                      });
-
-
-                  }
-                  // TODO: send tweet by socket connection
-                  callback(null,Buffer(JSON.stringify(data)));
-              },function(err){
-                  console.log(`Error: ${err}`.red);
-              })
-          }else{
-              console.log('This should never happen'.red);
-          }
-      }
-
-    }))
-    .pipe(ws)
+client
+  .pipe(es.filterSync(isGeoTweet))
+  .pipe(es.map(mapTweet))
+  .pipe(ws)

@@ -53,36 +53,37 @@ function geolocateTweet(location){
                     db.get('locations')
                       .push({name: location})
                       .write();
+
+                    reject(new Error(`Warning: Location not found '${location}'`));
+
+                }else{
+                    // console.log(`Location ${location}: ${JSON.stringify(coordinates)}`.green);
+                    resolve(coordinates);
                 }
-                // console.log(`Location ${location}: ${JSON.stringify(coordinates)}`.green);
-                resolve(coordinates);
-            },function(err){
-                reject(err);
+            }).catch(function(error){
+                console.log(`Error geocode: ${error}`);
             });
         }else if(typeof location !== 'obj'){
-            try{
-                /*
-                    TODO: Check twitter location format and change to
-                    {
-                        location: location,
-                        coordinates: {
-                            lat: obj[0].lat,
-                            lon: obj[0].lon
-                        },
-                        boundingbox: obj[0].boundingbox
-                    }
-                */
-                console.log(`Valid location!: ${location}`.blue);
-                resolve(location);
-            }catch(err){
-                reject(err);
-            }
+            /*
+                TODO: Check twitter location format and change to
+                {
+                    location: location,
+                    coordinates: {
+                        lat: obj[0].lat,
+                        lon: obj[0].lon
+                    },
+                    boundingbox: obj[0].boundingbox
+                }
+            */
+            console.log(`Valid location!: ${location}`.blue);
+            resolve(location);
         }
+    }).catch(function(error){
+        console.log(`Error geolocateTweet: ${error}`);
     });
 }
 
 function mapTweet(tweet, callback) {
-  console.log(tweet);
     var data = {
         'username': tweet.user.name,
         'screename': tweet.user.screen_name,
@@ -101,21 +102,26 @@ function mapTweet(tweet, callback) {
     };
 
     location = data.geo? data.geo : data.location;
-    geolocateTweet(location).then((coordinates) => {
-        // Now it's time to add a random value to its location and ensure it falls in land
-        let wsTweetData = coordinates != null
-          ? {...data}
-          : virtualLocTweet(data);
 
-        if (coordinates !== null) {
-          saveCsv(wsTweetData);
+    geolocateTweet(location).then((coordinates) => {
+
+        let send = typeof coordinates === 'object';
+        let wsTweetData;
+
+        if(send){
+            // Now it's time to add a random value to its location and ensure it falls in land
+            wsTweetData = virtualLocTweet(data, coordinates);
+            saveCsv(wsTweetData);
+        }else{
+            wsTweetData = {};
         }
         // TODO: send tweet by socket connection
-        callback(null,Buffer(JSON.stringify(wsTweetData)));
-    },function(err){
-        console.log(`Error: ${err}`.red);
-        callback(true,err);
-    })
+        callback(null, Buffer(JSON.stringify(wsTweetData)));
+
+    }).catch(function(err){
+        console.log(`Error mapTweet: ${err}`.red);
+        // callback(true, err);
+    });
 
 }
 
@@ -125,8 +131,8 @@ function saveCsv(tdata) {
   });
 }
 
-function virtualLocTweet (t) {
-  let virtualLocation = locationUtils.randomize(coordinates);
+function virtualLocTweet (t, cords) {
+  let virtualLocation = locationUtils.randomize(cords);
   return {...t, lat: virtualLocation.lat, lon: virtualLocation.lon};
 }
 
@@ -139,18 +145,21 @@ function saveUnlocated (t) {
 }
 
 function isGeoTweet(t) {
-  let unlocated = !t.geo && t.user && !t.user.location;
+  let unlocated = !t.geo && !t.user.location;
   if (unlocated) {
     saveUnlocated(t);
   }
   // Si unlocated es false , es que tiene info para geolocalizar y tiramos pa'lante
   return !unlocated;
 }
-
+function filterEmptyTweets(o){
+    return Object.keys(JSON.parse(o.toString())).length > 0;
+}
 
 client.stream('statuses/filter', {track: TRACK});
 
 client
   .pipe(es.filterSync(isGeoTweet))
   .pipe(es.map(mapTweet))
+  .pipe(es.filterSync(filterEmptyTweets))
   .pipe(ws)

@@ -25,7 +25,7 @@ db.defaults({ "type": "FeatureCollection", features: [] }).write();
             - Guardar en DB local el resultado
 */
 function geocode(location, geocoderIndex){
-    const geocoderFallback = ["arcgis", /*"osm", "arcgisGlobal"*/];
+    const geocoderFallback = ["arcgis" /*, "osm", "arcgisGlobal"*/];
     const i = geocoderIndex? geocoderIndex : 0;
 
     var address = db.get('features')
@@ -36,6 +36,8 @@ function geocode(location, geocoderIndex){
         return new Promise(function(resolve, reject) {
             console.log(`Address found for "${location}" in the local DB: ${JSON.stringify(address)}`.green);
             resolve(address);
+        }).catch(function(err){
+            console.log(`Error geocodeAddress`);
         });
     }
 
@@ -46,8 +48,10 @@ function geocode(location, geocoderIndex){
     if(falseAddress){
         return new Promise(function(resolve, reject) {
             console.log(`False address "${location}" in the local DB`.red);
-            resolve(null);
-        });
+            reject(new Error(`Location in notFoundLocations.json '${location}'`));
+        }).catch(function(err){
+            console.log(`Error geocodeFalseAddress`);
+        });;
     }
 
     // TODO: check if exists in db/notfound.txt, if so, resolve(null) & return
@@ -99,7 +103,8 @@ function geocode(location, geocoderIndex){
                     resolve(obj);
                 }
             });
-
+        }).catch(function(err){
+            console.log(`Error geocodeArcGISLoca`);
         });
         break;
 
@@ -122,7 +127,7 @@ function geocode(location, geocoderIndex){
                     return;
                     reject(err);
                 }
-                try{
+                // try{
                     var obj = JSON.parse(response.body);
                     if(obj.length === 0){
                         console.log(`Location "${location}" not found with OSM`.red);
@@ -163,12 +168,14 @@ function geocode(location, geocoderIndex){
                           .write();
                         resolve(obj);
                     }
-                }catch(err){
-                    console.log(`Error: ${err}`.red);
-                }
+                // }catch(err){
+                //     console.log(`Error: ${err}`.red);
+                // }
             });
 
-        });
+        }).catch(function(err){
+            console.log(`Error geocodeOSM`);
+        });;
         break;
 
         case 'arcgisGlobal':
@@ -220,6 +227,8 @@ function geocode(location, geocoderIndex){
                 }
             });
 
+        }).catch(function(err){
+            console.log(`Error geocodeArcGISGlobal`);
         });
         break;
     }

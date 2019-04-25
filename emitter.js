@@ -42,47 +42,6 @@ const csvWriter = createCsvWriter({
     append:true
 });
 
-
-
-function geolocateTweet(location){
-    return new Promise(function(resolve, reject) {
-        if(typeof location === 'string'){
-            geocode.find(location).then((coordinates) => {
-                if(coordinates === null){
-                    // TODO: save also which geocoders has been tried to geocode the address
-                    db.get('locations')
-                      .push({name: location})
-                      .write();
-
-                    reject(new Error(`Warning: Location not found '${location}'`));
-
-                }else{
-                    // console.log(`Location ${location}: ${JSON.stringify(coordinates)}`.green);
-                    resolve(coordinates);
-                }
-            }).catch(function(error){
-                console.log(`Error geocode: ${error}`);
-            });
-        }else if(typeof location !== 'obj'){
-            /*
-                TODO: Check twitter location format and change to
-                {
-                    location: location,
-                    coordinates: {
-                        lat: obj[0].lat,
-                        lon: obj[0].lon
-                    },
-                    boundingbox: obj[0].boundingbox
-                }
-            */
-            console.log(`Valid location!: ${location}`.blue);
-            resolve(location);
-        }
-    }).catch(function(error){
-        console.log(`Error geolocateTweet: ${error}`);
-    });
-}
-
 function mapTweet(tweet, callback) {
     var data = {
         'username': tweet.user.name,
@@ -102,26 +61,14 @@ function mapTweet(tweet, callback) {
     };
 
     location = data.geo? data.geo : data.location;
-
-    geolocateTweet(location).then((coordinates) => {
-
-        let send = typeof coordinates === 'object';
-        let wsTweetData;
-
-        if(send){
-            // Now it's time to add a random value to its location and ensure it falls in land
-            wsTweetData = virtualLocTweet(data, coordinates);
-            saveCsv(wsTweetData);
-        }else{
-            wsTweetData = {};
-        }
-        // TODO: send tweet by socket connection
-        callback(null, Buffer(JSON.stringify(wsTweetData)));
-
+    geocode.find(location).then((coordinates) => {
+      console.log(`Marcado para enviar`);
+      wsTweetData = virtualLocTweet(data, coordinates);
+      saveCsv(wsTweetData);
+      callback(null,new Buffer.from(JSON.stringify(wsTweetData)));
     }).catch(function(err){
-        console.log(`Error mapTweet: ${err}`.red);
-        // callback(true, err);
-    });
+      callback(null, new Buffer.from(JSON.stringify({ error: true })));
+    })
 
 }
 
@@ -153,10 +100,48 @@ function isGeoTweet(t) {
   return !unlocated;
 }
 function filterEmptyTweets(o){
-    return Object.keys(JSON.parse(o.toString())).length > 0;
+    let d = JSON.parse(new Buffer.from(o).toString('utf8'));
+    return !d.hasOwnProperty("error");
 }
 
 client.stream('statuses/filter', {track: TRACK});
+
+client.on('connection success', function (uri) {
+    console.log('connection success', uri);
+});
+
+client.on('connection aborted', function () {
+    console.log('connection aborted');
+});
+
+client.on('connection error network', function () {
+    console.log('connection error network');
+});
+
+client.on('connection error stall', function () {
+    console.log('connection error stall');
+});
+
+client.on('connection error http', function () {
+    console.log('connection error http');
+});
+
+client.on('connection rate limit', function () {
+    console.log('connection rate limit');
+});
+
+client.on('connection error unknown', function () {
+    console.log('connection error unknown');
+});
+
+client.on('data keep-alive', function () {
+    console.log('data keep-alive');
+});
+
+client.on('data error', function () {
+    console.log('data error');
+});
+
 
 client
   .pipe(es.filterSync(isGeoTweet))

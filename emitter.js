@@ -85,65 +85,64 @@ function geolocateTweet(location){
 
 
 
-client.stream('statuses/filter', {track: 'DebatTV3'});
+client.stream('statuses/filter', {track: 'ElDebateDecisivo'});
 
 client.pipe(es.map(function (tweet, callback) {
+
+        var data = {
+            'username': tweet.user.name,
+            'screename': tweet.user.screen_name,
+            'text': tweet.text,
+            'profile_image_url_https': tweet.user.profile_image_url_https,
+            'geo': tweet.geo,
+            'location': tweet.user.location,
+            'created_at': tweet.created_at,
+            'id_str': tweet.id_str,
+            'reply_count': tweet.reply_count,
+            'retweet_count': tweet.retweet_count,
+            'favorite_count': tweet.favorite_count
+        };
+
       if(!tweet.geo && tweet.user && !tweet.user.location){
           fs.appendFile('data/unlocated.js', JSON.stringify(tweet, null, 4), function (err) {
             if (err) throw err;
             // console.log('Non-localizable tweet saved at data/unlocated.js'.yellow);
           });
-          return 0;
-      }
-
-      var data = {
-          'username': tweet.user.name,
-          'screename': tweet.user.screen_name,
-          'text': tweet.text,
-          'profile_image_url_https': tweet.user.profile_image_url_https,
-          'geo': tweet.geo,
-          'location': tweet.user.location,
-          'created_at': tweet.created_at,
-          'id_str': tweet.id_str,
-          'reply_count': tweet.reply_count,
-          'retweet_count': tweet.retweet_count,
-          'favorite_count': tweet.favorite_count
-      };
-
-      if(tweet.retweeted_status){
-          data.tweet_url = `https://twitter.com/${tweet.retweeted_status.user.screen_name}/status/${tweet.retweeted_status.id_str}`;
+          callback(null,Buffer(JSON.stringify(data)));
       }else{
-          data.tweet_url = `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
-      }
-
-      // TEST antes de geolocalizar
-      // websocat -s 9000
-      // Para que functione el pipe hacia el websocketstream tienes que covertir el objeto a Buffer
-      //callback(null,Buffer.from(JSON.stringify(data)));
 
 
-      if(data.geo || data.location){
-          location = data.geo? data.geo : data.location;
-          geolocateTweet(location).then((coordinates) => {
-              // Now it's time to add a random value to its location and ensure it falls in land
-              if(coordinates != null){
-                  var virtualLocation = locationUtils.randomize(coordinates);
 
-                  // Write in the CSV the received and geolocated tweets
-                  data.lat = virtualLocation.lat;
-                  data.lon = virtualLocation.lon;
-                  csvWriter.writeRecords([data]).then(() => {
-                      // console.log('The CSV file was written successfully'.yellow);
-                  });
+          if(tweet.retweeted_status){
+              data.tweet_url = `https://twitter.com/${tweet.retweeted_status.user.screen_name}/status/${tweet.retweeted_status.id_str}`;
+          }else{
+              data.tweet_url = `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
+          }
 
+          if(data.geo || data.location){
+              location = data.geo? data.geo : data.location;
+              geolocateTweet(location).then((coordinates) => {
+                  // Now it's time to add a random value to its location and ensure it falls in land
+                  if(coordinates != null){
+                      var virtualLocation = locationUtils.randomize(coordinates);
+
+                      // Write in the CSV the received and geolocated tweets
+                      data.lat = virtualLocation.lat;
+                      data.lon = virtualLocation.lon;
+                      csvWriter.writeRecords([data]).then(() => {
+                          // console.log('The CSV file was written successfully'.yellow);
+                      });
+
+
+                  }
                   // TODO: send tweet by socket connection
                   callback(null,Buffer(JSON.stringify(data)));
-              }
-          },function(err){
-              console.log(`Error: ${err}`.red);
-          })
-      }else{
-          console.log('This should never happen'.red);
+              },function(err){
+                  console.log(`Error: ${err}`.red);
+              })
+          }else{
+              console.log('This should never happen'.red);
+          }
       }
 
     }))

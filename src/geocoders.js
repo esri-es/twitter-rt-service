@@ -13,7 +13,7 @@ const notFoundDB = low(new FileSync('data/notFoundLocations.json'));
 db.defaults({ "type": "FeatureCollection", features: [] }).write();
 
 
-const ALLOW_EXTERNAL_GEOCODING = false;
+const ALLOW_EXTERNAL_GEOCODING = true;
 const GEOCODERS = require('./external_geocoders.js');
 /*
     - Comprueba en una DB local si ha sido ya geocodificado
@@ -55,7 +55,7 @@ function runExternalGeocoder(loc,opts){
            reject(err);
        }
        var obj = JSON.parse(response.body);
-       if(obj.candidates.length > 0){
+       if(obj.candidates.length === 0){
            console.log(`Location "${loc}" not found with ${opts.name}`.red);
            reject(`failed [${opts.name}] geocoding`);
        } else {

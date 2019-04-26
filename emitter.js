@@ -15,6 +15,8 @@ const adapter = new FileSync('data/notFoundLocations.json');
 const db = low(adapter);
 db.defaults({ "locations": [] }).write();
 
+const EXTERNALGEOCODERNAME = "arcgis";
+
 const WS_URL = 'ws://localhost:9000'
 var ws = websocket(WS_URL);
 
@@ -63,7 +65,9 @@ function mapTweet(tweet, callback) {
     };
 
     location = data.geo? data.geo : data.location;
-    geocode.find(location).then((coordinates) => {
+
+
+    geocode.find(location,EXTERNALGEOCODERNAME).then((coordinates) => {
       console.log(`Marcado para enviar`);
       wsTweetData = virtualLocTweet(data, coordinates);
       saveCsv(wsTweetData);

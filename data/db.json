@@ -100290,6 +100290,426 @@
       },
       "match": "Oleiros, A Coruña, Galicia, España",
       "geocoder": "OSM"
+    },
+    {
+      "location": "Andalucía, Spain",
+      "coordinates": {
+        "lat": "37.3399964",
+        "lon": "-4.5811614"
+      },
+      "boundingbox": {
+        "ymin": "35.9376398",
+        "ymax": "38.7290874",
+        "xmin": "-7.5226863",
+        "xmax": "-1.6298"
+      },
+      "match": "Andalucía, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Palma - Mallorca - Balears",
+      "coordinates": {
+        "lat": "39.5695818",
+        "lon": "2.6500745"
+      },
+      "boundingbox": {
+        "ymin": "39.1068691",
+        "ymax": "39.6584127",
+        "xmin": "2.563847",
+        "xmax": "2.9977307"
+      },
+      "match": "Palma, Illes Balears, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "LAS CANARIAS",
+      "coordinates": {
+        "lat": "3.7367983",
+        "lon": "-73.1204932"
+      },
+      "boundingbox": {
+        "ymin": "3.7167983",
+        "ymax": "3.7567983",
+        "xmin": "-73.1404932",
+        "xmax": "-73.1004932"
+      },
+      "match": "Las Canarias, Meta, Colombia",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Madrid, España🇪🇸🇪🇸",
+      "coordinates": {
+        "lat": "40.4167047",
+        "lon": "-3.7035825"
+      },
+      "boundingbox": {
+        "ymin": "40.3119774",
+        "ymax": "40.6437293",
+        "xmin": "-3.8889539",
+        "xmax": "-3.5179163"
+      },
+      "match": "Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Aragón-España(Huesca-Zaragoza)",
+      "coordinates": {
+        "lat": "41.768433",
+        "lon": "-0.331362"
+      },
+      "boundingbox": {
+        "ymin": "41.7684254",
+        "ymax": "41.768433",
+        "xmin": "-0.3320707",
+        "xmax": "-0.331362"
+      },
+      "match": "Zaragoza, Lanaja, Los Monegros, Huesca, Aragón, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Catalunya, Catalunya",
+      "coordinates": {
+        "lat": "41.3874344",
+        "lon": "2.16903130986842"
+      },
+      "boundingbox": {
+        "ymin": "41.3873907",
+        "ymax": "41.3874849",
+        "xmin": "2.1689776",
+        "xmax": "2.1690792"
+      },
+      "match": "Catalunya, Pl. Catalunya, la Dreta de l'Eixample, Eixample, Barcelona, BCN, CAT, 08002, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Antofagasta",
+      "coordinates": {
+        "lat": "-23.6463741",
+        "lon": "-70.3980033"
+      },
+      "boundingbox": {
+        "ymin": "-25.4019573",
+        "ymax": "-23.0584154",
+        "xmin": "-70.6285",
+        "xmax": "-68.0670324"
+      },
+      "match": "Antofagasta, Provincia de Antofagasta, Región de Antofagasta, Chile",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Error 404",
+      "coordinates": {
+        "lat": "-26.1984736",
+        "lon": "28.056248"
+      },
+      "boundingbox": {
+        "ymin": "-26.1987396",
+        "ymax": "-26.1984736",
+        "xmin": "28.056248",
+        "xmax": "28.057164"
+      },
+      "match": "Error Street, Johannesburg Ward 123, Johannesburg, City of Johannesburg Metropolitan Municipality, Gauteng, 2001, South Africa",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Naperville, IL",
+      "coordinates": {
+        "lat": "41.7728699",
+        "lon": "-88.1479278"
+      },
+      "boundingbox": {
+        "ymin": "41.6698948",
+        "ymax": "41.821975",
+        "xmin": "-88.235296",
+        "xmax": "-88.0885135"
+      },
+      "match": "Naperville, DuPage County, Illinois, USA",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Querétaro, Querétaro Arteaga",
+      "coordinates": {
+        "lat": "20.5878372",
+        "lon": "-100.3879904"
+      },
+      "boundingbox": {
+        "ymin": "20.5163267",
+        "ymax": "20.6839674",
+        "xmin": "-100.4801491",
+        "xmax": "-100.3119636"
+      },
+      "match": "Santiago de Querétaro, Municipio de Querétaro, Querétaro, México",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Granatula de Calatrava ",
+      "coordinates": {
+        "lat": "38.7958912",
+        "lon": "-3.7429733"
+      },
+      "boundingbox": {
+        "ymin": "38.6638219",
+        "ymax": "38.8437232",
+        "xmin": "-3.8158149",
+        "xmax": "-3.5830626"
+      },
+      "match": "Granátula de Calatrava, Campo de Calatrava, Ciudad Real, Castilla-La Mancha, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Zuera,Zaragoza",
+      "coordinates": {
+        "lat": "41.8659094",
+        "lon": "-0.7886383"
+      },
+      "boundingbox": {
+        "ymin": "41.7932684",
+        "ymax": "42.0150717",
+        "xmin": "-0.95533",
+        "xmax": "-0.624165"
+      },
+      "match": "Zuera, Zaragoza, Aragón, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "El ejido , Almeria",
+      "coordinates": {
+        "lat": "36.7753425",
+        "lon": "-2.8168228"
+      },
+      "boundingbox": {
+        "ymin": "36.6801832",
+        "ymax": "36.8285271",
+        "xmin": "-2.9071016",
+        "xmax": "-2.6572041"
+      },
+      "match": "El Ejido, Almería, Andalucía, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "CDMX!!!!🇲🇽",
+      "coordinates": {
+        "lat": "19.32055625",
+        "lon": "-99.1517010707765"
+      },
+      "boundingbox": {
+        "ymin": "19.0482367",
+        "ymax": "19.5927572",
+        "xmin": "-99.3649242",
+        "xmax": "-98.9403028"
+      },
+      "match": "CDMX, México",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Orense",
+      "coordinates": {
+        "lat": "42.1968459",
+        "lon": "-7.6114105"
+      },
+      "boundingbox": {
+        "ymin": "41.8073667",
+        "ymax": "42.5785999",
+        "xmin": "-8.3663444",
+        "xmax": "-6.7339533"
+      },
+      "match": "Ourense, Galicia, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "ISLAS CANARIAS , ESPAÑA",
+      "coordinates": {
+        "lat": "39.4011424",
+        "lon": "-3.1341671"
+      },
+      "boundingbox": {
+        "ymin": "39.4011424",
+        "ymax": "39.4017179",
+        "xmin": "-3.1341671",
+        "xmax": "-3.1328508"
+      },
+      "match": "Islas Canarias, Campo de Criptana, La Mancha, Ciudad Real, Castilla-La Mancha, 13610, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "New York N.Y.",
+      "coordinates": {
+        "lat": "40.7127281",
+        "lon": "-74.0060152"
+      },
+      "boundingbox": {
+        "ymin": "40.477399",
+        "ymax": "40.9161785",
+        "xmin": "-74.25909",
+        "xmax": "-73.7001809"
+      },
+      "match": "NYC, New York, USA",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Baena, España",
+      "coordinates": {
+        "lat": "37.6173035",
+        "lon": "-4.324371"
+      },
+      "boundingbox": {
+        "ymin": "37.5392605",
+        "ymax": "37.8201138",
+        "xmin": "-4.4266892",
+        "xmax": "-4.1643685"
+      },
+      "match": "Baena, Córdoba, Andalucía, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "BOGOTA",
+      "coordinates": {
+        "lat": "4.5980772",
+        "lon": "-74.0761028"
+      },
+      "boundingbox": {
+        "ymin": "4.4380772",
+        "ymax": "4.7580772",
+        "xmin": "-74.2361028",
+        "xmax": "-73.9161028"
+      },
+      "match": "Bogotá, Distrito Capital de Bogotá, 110321, Colombia",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "¡Viva España!",
+      "coordinates": {
+        "lat": "38.9300126",
+        "lon": "-0.1363172"
+      },
+      "boundingbox": {
+        "ymin": "38.9299626",
+        "ymax": "38.9300626",
+        "xmin": "-0.1363672",
+        "xmax": "-0.1362672"
+      },
+      "match": "Viva España, Carretera de Cartagena a Valencia, Oliva, Safor, València / Valencia, Comunitat Valenciana, 46712, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Normal, IL",
+      "coordinates": {
+        "lat": "40.5117699",
+        "lon": "-88.9944815"
+      },
+      "boundingbox": {
+        "ymin": "40.493833",
+        "ymax": "40.5622",
+        "xmin": "-89.060454",
+        "xmax": "-88.902741"
+      },
+      "match": "Normal, McLean County, Illinois, USA",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Spanien",
+      "coordinates": {
+        "lat": "39.3262345",
+        "lon": "-4.8380649"
+      },
+      "boundingbox": {
+        "ymin": "27.4335426",
+        "ymax": "43.9933088",
+        "xmin": "-18.3936845",
+        "xmax": "4.5918885"
+      },
+      "match": "España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Chile",
+      "coordinates": {
+        "lat": "-31.7613365",
+        "lon": "-71.3187697"
+      },
+      "boundingbox": {
+        "ymin": "-56.725",
+        "ymax": "-17.4983998",
+        "xmin": "-109.6795789",
+        "xmax": "-66.0753474"
+      },
+      "match": "Chile",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Rönninge",
+      "coordinates": {
+        "lat": "60.2319959",
+        "lon": "25.0007863"
+      },
+      "boundingbox": {
+        "ymin": "60.2119959",
+        "ymax": "60.2519959",
+        "xmin": "24.9807863",
+        "xmax": "25.0207863"
+      },
+      "match": "Pihlajisto, Helsinki, Helsingin seutukunta, Uusimaa, Etelä-Suomi, Manner-Suomi, 00710, Suomi",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Oxford, UK",
+      "coordinates": {
+        "lat": "51.7520131",
+        "lon": "-1.2578499"
+      },
+      "boundingbox": {
+        "ymin": "51.7109788",
+        "ymax": "51.7962658",
+        "xmin": "-1.3042472",
+        "xmax": "-1.1758134"
+      },
+      "match": "Oxford, Oxon, South East, England, UK",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "West Virginia, USA",
+      "coordinates": {
+        "lat": "38.4758406",
+        "lon": "-80.8408415"
+      },
+      "boundingbox": {
+        "ymin": "37.201483",
+        "ymax": "40.638801",
+        "xmin": "-82.644739",
+        "xmax": "-77.719029"
+      },
+      "match": "West Virginia, USA",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Nancy, France",
+      "coordinates": {
+        "lat": "48.6937223",
+        "lon": "6.1834097"
+      },
+      "boundingbox": {
+        "ymin": "48.666906",
+        "ymax": "48.7092349",
+        "xmin": "6.134292",
+        "xmax": "6.2126188"
+      },
+      "match": "Nancy, Meurthe-et-Moselle, Grand Est, France métropolitaine, 54000, France",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Azuqueca de Henares. ",
+      "coordinates": {
+        "lat": "40.5684256",
+        "lon": "-3.2621585"
+      },
+      "boundingbox": {
+        "ymin": "40.531689",
+        "ymax": "40.5835089",
+        "xmin": "-3.2970003",
+        "xmax": "-3.2303131"
+      },
+      "match": "Azuqueca de Henares, Guadalajara, Castilla-La Mancha, 19200, España",
+      "geocoder": "OSM"
     }
   ]
 }

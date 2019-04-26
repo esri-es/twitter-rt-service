@@ -15,7 +15,7 @@ const adapter = new FileSync('data/notFoundLocations.json');
 const db = low(adapter);
 db.defaults({ "locations": [] }).write();
 
-const EXTERNALGEOCODERNAME = "arcgis";
+const EXTERNALGEOCODERNAME = process.argv[3] || "osm";
 
 const WS_URL = 'ws://localhost:9000'
 var ws = websocket(WS_URL);
@@ -65,7 +65,6 @@ function mapTweet(tweet, callback) {
     };
 
     location = data.geo? data.geo : data.location;
-
 
     geocode.find(location,EXTERNALGEOCODERNAME).then((results) => {
       console.log(`geocoded [${location}] from [${results.source}]`.green);

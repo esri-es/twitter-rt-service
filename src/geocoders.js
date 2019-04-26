@@ -1,4 +1,4 @@
-const request = require('request');
+const fetch = require("node-fetch");
 const fs = require('fs');
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
@@ -32,7 +32,7 @@ function isCached(location){
     .find({ location: location })
     .value();
   if (address) {
-    console.log(`Address found for "${location}" in the local DB: ${JSON.stringify(address)}`.green);
+    console.log(`Address found for "${location}" in the local DB: ${JSON.stringify(address)}`.grey);
     return address;
   } else {
     let falseAddress = notFoundDB.get('locations')
@@ -45,63 +45,77 @@ function isCached(location){
   }
 }
 
+function checkStatus(res) {
+    if (res.ok) { // res.status >= 200 && res.status < 300
+        return res;
+    } else {
+        throw new Error(res.statusText);
+    }
+}
 
 
 function runExternalGeocoder(loc,opts){
-  return new Promise((resolve,reject) => {
-   request({url:opts.url, qs:opts.qs}, function(err, response, body) {
-     if(err) {
-         console.log(`Error: ${err.red}`.red);
-         reject(err);
-     }
-     let res = JSON.parse(response.body);
-     let foundCandidates = opts.name === "osm"
-        ? res.length > 0
-        : res.candidates.length > 0;
+  let url = new URL(opts.url);
+  let params = opts.qs;
+  Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+  return fetch(url)
+     .then(checkStatus)
+     .then(res => res.json())
+     .then(json => {
+         let res = json;
+         let foundCandidates = opts.name === "osm"
+            ? res.length > 0
+            : res.candidates.length > 0;
 
-     if(!foundCandidates){
-       console.log(`Location "${loc}" not found with ${opts.name}`.red);
-       reject(`failed [${opts.name}] geocoding`);
-     } else {
-       let results = opts.name === "osm"
-        ? {
-          location: loc,
-           coordinates: {
-               lat: res[0].lat,
-               lon: res[0].lon
-           },
-           boundingbox: {
-               ymin: res[0].boundingbox[0],
-               ymax: res[0].boundingbox[1],
-               xmin: res[0].boundingbox[2],
-               xmax: res[0].boundingbox[3]
-           },
-           match: res[0].display_name,
-           geocoder: 'OSM'
-        }
-        : {
-           location: loc,
-           coordinates: res.candidates[0].location,
-           boundingbox: res.candidates[0].extent,
-           match: res.candidates[0].address,
-           geocoder: opts.name
-        };
-       console.log(`Location "${loc}" found with ${opts.name}: ${JSON.stringify(results)}`.green);
-       db.get('features')
-         .push(results)
-         .write();
-       resolve(results);
-     }
-   })
-  });
+         if(!foundCandidates){
+           console.log(`Location "${loc}" not found with ${opts.name}`.red);
+           return new Promise((resolve, reject) => {
+             reject(`No candidates`);
+           });
+         } else {
+           let results = opts.name === "osm"
+            ? {
+              location: loc,
+               coordinates: {
+                   lat: res[0].lat,
+                   lon: res[0].lon
+               },
+               boundingbox: {
+                   ymin: res[0].boundingbox[0],
+                   ymax: res[0].boundingbox[1],
+                   xmin: res[0].boundingbox[2],
+                   xmax: res[0].boundingbox[3]
+               },
+               match: res[0].display_name,
+               geocoder: 'OSM'
+            }
+            : {
+               location: loc,
+               coordinates: res.candidates[0].location,
+               boundingbox: res.candidates[0].extent,
+               match: res.candidates[0].address,
+               geocoder: opts.name
+            };
+           //console.log(`Location "${loc}" found with ${opts.name}: ${JSON.stringify(results)}`.green);
+           db.get('features')
+             .push(results)
+             .write();
+           return new Promise((resolve,reject) => {
+             resolve({coordinates: results, source : opts.name})
+           });
+          }
+     }).catch(function(err){
+       console.log(`Failed [${opts.name}] geocoding for [${loc}] - Error [${err}]`.red);
+     });
 }
 
-    // TODO: check if exists in db/notfound.txt, if so, resolve(null) & return
+
+// TODO: check if exists in db/notfound.txt, if so, resolve(null) & return
 function geocode(location, geocoderName = 'arcgis'){
   let cached = isCached(location);
   if(cached) {
     return new Promise(function(resolve,reject){
-      resolve(cached);
+      resolve({ coordinates : cached, source : "cached"});
     });
   } else {
     if (ALLOW_EXTERNAL_GEOCODING) {
@@ -110,7 +124,7 @@ function geocode(location, geocoderName = 'arcgis'){
         url  : GEOCODERS[geocoderName].url,
         qs   : GEOCODERS[geocoderName].qs(location)
       };
-      console.log(`Trying [${geocoderName}] geocoding for location: [${location}]`);
+      console.log(`Trying [${geocoderName}] geocoding for location: [${location}]`.yellow);
       return runExternalGeocoder(location, options);
     } else {
       return new Promise(function(resolve,reject){

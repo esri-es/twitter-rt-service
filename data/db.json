@@ -99735,6 +99735,561 @@
       },
       "match": "221, Baker Street, Terrell, Kaufman County, Texas, 75160, USA",
       "geocoder": "OSM"
+    },
+    {
+      "location": "Avenida del Oeste, 48 València",
+      "coordinates": {
+        "lat": "39.0606612",
+        "lon": "-0.6765661"
+      },
+      "boundingbox": {
+        "ymin": "39.0605528",
+        "ymax": "39.0606612",
+        "xmin": "-0.6765661",
+        "xmax": "-0.676255"
+      },
+      "match": "Avenida del Oeste, Bolbaite, La Canal de Navarrés, València / Valencia, Comunitat Valenciana, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "España - Spain",
+      "coordinates": {
+        "lat": "39.3262345",
+        "lon": "-4.8380649"
+      },
+      "boundingbox": {
+        "ymin": "27.4335426",
+        "ymax": "43.9933088",
+        "xmin": "-18.3936845",
+        "xmax": "4.5918885"
+      },
+      "match": "España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "España🇪🇸",
+      "coordinates": {
+        "lat": "39.3262345",
+        "lon": "-4.8380649"
+      },
+      "boundingbox": {
+        "ymin": "27.4335426",
+        "ymax": "43.9933088",
+        "xmin": "-18.3936845",
+        "xmax": "4.5918885"
+      },
+      "match": "España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Mérida, Yucatán",
+      "coordinates": {
+        "lat": "20.9670759",
+        "lon": "-89.6237402"
+      },
+      "boundingbox": {
+        "ymin": "20.8733088",
+        "ymax": "21.0867259",
+        "xmin": "-89.7261963",
+        "xmax": "-89.5301684"
+      },
+      "match": "Mérida, Yucatán, México",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Vilallonga del Camp",
+      "coordinates": {
+        "lat": "41.2080149",
+        "lon": "1.2074709"
+      },
+      "boundingbox": {
+        "ymin": "41.19347",
+        "ymax": "41.2323166",
+        "xmin": "1.1735091",
+        "xmax": "1.2229761"
+      },
+      "match": "Vilallonga del Camp, Tarragonès, Tarragona, CAT, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "España, Madrid, Granada",
+      "coordinates": {
+        "lat": "36.4667412",
+        "lon": "-5.0267062"
+      },
+      "boundingbox": {
+        "ymin": "36.4666912",
+        "ymax": "36.4667912",
+        "xmin": "-5.0267562",
+        "xmax": "-5.0266562"
+      },
+      "match": "Granada, Calle de Sabinillas, Jardines de Nueva Atalaya Estepona, El Pilar, Estepona, Málaga, Andalucía, 29688, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Maresme, Catalunya.",
+      "coordinates": {
+        "lat": "41.60241325",
+        "lon": "2.50917203274613"
+      },
+      "boundingbox": {
+        "ymin": "41.4606341",
+        "ymax": "41.744245",
+        "xmin": "2.246952",
+        "xmax": "2.7776432"
+      },
+      "match": "Maresme, BCN, CAT, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Valparaíso... Curauma. ",
+      "coordinates": {
+        "lat": "-33.1464448",
+        "lon": "-71.6745901"
+      },
+      "boundingbox": {
+        "ymin": "-33.1664448",
+        "ymax": "-33.1264448",
+        "xmin": "-71.6945901",
+        "xmax": "-71.6545901"
+      },
+      "match": "Curauma, Provincia de Valparaíso, Región de Valparaíso, Chile",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Mengíbar, España",
+      "coordinates": {
+        "lat": "37.9679944",
+        "lon": "-3.8087732"
+      },
+      "boundingbox": {
+        "ymin": "37.9174391",
+        "ymax": "38.013019",
+        "xmin": "-3.8687434",
+        "xmax": "-3.7359905"
+      },
+      "match": "Mengíbar, Jaén, Andalucía, 23620, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Canarias - Catalunya",
+      "coordinates": {
+        "lat": "27.9969393",
+        "lon": "-15.4165596"
+      },
+      "boundingbox": {
+        "ymin": "27.9968893",
+        "ymax": "27.9969893",
+        "xmin": "-15.4166096",
+        "xmax": "-15.4165096"
+      },
+      "match": "Caixa Catalunya, Calle Ruiz, La Rocha, Lomo del Cementerio, Telde, Las Palmas, Canarias, 35200, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Grimsby, UK",
+      "coordinates": {
+        "lat": "53.5677371",
+        "lon": "-0.0736289"
+      },
+      "boundingbox": {
+        "ymin": "53.5277371",
+        "ymax": "53.6077371",
+        "xmin": "-0.1136289",
+        "xmax": "-0.0336289"
+      },
+      "match": "Grimsby, North East Lincolnshire, Yorkshire and the Humber, England, DN32 9UT, UK",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Linares, Andalucia, España",
+      "coordinates": {
+        "lat": "38.0928249",
+        "lon": "-3.6343581"
+      },
+      "boundingbox": {
+        "ymin": "38.0021713",
+        "ymax": "38.1733367",
+        "xmin": "-3.7620536",
+        "xmax": "-3.5171467"
+      },
+      "match": "Linares, Jaén, Andalucía, 23700, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Saint Stephen of the Oaks",
+      "coordinates": {
+        "lat": "38.1873448",
+        "lon": "-75.839931"
+      },
+      "boundingbox": {
+        "ymin": "38.1673448",
+        "ymax": "38.2073448",
+        "xmin": "-75.859931",
+        "xmax": "-75.819931"
+      },
+      "match": "Saint Stephen, Somerset County, Maryland, USA",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "𝐬𝐡𝐞 & 𝐡𝐞𝐫 || 🏳️‍🌈",
+      "coordinates": {
+        "lat": "6.1653655",
+        "lon": "-75.6001276"
+      },
+      "boundingbox": {
+        "ymin": "6.1653155",
+        "ymax": "6.1654155",
+        "xmin": "-75.6001776",
+        "xmax": "-75.6000776"
+      },
+      "match": "⚽️, Carrera 48, La Paz, Envigado, Valle de Aburrá, Antioquia, 055421, Colombia",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "València ESPAÑA",
+      "coordinates": {
+        "lat": "39.4699014",
+        "lon": "-0.3759513"
+      },
+      "boundingbox": {
+        "ymin": "39.2784496",
+        "ymax": "39.5666202",
+        "xmin": "-0.4325512",
+        "xmax": "-0.2725205"
+      },
+      "match": "València, Comarca de València, València / Valencia, Comunitat Valenciana, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "sant pol de mar",
+      "coordinates": {
+        "lat": "41.6030132",
+        "lon": "2.6238092"
+      },
+      "boundingbox": {
+        "ymin": "41.5905419",
+        "ymax": "41.6292517",
+        "xmin": "2.5882459",
+        "xmax": "2.6392972"
+      },
+      "match": "Sant Pol de Mar, Maresme, BCN, CAT, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Sant Quirze del Vallès",
+      "coordinates": {
+        "lat": "41.530143",
+        "lon": "2.0820052"
+      },
+      "boundingbox": {
+        "ymin": "41.5067445",
+        "ymax": "41.5430539",
+        "xmin": "2.0315405",
+        "xmax": "2.099146"
+      },
+      "match": "Sant Quirze del Vallès, Vallès Occidental, BCN, CAT, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Free Europe",
+      "coordinates": {
+        "lat": "50.07894045",
+        "lon": "14.4785100049238"
+      },
+      "boundingbox": {
+        "ymin": "50.0786124",
+        "ymax": "50.0792684",
+        "xmin": "14.4779994",
+        "xmax": "14.4790206"
+      },
+      "match": "Radio Free Europe / Radio Liberty, 159a, Vinohradská, Žižkov, Praha, okres Hlavní město Praha, Hlavní město Praha, Praha, 10000, Česko",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "MÉXICO",
+      "coordinates": {
+        "lat": "19.4326009",
+        "lon": "-99.1333416"
+      },
+      "boundingbox": {
+        "ymin": "19.2726009",
+        "ymax": "19.5926009",
+        "xmin": "-99.2933416",
+        "xmax": "-98.9733416"
+      },
+      "match": "Ciudad de México, Cuauhtémoc, CDMX, 06060, México",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Novalaise",
+      "coordinates": {
+        "lat": "45.5951342",
+        "lon": "5.7704482"
+      },
+      "boundingbox": {
+        "ymin": "45.5578696",
+        "ymax": "45.6149232",
+        "xmin": "5.7275923",
+        "xmax": "5.8068483"
+      },
+      "match": "Novalaise, Chambéry, Savoie, Auvergne-Rhône-Alpes, France métropolitaine, 73470, France",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "CATALUNYA ||☆||",
+      "coordinates": {
+        "lat": "41.8523094",
+        "lon": "1.5745043"
+      },
+      "boundingbox": {
+        "ymin": "40.5230524",
+        "ymax": "42.8615226",
+        "xmin": "0.1594133",
+        "xmax": "3.3222508"
+      },
+      "match": "CAT, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Venezuela - España",
+      "coordinates": {
+        "lat": "36.8944422",
+        "lon": "-2.4475791"
+      },
+      "boundingbox": {
+        "ymin": "36.8935901",
+        "ymax": "36.8944422",
+        "xmin": "-2.4475791",
+        "xmax": "-2.4474026"
+      },
+      "match": "Venezuela, La Gloria, Huércal de Almería, Almería, Andalucía, 04230, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "ni idea ",
+      "coordinates": {
+        "lat": "36.785262",
+        "lon": "-6.3464425"
+      },
+      "boundingbox": {
+        "ymin": "36.785212",
+        "ymax": "36.785312",
+        "xmin": "-6.3464925",
+        "xmax": "-6.3463925"
+      },
+      "match": "ni idea, Calle de la Bolsa, شلوقة, Cádiz, Andalucía, 11540, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Burgos - Madrid ",
+      "coordinates": {
+        "lat": "42.6862527",
+        "lon": "-2.9474023"
+      },
+      "boundingbox": {
+        "ymin": "42.6862027",
+        "ymax": "42.6863027",
+        "xmin": "-2.9474523",
+        "xmax": "-2.9473523"
+      },
+      "match": "Madrid, Calle Dos de Mayo, Barriada de Nuclenor, Allende, Miranda de Ebro, Ebro, Burgos, Castilla y León, 09200, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Bronx, NY/Boston, MA",
+      "coordinates": {
+        "lat": "42.273237",
+        "lon": "-71.161942"
+      },
+      "boundingbox": {
+        "ymin": "42.2730927",
+        "ymax": "42.274073",
+        "xmin": "-71.162871",
+        "xmax": "-71.1608036"
+      },
+      "match": "Bronx Road, Germantown, West Roxbury, Boston, Suffolk County, Massachusetts, 02132-3226, USA",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Nicaragua",
+      "coordinates": {
+        "lat": "12.3724928",
+        "lon": "-84.8700308"
+      },
+      "boundingbox": {
+        "ymin": "10.7076565",
+        "ymax": "15.0331183",
+        "xmin": "-87.901532",
+        "xmax": "-82.6227023"
+      },
+      "match": "Nicaragua",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Gotham",
+      "coordinates": {
+        "lat": "43.2233214",
+        "lon": "-90.2915132"
+      },
+      "boundingbox": {
+        "ymin": "43.2033214",
+        "ymax": "43.2433214",
+        "xmin": "-90.3115132",
+        "xmax": "-90.2715132"
+      },
+      "match": "Gotham, Town of Buena Vista, Richland County, Wisconsin, 53540, USA",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "SBCN",
+      "coordinates": {
+        "lat": "-17.72483185",
+        "lon": "-48.6082487390863"
+      },
+      "boundingbox": {
+        "ymin": "-17.7298932",
+        "ymax": "-17.7195416",
+        "xmin": "-48.6173283",
+        "xmax": "-48.5942182"
+      },
+      "match": "Aeroporto de Caldas Novas (CLV), Rua RP 12, Residencial Primavera, Caldas Novas, Microrregião de Meia Ponte, Mesorregião Sul Goiano, GO, Região Centro-Oeste, 75694-970, Brasil",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "México, Ciudad de México",
+      "coordinates": {
+        "lat": "19.4326009",
+        "lon": "-99.1333416"
+      },
+      "boundingbox": {
+        "ymin": "19.2726009",
+        "ymax": "19.5926009",
+        "xmin": "-99.2933416",
+        "xmax": "-98.9733416"
+      },
+      "match": "Ciudad de México, Cuauhtémoc, CDMX, 06060, México",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Ratisbona, Alemania",
+      "coordinates": {
+        "lat": "49.0195333",
+        "lon": "12.0974869"
+      },
+      "boundingbox": {
+        "ymin": "48.8595333",
+        "ymax": "49.1795333",
+        "xmin": "11.9374869",
+        "xmax": "12.2574869"
+      },
+      "match": "Rgbg, Regensburg, OPf, Bayern, 93047, Deutschland",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Entre el 188 i 190 ",
+      "coordinates": {
+        "lat": "-30.73738135",
+        "lon": "-57.9740441661019"
+      },
+      "boundingbox": {
+        "ymin": "-30.7381049",
+        "ymax": "-30.7366437",
+        "xmin": "-57.9748819",
+        "xmax": "-57.9732096"
+      },
+      "match": "Loteo Pro.Cre.Ar, Chajarí, Distrito Mandisoví, Departamento Federación, ER., Argentina",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "London",
+      "coordinates": {
+        "lat": "51.5073219",
+        "lon": "-0.1276474"
+      },
+      "boundingbox": {
+        "ymin": "51.3473219",
+        "ymax": "51.6673219",
+        "xmin": "-0.2876474",
+        "xmax": "0.0323526"
+      },
+      "match": "London, Greater London, England, SW1A 2DX, UK",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Caracas, Venezuela",
+      "coordinates": {
+        "lat": "10.506098",
+        "lon": "-66.9146017"
+      },
+      "boundingbox": {
+        "ymin": "10.346098",
+        "ymax": "10.666098",
+        "xmin": "-67.0746017",
+        "xmax": "-66.7546017"
+      },
+      "match": "Caracas, Municipio Libertador, Distrito Capital, Región Capital, 1010-A, Venezuela",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "CASTANYET-CATALUNYA",
+      "coordinates": {
+        "lat": "41.8888471",
+        "lon": "2.6232346"
+      },
+      "boundingbox": {
+        "ymin": "41.8688471",
+        "ymax": "41.9088471",
+        "xmin": "2.6032346",
+        "xmax": "2.6432346"
+      },
+      "match": "Castanyet, Selva, Girona, CAT, 17430, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Fuentes Calientes, España",
+      "coordinates": {
+        "lat": "40.7004538",
+        "lon": "-0.9786854"
+      },
+      "boundingbox": {
+        "ymin": "40.6630581",
+        "ymax": "40.7204663",
+        "xmin": "-1.0204101",
+        "xmax": "-0.9429921"
+      },
+      "match": "Fuentes Calientes, Teruel, Aragón, España",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Jujuy, Argentina",
+      "coordinates": {
+        "lat": "-23.3161458",
+        "lon": "-65.7595288"
+      },
+      "boundingbox": {
+        "ymin": "-24.6172081",
+        "ymax": "-21.781168",
+        "xmin": "-67.212916",
+        "xmax": "-64.1506698"
+      },
+      "match": "JJY, Argentina",
+      "geocoder": "OSM"
+    },
+    {
+      "location": "Oleiros, Galicia",
+      "coordinates": {
+        "lat": "43.3330859",
+        "lon": "-8.3170202"
+      },
+      "boundingbox": {
+        "ymin": "43.3038457",
+        "ymax": "43.4069793",
+        "xmin": "-8.385195",
+        "xmax": "-8.2956966"
+      },
+      "match": "Oleiros, A Coruña, Galicia, España",
+      "geocoder": "OSM"
     }
   ]
 }

@@ -29,6 +29,7 @@
     "event-stream": "^4.0.1",
     "jsonpath": "^1.0.1",
     "lowdb": "^1.0.0",
+    "node-fetch": "^2.4.0",
     "twitter-stream-api": "^0.5.2",
     "websocket-stream": "^5.5.0",
     "ws": "^6.2.1"

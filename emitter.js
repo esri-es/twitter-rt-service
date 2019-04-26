@@ -67,10 +67,11 @@ function mapTweet(tweet, callback) {
     location = data.geo? data.geo : data.location;
 
 
-    geocode.find(location,EXTERNALGEOCODERNAME).then((coordinates) => {
-      console.log(`Marcado para enviar`);
-      wsTweetData = virtualLocTweet(data, coordinates);
+    geocode.find(location,EXTERNALGEOCODERNAME).then((results) => {
+      console.log(`geocoded [${location}] from [${results.source}]`.green);
+      wsTweetData = virtualLocTweet(data, results.coordinates);
       saveCsv(wsTweetData);
+      console.log(`Sending data to ws...`);
       callback(null,new Buffer.from(JSON.stringify(wsTweetData)));
     }).catch(function(err){
       callback(null, new Buffer.from(JSON.stringify({ error: true })));

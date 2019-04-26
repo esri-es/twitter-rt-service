@@ -1,16 +1,71 @@
-# Tareas pendientes
+# twitter-rt-service
 
-* [x] Generar la URL del tweet
+Este script se conecta a la stream API de twitter para recibir tweets en tiempo real e intento geocodificarlos. Si lo consigue los envía a la dirección indicada por la variable `WS_URL`, por defecto `'ws://localhost:9000'`.
 
-* [ ] Geolocalizar el tweet
-  * [x] Si no está geolocalizado -> geolocalizar = geocoderFind(str)
-  * [ ] Implementar distorsionarLocalizacion({lat:..., lon:..., boundingbox: ...})
+![animation](./img/console-animation.gif)
 
-* [ ] Escribir en CSV los tweets recibidos & geolocalizados (parcialmente hecho)
+Y la información enviada tiene un aspecto similar a este:
 
+```
+{
+  "username": "Jurado",
+  "screename": "Jurado___",
+  "text": "@Morfeiu @edugalan En ningún momento dice que el motivo sea exclusivo. Que haya gente como tú que vea xenofobia en… https://t.co/nkAK1NPNzQ",
+  "profile_image_url_https": "https://pbs.twimg.com/profile_images/954418199805726721/LZaAP2qG_normal.jpg",
+  "geo": null,
+  "location": "Comunidad de Madrid, España",
+  "created_at": "Fri Apr 26 16:24:30 +0000 2019",
+  "id_str": "1121812304071413761",
+  "reply_count": 0,
+  "retweet_count": 0,
+  "favorite_count": 0,
+  "tweet_url": "https://twitter.com/Jurado___/status/1121812304071413761",
+  "is_rt": false,
+  "lat": 40.3991990891055,
+  "lon": -3.681170514432476
+}
+```
 
-* [ ] Servir fichero con CSV [Koop](https://esri-es.github.io/awesome-arcgis/arcgis/developers/profiles/devops/technologies/koop/)
+## Instalación
 
-* [ ] Conectar con [arcgis_websocket_server](https://github.com/esri-es/arcgis_websocket_server)
+Para instalar sólo es necesario ejecutar tener NodeJS instalado y ejecutar desde el directorio raíz del proyecto: `$ npm install`
 
-* [ ] Montar Operations Dashboard o Web AppBuilder
+## Configuración y ejecución
+
+Crear un fichero de configuración llamado `config.json`
+```
+{
+    "twitter_credentials":{
+        "consumer_key": "YOUR_CONSUMER_KEY",
+        "consumer_secret": "YOUR_CONSUMER_SECRET",
+        "token": "YOUR_TOKEN",
+        "token_secret": "YOUR_TOKE_SECRET"
+    }
+}
+```
+
+E introduce los valores de una Twitter app (esta puedes crearla en [dev.twitter.com](https://developer.twitter.com/en/apps))
+
+También puedes configurar los geocodificacodes modificando el fichero **[src/geocoders.js](./src/geocoders.js)**:
+
+Y por último, para la iniciar el script tan sólo es necesario ejecutar desde la consola de comandos:
+
+`$ node emitter.js "PP,PSOE,VOX,CIUDADANOS"`
+
+Donde el segundo parámetro el un hashtag o varios separados por comas.
+
+## Utilidades
+
+### Mejorar la precisión de la geocodificación
+
+El fichero data/db.json contiene información de las geocodificaciones ya resueltas. Si se detecta que algún fallo importante se puede modificar manualmente el fichero db.json
+
+Con este script podrás ver gráficamente el boundingbox de una geocodificación para decidir si cambiarlo:
+https://jsbin.com/qaxujob/1/edit?html,output
+
+Recuerda que además de cambiar el valor del boundingbox por el nuevo (más preciso) también debes cambiar los valores:
+
+```js
+"match": "Spain", <- la ubicación con la que ha matcheado
+"geocoder": "OSM" <- el geocodificador que hayas usado
+```

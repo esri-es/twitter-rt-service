@@ -1,6 +1,8 @@
 # twitter-rt-service
 
-Este script se conecta a la stream API de twitter para recibir tweets en tiempo real e intento geocodificarlos. Si lo consigue los envía a la dirección indicada por la variable `WS_URL`, por defecto `'ws://localhost:9000'`.
+Este script se conecta a la [Stream API de Twitter](https://developer.twitter.com/en/docs) para recibir tweets en tiempo real e intentar geocodificarlos. Si lo consigue los envía a la dirección indicada por la variable `WS_URL` del fichero `emitter.js` (por defecto lo envía a `'ws://localhost:9000'`).
+
+> **Relacionado**: Este proyecto en combinación con [arcgis_websocket_server](https://github.com/esri-es/arcgis_websocket_server) permite servir estos datos haciéndose pasar por Stream Layer, y por tanto cargar los tweets en tiempo real en un webmap/webscene y/ cualquier<sup>1</sup> SDK/API de ArcGIS (<sup>1</sup> se ha detectado alguna [limitación](https://github.com/hhkaos/arcgis_websocket_server#known-issues)).
 
 ![animation](./img/console-animation.gif)
 

@@ -15,12 +15,12 @@ const adapter = new FileSync('data/notFoundLocations.json');
 const db = low(adapter);
 db.defaults({ "locations": [] }).write();
 
+const TRACK = process.argv[2] || "FelizJueves";
 const EXTERNALGEOCODERNAME = process.argv[3] || "osm";
 
 const WS_URL = 'ws://localhost:9000'
 var ws = websocket(WS_URL);
 
-const TRACK = process.argv[2] || "FelizJueves";
 const client = new twitterStream(config.twitter_credentials, true);
 
 const csvWriter = createCsvWriter({

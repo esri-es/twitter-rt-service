@@ -36,6 +36,7 @@ const csvWriter = createCsvWriter({
         {id: 'retweet_count', title: 'Retweet_count'},
         {id: 'favorite_count', title: 'Favorite_count'},
         {id: 'tweet_url', title: 'Tweet_URL'},
+        {id: 'IS_RT', title: 'Is_RT'},
         {id: 'lat', title: 'lat'},
         {id: 'lon', title: 'lon'}
     ],
@@ -57,7 +58,8 @@ function mapTweet(tweet, callback) {
         'favorite_count': tweet.favorite_count,
         'tweet_url' : tweet.retweeted_status
             ? `https://twitter.com/${tweet.retweeted_status.user.screen_name}/status/${tweet.retweeted_status.id_str}`
-            : `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`
+            : `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`,
+        'is_rt' : tweet.retweeted_status ? true: false
     };
 
     location = data.geo? data.geo : data.location;

@@ -110,6 +110,40 @@ function filterEmptyTweets(o){
     return !d.hasOwnProperty("error");
 }
 
+PARTIDOS = {
+  pp: ["PP", "pablocasado_", "Casado", "ppopular"],
+  psoe: ["PSOE", "sanchezcastejon", "Sanchez"],
+  podemos: ["Podemos", "pablo_iglesias_", "ahorapodemos"],
+  ciudadanos: ["Ciudadanos", "Albert_Rivera", "Rivera", "ciudadanoscs"],
+  vox: ["VOX", "santi_abascal", "Abascal", "vox_es"]
+}
+
+
+function classifyTweets(t, callback){
+    let tweet;
+
+    try {
+      tweet = JSON.parse(new Buffer.from(t).toString());
+      let matchParties = {
+        pp: false,
+        psoe: false,
+        podemos: false,
+        ciudadanos: false,
+        vox: false
+      };
+
+      for(let partido in PARTIDOS) {
+         let re = new RegExp(`(${PARTIDOS[partido].join("|").toLowerCase()})`, "ig");
+         matchParties[partido] = re.test(tweet.text);
+      }
+      callback(null, new Buffer.from(JSON.stringify({...tweet, ...matchParties})));
+    } catch (e) {
+      callack(true, null);
+    }
+
+}
+
+
 client.stream('statuses/filter', {track: TRACK});
 
 client.on('connection success', function (uri) {
@@ -153,4 +187,5 @@ client
   .pipe(es.filterSync(isGeoTweet))
   .pipe(es.map(mapTweet))
   .pipe(es.filterSync(filterEmptyTweets))
+  .pipe(es.map(classifyTweets))
   .pipe(ws)

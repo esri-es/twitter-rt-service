@@ -56,7 +56,13 @@ Y por último, para la iniciar el script tan sólo es necesario ejecutar desde l
 
 Donde el segundo parámetro el un hashtag o varios separados por comas.
 
-## Utilidades
+## Cómo geolocaliza los tweets
+
+A grandes rasgos el procedimiento que sigue este servicio es:
+
+1.- Geocodifica la cadena de texto que el usuario tenga en el campo "location"
+2.- Para evitar que los puntos con la misma cadena o mismo resultado de geocodificación se superpongan se introduce un valor aleatorio controlando que caiga dentro del boundingbox devuelto por el geocodificador
+3.- Se comprueba que el punto se encuentre dentro de territorio Español, para ello se utiliza la capa simplificada [spain-boundaries.json](./data/spain-boundaries.json) que se puede ver en [http://geojson.io](http://geojson.io).
 
 ### Mejorar la precisión de la geocodificación
 

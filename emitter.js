@@ -69,8 +69,11 @@ function mapTweet(tweet, callback) {
     geocode.find(location,EXTERNALGEOCODERNAME).then((results) => {
       console.log(`geocoded [${location}] from [${results.source}]`.green);
       wsTweetData = virtualLocTweet(data, results.coordinates);
-      saveCsv(wsTweetData);
-      console.log(`Sending data to ws...`);
+      let randomizeFailed = (wsTweetData.lat === 0 & wsTweetData.lon === 0);
+      if(!randomizeFailed){
+          saveCsv(wsTweetData);
+          console.log(`Sending data to ws...`);
+      }
       callback(null,new Buffer.from(JSON.stringify(wsTweetData)));
     }).catch(function(err){
       callback(null, new Buffer.from(JSON.stringify({ error: true })));
@@ -107,7 +110,8 @@ function isGeoTweet(t) {
 }
 function filterEmptyTweets(o){
     let d = JSON.parse(new Buffer.from(o).toString('utf8'));
-    return !d.hasOwnProperty("error");
+    let randomizeFailed = (o.lat === 0 & o.lon === 0);
+    return !(d.hasOwnProperty("error") || randomizeFailed);
 }
 
 PARTIDOS = {

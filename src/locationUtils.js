@@ -29,6 +29,7 @@ function randomize(location){
         }
     }catch(err){
         console.log(`${err}\nRandomzing location: ${JSON.stringify(location)}`.red);
+        lon = lat = 0;
     }
 
     return {

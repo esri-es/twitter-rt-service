@@ -1,21 +1,36 @@
 const colors = require('colors');
+const turf = require('@turf/turf');
+const spain = require('../data/spain-boundaries.json')
 
 function randomize(location){
-    /*
-        TODO:
-        1) Meter random al estilo de lo que hice aquí: https://github.com/esri-es/real-time-twitter-map/blob/master/js/twitterMap.js#L187 (usar límites el Bounding box)
-        2) Hacer interseccion espacial con data/spain-boundaries.geojson
-        3) Si la intersección es vacía repetir (hasta 3 veces)
-    */
     let lat, lon;
 
     try{
-        lat = getRandomArbitrary(location.boundingbox.ymin, location.boundingbox.ymax);
-        lon = getRandomArbitrary(location.boundingbox.xmin, location.boundingbox.xmax)
-    }catch(err){
-        console.log(`Error: ${err}\nRandomzing location: ${JSON.stringify(location)}`.red);
-    }
+        let i = 1,
+            ymin = parseFloat(location.boundingbox.ymin),
+            ymax = parseFloat(location.boundingbox.ymax),
+            xmin = parseFloat(location.boundingbox.xmin),
+            xmax = parseFloat(location.boundingbox.xmax);
+            yDiff = ymax - ymin,
+            xDiff = xmax - xmin;
 
+        do{
+            lat = getRandomArbitrary(ymin, ymax);
+            lon = getRandomArbitrary(xmin, xmax);
+            ymin += yDiff;
+            ymax -= yDiff;
+            xmin += xDiff;
+            xmax -= xDiff;
+            i++;
+        }while(!isInsideSpain(lon, lat) && i < 3);
+
+        if(i === 3){
+            throw "Geolocation attempts exceeded";
+        }
+    }catch(err){
+        console.log(`${err}\nRandomzing location: ${JSON.stringify(location)}`.red);
+        lon = lat = 0;
+    }
 
     return {
         lat: lat,
@@ -26,6 +41,27 @@ function randomize(location){
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 };
+
+function isInsideSpain(lon, lat){
+    var is_in = false;
+    var numPolygons = spain.features[0].geometry.coordinates.length;
+    var i = 0;
+    var points = turf.points([[lon, lat]]);
+
+    do{
+        let coords = spain.features[0].geometry.coordinates[i],
+            searchWithin = turf.polygon(coords);
+            ptsWithin = turf.pointsWithinPolygon(points, searchWithin);
+
+        if(ptsWithin.features.length > 0){
+            is_in = true;
+            // console.log(`Point found inside Spain (${i} iterations needed)`.green);
+        }
+        i++;
+    }while(!is_in && i < numPolygons);
+
+    return is_in;
+}
 
 module.exports = {
     randomize: randomize

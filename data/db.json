@@ -1,0 +1,341 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "location": "Tarragona ",
+      "coordinates": {
+        "x": 1.2540598774695244,
+        "y": 41.11691990658903
+      },
+      "boundingbox": {
+        "xmin": 1.20406,
+        "ymin": 41.06692,
+        "xmax": 1.30406,
+        "ymax": 41.16692
+      },
+      "match": "Tarragona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Asturias / Vizcaya",
+      "coordinates": {
+        "x": -5.847680052013972,
+        "y": 43.36268983045154
+      },
+      "boundingbox": {
+        "xmin": -5.897681,
+        "ymin": 43.31269,
+        "xmax": -5.797681,
+        "ymax": 43.41269
+      },
+      "match": "Oviedo, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "República Catalana",
+      "coordinates": {
+        "x": 0.9332997478792748,
+        "y": 42.699569989783285
+      },
+      "boundingbox": {
+        "xmin": -1.215701,
+        "ymin": 40.55057,
+        "xmax": 3.0823,
+        "ymax": 44.84857
+      },
+      "match": "Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "españa",
+      "coordinates": {
+        "lat": "39.3262345",
+        "lon": "-4.8380649"
+      },
+      "boundingbox": {
+        "ymin": "35.4335426",
+        "ymax": "43.9933088",
+        "xmin": "-9.3936845",
+        "xmax": "4.5918885"
+      },
+      "match": "España",
+      "geocoder": "nominatim",
+      "admin_level": 5
+    },
+    {
+      "location": "La Puebla de Arganzon",
+      "coordinates": {
+        "x": -2.8304601692879734,
+        "y": 42.76878999443254
+      },
+      "boundingbox": {
+        "xmin": -2.880461,
+        "ymin": 42.71879,
+        "xmax": -2.780461,
+        "ymax": 42.81879
+      },
+      "match": "La Puebla de Arganzón, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Mexico hecho un fiasco",
+      "coordinates": {
+        "x": -16.506099993044717,
+        "y": 28.377230108103042
+      },
+      "boundingbox": {
+        "xmin": -16.556101,
+        "ymin": 28.32723,
+        "xmax": -16.456101,
+        "ymax": 28.42723
+      },
+      "match": "Fiesco, La Orotava, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Mi mundo.",
+      "coordinates": {
+        "x": -2.045400213597474,
+        "y": 37.474519996116285
+      },
+      "boundingbox": {
+        "xmin": -2.095401,
+        "ymin": 37.42452,
+        "xmax": -1.995401,
+        "ymax": 37.52452
+      },
+      "match": "Los Mundos, Taberno, Almería, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Alicante, España",
+      "coordinates": {
+        "x": -0.48048026889747497,
+        "y": 38.34407997059353
+      },
+      "boundingbox": {
+        "xmin": -0.530481,
+        "ymin": 38.29408,
+        "xmax": -0.430481,
+        "ymax": 38.39408
+      },
+      "match": "Alicante, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Aragon",
+      "coordinates": {
+        "x": -0.7017001399374747,
+        "y": 40.80704878285729
+      },
+      "boundingbox": {
+        "xmin": -2.818701,
+        "ymin": 38.690049,
+        "xmax": 1.4153,
+        "ymax": 42.924049
+      },
+      "match": "Aragon",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "Sevilla.",
+      "coordinates": {
+        "x": -6.0019801837777225,
+        "y": 37.387889738878286
+      },
+      "boundingbox": {
+        "xmin": -6.051981,
+        "ymin": 37.33789,
+        "xmax": -5.951981,
+        "ymax": 37.43789
+      },
+      "match": "Sevilla, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Crevillent (País Valencià)",
+      "coordinates": {
+        "x": -0.3769100641804748,
+        "y": 39.46867976747529
+      },
+      "boundingbox": {
+        "xmin": -0.426911,
+        "ymin": 39.41868,
+        "xmax": -0.326911,
+        "ymax": 39.51868
+      },
+      "match": "Valencia, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Palencia. España. ",
+      "coordinates": {
+        "x": -4.5392702284207225,
+        "y": 42.010429867661784
+      },
+      "boundingbox": {
+        "xmin": -4.589271,
+        "ymin": 41.96043,
+        "xmax": -4.489271,
+        "ymax": 42.06043
+      },
+      "match": "Palencia, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Madrid, Comunidad de Madrid",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "amaili = petit con ",
+      "coordinates": {
+        "x": -8.732619829949222,
+        "y": 42.35859990565554
+      },
+      "boundingbox": {
+        "xmin": -8.782621,
+        "ymin": 42.3086,
+        "xmax": -8.682621,
+        "ymax": 42.4086
+      },
+      "match": "O Con, Marín, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Comunidad de Madrid, España",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Tepoztlán, Morelos",
+      "coordinates": {
+        "x": -8.88435975402797,
+        "y": 42.87328988506928
+      },
+      "boundingbox": {
+        "xmin": -8.934361,
+        "ymin": 42.82329,
+        "xmax": -8.834361,
+        "ymax": 42.92329
+      },
+      "match": "Mourelos, Outes, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Asturies",
+      "coordinates": {
+        "x": -5.847680052013972,
+        "y": 43.36268983045154
+      },
+      "boundingbox": {
+        "xmin": -5.897681,
+        "ymin": 43.31269,
+        "xmax": -5.797681,
+        "ymax": 43.41269
+      },
+      "match": "Oviedo, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Rio de Janeiro, Brasil",
+      "coordinates": {
+        "x": -17.754189754961967,
+        "y": 28.74625015255554
+      },
+      "boundingbox": {
+        "xmin": -17.804191,
+        "ymin": 28.69625,
+        "xmax": -17.704191,
+        "ymax": 28.79625
+      },
+      "match": "El Brasil, Puntallana, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Collado Villalba",
+      "coordinates": {
+        "x": -3.9919600098432233,
+        "y": 40.64554981766854
+      },
+      "boundingbox": {
+        "xmin": -4.041961,
+        "ymin": 40.59555,
+        "xmax": -3.941961,
+        "ymax": 40.69555
+      },
+      "match": "Collado Villalba, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "En la mejor parte",
+      "coordinates": {
+        "x": -8.018339812890222,
+        "y": 42.60351990494804
+      },
+      "boundingbox": {
+        "xmin": -8.068341,
+        "ymin": 42.55352,
+        "xmax": -7.968341,
+        "ymax": 42.65352
+      },
+      "match": "A Parte, Dozón, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Gironella",
+      "coordinates": {
+        "x": 1.880219730870774,
+        "y": 42.03337986066479
+      },
+      "boundingbox": {
+        "xmin": 1.83022,
+        "ymin": 41.98338,
+        "xmax": 1.93022,
+        "ymax": 42.08338
+      },
+      "match": "Gironella, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    }
+  ]
+}

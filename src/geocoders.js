@@ -1,15 +1,13 @@
 const fetch = require("node-fetch");
 const fs = require('fs');
-const low = require('lowdb');
-const FileSync = require('lowdb/adapters/FileSync');
 const colors = require('colors')
 const geocoderUtils = require('./geocoder_utils');
 
+const low = require('lowdb');
+const FileSync = require('lowdb/adapters/FileSync');
 const adapter = new FileSync('data/db.json');
 const db = low(adapter);
-
 const notFoundDB = low(new FileSync('data/notFoundLocations.json'));
-
 // File database to store locations already geocoded
 db.defaults({ "type": "FeatureCollection", features: [] }).write();
 

@@ -6,20 +6,22 @@ module.exports = {
       return {
         SingleLineCityName: location,
         f: 'json',
+        outFields: '*',
         outSR: '{"wkid":4326,"latestWkid":4326}',
         maxLocations: '1'
       }
     }
   },
   osm : {
-    name : 'osm',
+    name : 'nominatim',
     url : 'https://nominatim.openstreetmap.org/search',
     qs : function(location) {
       return {
         q: location,
-        email: 'hhkaos@gmail.com',
+        email: 'rauljimenezortega@gmail.com',
         limit: 1,
-        format: 'json'
+        format: 'json',
+        countrycodes: 'ES'
       }
     }
   },
@@ -30,8 +32,10 @@ module.exports = {
       return {
         SingleLineCityName: location,
         f: 'json',
+        outFields: '*',
         outSR: '{"wkid":4326,"latestWkid":4326}',
-        maxLocations: '1'
+        maxLocations: '1',
+        sourceCountry: 'ES'
       }
     }
   }

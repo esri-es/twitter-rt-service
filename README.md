@@ -52,7 +52,9 @@ También puedes configurar los geocodificacodes modificando el fichero **[src/ge
 
 Y por último, para la iniciar el script tan sólo es necesario ejecutar desde la consola de comandos:
 
-`$ node emitter.js "PP,PSOE,VOX,CIUDADANOS"`
+`$ node emitter.js "PP,PSOE,VOX,CIUDADANOS" <geocoder>`
+
+> Nota: <geocoder> puede contener el valor `name` de cualquiera de los geocodificadores de src/external_geocoders.js (nominatim, arcgis, arcgisGlobal)
 
 Donde el segundo parámetro el un hashtag o varios separados por comas.
 

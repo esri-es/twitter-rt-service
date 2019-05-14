@@ -16,7 +16,7 @@ const db = low(adapter);
 db.defaults({ "locations": [] }).write();
 
 const TRACK = process.argv[2] || "FelizJueves";
-const EXTERNALGEOCODERNAME = process.argv[3] || "osm";
+const EXTERNALGEOCODERNAME = process.argv[3] || "arcgis";
 
 const WS_URL = 'ws://localhost:9000'
 var ws = websocket(WS_URL);
@@ -66,7 +66,7 @@ function mapTweet(tweet, callback) {
 
     location = data.geo? data.geo : data.location;
 
-    geocode.find(location,EXTERNALGEOCODERNAME).then((results) => {
+    geocode.find(location, EXTERNALGEOCODERNAME).then((results) => {
       console.log(`geocoded [${location}] from [${results.source}]`.green);
       wsTweetData = virtualLocTweet(data, results.coordinates);
       let randomizeFailed = (wsTweetData.lat === 0 & wsTweetData.lon === 0);

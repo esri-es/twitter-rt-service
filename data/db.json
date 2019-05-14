@@ -624,6 +624,304 @@
       "match": "Penamá, Allariz, Ourense, Galicia",
       "geocoder": "arcgis",
       "admin_level": 5
+    },
+    {
+      "location": "San Pedro del Pinatar (Murcia)",
+      "coordinates": {
+        "x": -0.7932600574652247,
+        "y": 37.83406979312654
+      },
+      "boundingbox": {
+        "xmin": -0.843261,
+        "ymin": 37.78407,
+        "xmax": -0.743261,
+        "ymax": 37.88407
+      },
+      "match": "San Pedro del Pinatar, Murcia, Región de Murcia",
+      "admin_level": 4
+    },
+    {
+      "location": "Taboão da Serra, Brasil",
+      "coordinates": {
+        "x": -17.754189754961967,
+        "y": 28.74625015255554
+      },
+      "boundingbox": {
+        "xmin": -17.804191,
+        "ymin": 28.69625,
+        "xmax": -17.704191,
+        "ymax": 28.79625
+      },
+      "match": "El Brasil, Puntallana, Santa Cruz de Tenerife, Islas Canarias",
+      "admin_level": 4
+    },
+    {
+      "location": "Guadalajara, España",
+      "coordinates": {
+        "x": -3.1644602700649735,
+        "y": 40.63017988814079
+      },
+      "boundingbox": {
+        "xmin": -3.214461,
+        "ymin": 40.58018,
+        "xmax": -3.114461,
+        "ymax": 40.68018
+      },
+      "match": "Guadalajara, Castilla-La Mancha",
+      "admin_level": 4
+    },
+    {
+      "location": "Región Valparaíso",
+      "coordinates": {
+        "x": -6.371350085932472,
+        "y": 36.62912989478079
+      },
+      "boundingbox": {
+        "xmin": -6.421351,
+        "ymin": 36.57913,
+        "xmax": -6.321351,
+        "ymax": 36.67913
+      },
+      "match": "Valparaíso, Rota, Cádiz, Andalucía",
+      "admin_level": 4
+    },
+    {
+      "location": "Me muevo mucho",
+      "coordinates": {
+        "x": -9.02096980306322,
+        "y": 42.638459737092035
+      },
+      "boundingbox": {
+        "xmin": -9.070971,
+        "ymin": 42.58846,
+        "xmax": -8.970971,
+        "ymax": 42.68846
+      },
+      "match": "O Moucho, Porto do Son, A Coruña, Galicia",
+      "admin_level": 4
+    },
+    {
+      "location": "Leon",
+      "coordinates": {
+        "x": -5.574960230849973,
+        "y": 42.59916979276554
+      },
+      "boundingbox": {
+        "xmin": -5.624961,
+        "ymin": 42.54917,
+        "xmax": -5.524961,
+        "ymax": 42.64917
+      },
+      "match": "León, Castilla y León",
+      "admin_level": 4
+    },
+    {
+      "location": "Binissalem, España",
+      "coordinates": {
+        "x": 2.846569841463774,
+        "y": 39.684049816054284
+      },
+      "boundingbox": {
+        "xmin": 2.79657,
+        "ymin": 39.63405,
+        "xmax": 2.89657,
+        "ymax": 39.73405
+      },
+      "match": "Binissalem, Illes Balears",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Castellón de la Plana, España",
+      "coordinates": {
+        "x": -0.045640198010224786,
+        "y": 39.98512995970003
+      },
+      "boundingbox": {
+        "xmin": -0.095641,
+        "ymin": 39.93513,
+        "xmax": 0.00436,
+        "ymax": 40.03513
+      },
+      "match": "Castellón de la Plana, Castellón, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Valladolid",
+      "coordinates": {
+        "x": -4.732140141058222,
+        "y": 41.65418985336554
+      },
+      "boundingbox": {
+        "xmin": -4.782141,
+        "ymin": 41.60419,
+        "xmax": -4.682141,
+        "ymax": 41.70419
+      },
+      "match": "Valladolid, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Soyapango, El Salvador",
+      "coordinates": {
+        "x": -6.943699919977972,
+        "y": 43.02197996874604
+      },
+      "boundingbox": {
+        "xmin": -6.993701,
+        "ymin": 42.97198,
+        "xmax": -6.893701,
+        "ymax": 43.07198
+      },
+      "match": "Salvador, Ibias, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Roquetas de Mar, España",
+      "coordinates": {
+        "x": -2.612660164290224,
+        "y": 36.763969927146285
+      },
+      "boundingbox": {
+        "xmin": -2.662661,
+        "ymin": 36.71397,
+        "xmax": -2.562661,
+        "ymax": 36.81397
+      },
+      "match": "Roquetas de Mar, Almería, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Chez Issou",
+      "coordinates": {
+        "x": -1.7472500231667238,
+        "y": 38.488469801712284
+      },
+      "boundingbox": {
+        "xmin": -1.797251,
+        "ymin": 38.43847,
+        "xmax": -1.697251,
+        "ymax": 38.53847
+      },
+      "match": "Isso, Hellín, Albacete, Castilla-La Mancha",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "República de Catalunya.",
+      "coordinates": {
+        "x": 0.9332997478792748,
+        "y": 42.699569989783285
+      },
+      "boundingbox": {
+        "xmin": -1.215701,
+        "ymin": 40.55057,
+        "xmax": 3.0823,
+        "ymax": 44.84857
+      },
+      "match": "Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "Málaga, España",
+      "coordinates": {
+        "x": -4.420160067254223,
+        "y": 36.71831979948329
+      },
+      "boundingbox": {
+        "xmin": -4.470161,
+        "ymin": 36.66832,
+        "xmax": -4.370161,
+        "ymax": 36.76832
+      },
+      "match": "Málaga, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Igualada",
+      "coordinates": {
+        "x": 1.6167597943512746,
+        "y": 41.579559799347784
+      },
+      "boundingbox": {
+        "xmin": 1.56676,
+        "ymin": 41.52956,
+        "xmax": 1.66676,
+        "ymax": 41.62956
+      },
+      "match": "Igualada, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Llíria (València)",
+      "coordinates": {
+        "x": -0.3769100641804748,
+        "y": 39.46867976747529
+      },
+      "boundingbox": {
+        "xmin": -0.426911,
+        "ymin": 39.41868,
+        "xmax": -0.326911,
+        "ymax": 39.51868
+      },
+      "match": "Valencia, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "San Fernando.11100",
+      "coordinates": {
+        "x": -6.196890139365972,
+        "y": 36.46541973927854
+      },
+      "boundingbox": {
+        "xmin": -6.246891,
+        "ymin": 36.41542,
+        "xmax": -6.146891,
+        "ymax": 36.51542
+      },
+      "match": "San Fernando, Cádiz, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "En ninguna parte",
+      "coordinates": {
+        "x": -8.018339812890222,
+        "y": 42.60351990494804
+      },
+      "boundingbox": {
+        "xmin": -8.068341,
+        "ymin": 42.55352,
+        "xmax": -7.968341,
+        "ymax": 42.65352
+      },
+      "match": "A Parte, Dozón, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Hamilton, Ontario",
+      "coordinates": {
+        "x": -3.6069000121449735,
+        "y": 37.44485996207454
+      },
+      "boundingbox": {
+        "xmin": -3.656901,
+        "ymin": 37.39486,
+        "xmax": -3.556901,
+        "ymax": 37.49486
+      },
+      "match": "Onitar, Iznalloz, Granada, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
     }
   ]
 }

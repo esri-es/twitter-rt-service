@@ -336,6 +336,294 @@
       "match": "Gironella, Barcelona, Catalunya",
       "geocoder": "arcgis",
       "admin_level": 4
+    },
+    {
+      "location": "Teniente RV Ejército del Aire",
+      "coordinates": {
+        "x": -8.244999985205721,
+        "y": 43.42868996777703
+      },
+      "boundingbox": {
+        "xmin": -8.295001,
+        "ymin": 43.37869,
+        "xmax": -8.195001,
+        "ymax": 43.47869
+      },
+      "match": "Ares, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Premià de Mar / Sabadell",
+      "coordinates": {
+        "x": 2.3522898153060243,
+        "y": 41.490779976051286
+      },
+      "boundingbox": {
+        "xmin": 2.30229,
+        "ymin": 41.44078,
+        "xmax": 2.40229,
+        "ymax": 41.54078
+      },
+      "match": "Premià de Mar, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Murcia, España",
+      "coordinates": {
+        "x": -1.130760135815974,
+        "y": 37.983019819115285
+      },
+      "boundingbox": {
+        "xmin": -1.180761,
+        "ymin": 37.93302,
+        "xmax": -1.080761,
+        "ymax": 38.03302
+      },
+      "match": "Murcia, Región de Murcia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Un Berciano en Madrid",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "España",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Cornellà de Llobregat, España ",
+      "coordinates": {
+        "x": 2.0707997422145237,
+        "y": 41.355979999451534
+      },
+      "boundingbox": {
+        "xmin": 2.0208,
+        "ymin": 41.30598,
+        "xmax": 2.1208,
+        "ymax": 41.40598
+      },
+      "match": "Cornellà de Llobregat, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "frigiliana (Malaga) ESPAÑA",
+      "coordinates": {
+        "x": -4.420160067254223,
+        "y": 36.71831979948329
+      },
+      "boundingbox": {
+        "xmin": -4.470161,
+        "ymin": 36.66832,
+        "xmax": -4.370161,
+        "ymax": 36.76832
+      },
+      "match": "Málaga, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "la primera pirámide al sur",
+      "coordinates": {
+        "x": -5.440370056827472,
+        "y": 43.473279878143785
+      },
+      "boundingbox": {
+        "xmin": -5.490371,
+        "ymin": 43.42328,
+        "xmax": -5.390371,
+        "ymax": 43.52328
+      },
+      "match": "Sur, Villaviciosa, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Galicia, España",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Cataluña, España",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Robledo de chavela   Madrid ",
+      "coordinates": {
+        "x": -4.239100162977223,
+        "y": 40.49864991859953
+      },
+      "boundingbox": {
+        "xmin": -4.289101,
+        "ymin": 40.44865,
+        "xmax": -4.189101,
+        "ymax": 40.54865
+      },
+      "match": "Robledo de Chavela, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Zaragoza, España",
+      "coordinates": {
+        "x": -0.8811401666387244,
+        "y": 41.651829924509286
+      },
+      "boundingbox": {
+        "xmin": -0.931141,
+        "ymin": 41.60183,
+        "xmax": -0.831141,
+        "ymax": 41.70183
+      },
+      "match": "Zaragoza, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "L'Hospitalet de Llobregat, ESP",
+      "coordinates": {
+        "x": 2.1051799140790237,
+        "y": 41.363219728973036
+      },
+      "boundingbox": {
+        "xmin": 2.05518,
+        "ymin": 41.31322,
+        "xmax": 2.15518,
+        "ymax": 41.41322
+      },
+      "match": "l'Hospitalet de Llobregat, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Alicante",
+      "coordinates": {
+        "x": -0.48048026889747497,
+        "y": 38.34407997059353
+      },
+      "boundingbox": {
+        "xmin": -0.530481,
+        "ymin": 38.29408,
+        "xmax": -0.430481,
+        "ymax": 38.39408
+      },
+      "match": "Alicante, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Spain",
+      "coordinates": {
+        "x": -7.7910799245294715,
+        "y": 42.427959965429785
+      },
+      "boundingbox": {
+        "xmin": -7.841081,
+        "ymin": 42.37796,
+        "xmax": -7.741081,
+        "ymax": 42.47796
+      },
+      "match": "Paín, A Peroxa, Ourense, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Zaragoza, España",
+      "coordinates": {
+        "x": -0.8811401666387244,
+        "y": 41.651829924509286
+      },
+      "boundingbox": {
+        "xmin": -0.931141,
+        "ymin": 41.60183,
+        "xmax": -0.831141,
+        "ymax": 41.70183
+      },
+      "match": "Zaragoza, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Benidorm, España",
+      "coordinates": {
+        "x": -0.13183012193522448,
+        "y": 38.54372995183228
+      },
+      "boundingbox": {
+        "xmin": -0.181831,
+        "ymin": 38.49373,
+        "xmax": -0.081831,
+        "ymax": 38.59373
+      },
+      "match": "Benidorm, Alacant, Comunitat Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Panamá",
+      "coordinates": {
+        "x": -7.812469983550222,
+        "y": 42.168159949436784
+      },
+      "boundingbox": {
+        "xmin": -7.862471,
+        "ymin": 42.11816,
+        "xmax": -7.762471,
+        "ymax": 42.21816
+      },
+      "match": "Penamá, Allariz, Ourense, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 5
     }
   ]
 }

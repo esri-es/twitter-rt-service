@@ -7,7 +7,7 @@ const notFoundDB = low(new FileSync('data/notFoundLocations.json'));
 db.defaults({ "type": "FeatureCollection", features: [] }).write();
 
 const CANDIDATES = {
-  nominatim : {
+  osm : {
     check : function(obj) {
       return obj.length > 0;
     },
@@ -29,7 +29,7 @@ const CANDIDATES = {
         admin_level : 0 // HARDCODED -> TO BE IMPLEMENTED
       }
     },
-    admin_levels : []
+    admin_levels : ['Country', 'Region', 'Subregion', undefined, 'City', 'Nbrhd']
   },
   arcgis : {
     check : function(obj) {
@@ -54,22 +54,22 @@ const CANDIDATES = {
   }
 }
 
-function normalize(loc,opts, res) {
-  let foundCandidates = CANDIDATES[opts.name].check(res);
+function normalize(loc,name,res) {
+  let foundCandidates = CANDIDATES[name].check(res);
   if (!foundCandidates) {
-      console.log(`Location "${loc}" not found with ${opts.name}`.red);
+      console.log(`Location "${loc}" not found with ${name}`.red);
       return new Promise((resolve, reject) => {
           reject(`No candidates`);
       });
   } else {
-    let results = CANDIDATES[opts.name].responseTemplate({
+    let results = CANDIDATES[name].responseTemplate({
       loc : loc,
-      name : opts.name,
+      name : name,
       res : res,
-      admin_levels : CANDIDATES[opts.name].admin_levels
+      admin_levels : CANDIDATES[name].admin_levels
     });
 
-    //console.log(`Location "${loc}" found with ${opts.name}: ${JSON.stringify(results)}`.green);
+    //console.log(`Location "${loc}" found with ${name}: ${JSON.stringify(results)}`.green);
     db.get('features')
         .push(results)
         .write();
@@ -77,7 +77,7 @@ function normalize(loc,opts, res) {
     return new Promise((resolve, reject) => {
         resolve({
             coordinates: results,
-            source: opts.name
+            source: name
         })
     });
   }

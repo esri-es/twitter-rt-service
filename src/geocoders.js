@@ -1,7 +1,6 @@
-const fetch = require("node-fetch");
 const fs = require('fs');
 const colors = require('colors')
-const geocoderUtils = require('./geocoder_utils');
+
 
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
@@ -35,30 +34,6 @@ function checkCache(location){
   }
 }
 
-function checkStatus(res) {
-    if (res.ok) { // res.status >= 200 && res.status < 300
-        return res;
-    } else {
-        throw new Error(res.statusText);
-    }
-}
-
-
-function runExternalGeocoder(loc,opts){
-  let url = new URL(opts.url);
-  let params = opts.qs;
-  Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
-  return fetch(url)
-     .then(checkStatus)
-     .then(res => res.json())
-     .then(json => {
-         return geocoderUtils.normalize(loc,opts, json);
-     }).catch(function(err){
-       console.log(`Failed [${opts.name}] geocoding for [${loc}] - Error [${err}]`.red);
-     });
-}
-
-
 // TODO: check if exists in db/notfound.txt, if so, resolve(null) & return
 function geocode(location, geocoderName = 'arcgis'){
   let cached = checkCache(location);
@@ -68,13 +43,13 @@ function geocode(location, geocoderName = 'arcgis'){
     });
   } else {
     if (ALLOW_EXTERNAL_GEOCODING && !cached) {
-      let options = {
-        name : GEOCODERS[geocoderName].name,
-        url  : GEOCODERS[geocoderName].url,
-        qs   : GEOCODERS[geocoderName].qs(location)
-      };
-      console.log(`Trying [${geocoderName}] geocoding for location: [${location}]`.yellow);
-      return runExternalGeocoder(location, options);
+      // let options = {
+      //   name : GEOCODERS[geocoderName].name,
+      //   url  : GEOCODERS[geocoderName].url,
+      //   qs   : GEOCODERS[geocoderName].qs(location)
+      // };
+      
+      return GEOCODERS[geocoderName].geocode(location);
     } else {
       return new Promise(function(resolve,reject){
         console.log("sin geocoding");

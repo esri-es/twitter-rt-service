@@ -1,5 +1,6 @@
 const fetch = require("node-fetch");
 const geocoderUtils = require('./geocoder_utils');
+const AbortController = require("abort-controller");
 
 const OSM_TYPES = {
   relation : "R",
@@ -7,14 +8,20 @@ const OSM_TYPES = {
   way : "W"
 }
 
+
 async function arcgis_geocode (loc,geocoderName) {
+  const controller = new AbortController()
+  const signal = controller.signal
+  setTimeout(() => {
+    controller.abort()
+  }, GEOCODERS[geocoderName].timeout);
   try {
-  console.log(`Trying [${geocoderName}] geocoding for location: [${loc}]`.yellow);
+
    let res = await fetch(buildUrl({
      url : GEOCODERS[geocoderName].url,
      name : geocoderName,
      loc : loc
-   })).then(checkStatus);
+   }),{ signal }).then(checkStatus);
    let json = await res.json();
    if (json.candidates.length > 0) {
      let normalizedRes = geocoderUtils.normalize(loc,geocoderName, json)
@@ -23,12 +30,17 @@ async function arcgis_geocode (loc,geocoderName) {
      throw new Error('No candidates found');
    }
  } catch(err) {
-   console.log(`Failed [${geocoderName}] geocoding for [${loc}] - Error [${err}]`.red);
+   console.log(`Failed [${geocoderName}] geocoding for [${loc}] - [${err}]`.red);
  }
 }
 
 
 async function osm_geocode (loc,geocoderName) {
+  const controller = new AbortController()
+  const signal = controller.signal
+  setTimeout(() => {
+    controller.abort()
+  }, GEOCODERS[geocoderName].timeout);
   try {
    let res = await fetch(buildUrl({
      url : GEOCODERS[geocoderName].url,
@@ -54,7 +66,7 @@ async function osm_geocode (loc,geocoderName) {
      throw new Error('No candidates found');
    }
  } catch(err) {
-   console.log(`Failed [${geocoderName}] geocoding for [${loc}] - Error [${err}]`.red);
+   console.log(`Failed [${geocoderName}] geocoding for [${loc}] - [${err}]`.red);
  }
 }
 
@@ -62,6 +74,7 @@ const GEOCODERS = {
   arcgis : {
     name : 'arcgis',
     url : 'https://cloudlab.esri.es/server/rest/services/ESP_AdminPlaces/GeocodeServer/findAddressCandidates',
+    timeout : 30000,
     qs : function(location) {
       return {
         SingleLineCityName: location,
@@ -78,6 +91,7 @@ const GEOCODERS = {
   osm : {
     name : 'nominatim',
     url : 'https://nominatim.openstreetmap.org/search',
+    timeout : 30000,
     qs : function(location) {
       return {
         q: location,

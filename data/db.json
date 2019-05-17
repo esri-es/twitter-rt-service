@@ -5194,6 +5194,3318 @@
       "match": "Murcia, Región de Murcia",
       "geocoder": "arcgis",
       "admin_level": 4
+    },
+    {
+      "location": "Boston, MA",
+      "coordinates": {
+        "x": -8.415539788823471,
+        "y": 42.86892996902803
+      },
+      "boundingbox": {
+        "xmin": -8.465541,
+        "ymin": 42.81893,
+        "xmax": -8.365541,
+        "ymax": 42.91893
+      },
+      "match": "Moa, Boqueixón, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Brasil",
+      "coordinates": {
+        "x": -17.754189754961967,
+        "y": 28.74625015255554
+      },
+      "boundingbox": {
+        "xmin": -17.804191,
+        "ymin": 28.69625,
+        "xmax": -17.704191,
+        "ymax": 28.79625
+      },
+      "match": "El Brasil, Puntallana, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Washington, USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Palma",
+      "coordinates": {
+        "x": 2.646939748052775,
+        "y": 39.57147994911504
+      },
+      "boundingbox": {
+        "xmin": 2.59694,
+        "ymin": 39.52148,
+        "xmax": 2.69694,
+        "ymax": 39.62148
+      },
+      "match": "Palma, Islas Baleares",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Las Palmas, Islas Canarias",
+      "coordinates": {
+        "x": -16.164399941605467,
+        "y": 28.58372010153654
+      },
+      "boundingbox": {
+        "xmin": -16.214401,
+        "ymin": 28.53372,
+        "xmax": -16.114401,
+        "ymax": 28.63372
+      },
+      "match": "Las Palmas, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Paris",
+      "coordinates": {
+        "x": -9.251329951670971,
+        "y": 42.971409984652034
+      },
+      "boundingbox": {
+        "xmin": -9.301331,
+        "ymin": 42.92141,
+        "xmax": -9.201331,
+        "ymax": 43.02141
+      },
+      "match": "Padris, Fisterra, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Terrassa, Països Catalans.",
+      "coordinates": {
+        "x": -17.811729722406717,
+        "y": 28.82705019505004
+      },
+      "boundingbox": {
+        "xmin": -17.861731,
+        "ymin": 28.77705,
+        "xmax": -17.761731,
+        "ymax": 28.87705
+      },
+      "match": "Los Catalanes, Barlovento, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Australia",
+      "coordinates": {
+        "x": -3.5622201863879734,
+        "y": 43.202529792257785
+      },
+      "boundingbox": {
+        "xmin": -3.612221,
+        "ymin": 43.15253,
+        "xmax": -3.512221,
+        "ymax": 43.25253
+      },
+      "match": "Astrana, Soba, Cantabria",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Païssos Catalans",
+      "coordinates": {
+        "x": -17.811729722406717,
+        "y": 28.82705019505004
+      },
+      "boundingbox": {
+        "xmin": -17.861731,
+        "ymin": 28.77705,
+        "xmax": -17.761731,
+        "ymax": 28.87705
+      },
+      "match": "Los Catalanes, Barlovento, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Carleton, MI",
+      "coordinates": {
+        "x": -8.029239743048471,
+        "y": 42.598329742125784
+      },
+      "boundingbox": {
+        "xmin": -8.079241,
+        "ymin": 42.54833,
+        "xmax": -7.979241,
+        "ymax": 42.64833
+      },
+      "match": "Moi, Dozón, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Valencia Mestalla España ",
+      "coordinates": {
+        "x": -0.35930009298347443,
+        "y": 39.47090972517554
+      },
+      "boundingbox": {
+        "xmin": -0.409301,
+        "ymin": 39.42091,
+        "xmax": -0.309301,
+        "ymax": 39.52091
+      },
+      "match": "Mestalla, València, Comunitat Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Narnia",
+      "coordinates": {
+        "x": -6.619600035876972,
+        "y": 43.075709876570286
+      },
+      "boundingbox": {
+        "xmin": -6.669601,
+        "ymin": 43.02571,
+        "xmax": -6.569601,
+        "ymax": 43.12571
+      },
+      "match": "Larna, Cangas del Narcea, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Mérida, España",
+      "coordinates": {
+        "x": -6.346470133306973,
+        "y": 38.916019723233035
+      },
+      "boundingbox": {
+        "xmin": -6.396471,
+        "ymin": 38.86602,
+        "xmax": -6.296471,
+        "ymax": 38.96602
+      },
+      "match": "Mérida, Badajoz, Extremadura",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Pachuca de Soto, Hidalgo",
+      "coordinates": {
+        "x": -5.465650006889972,
+        "y": 37.190459911481035
+      },
+      "boundingbox": {
+        "xmin": -5.515651,
+        "ymin": 37.14046,
+        "xmax": -5.415651,
+        "ymax": 37.24046
+      },
+      "match": "El Hidalgo, Morón de la Frontera, Sevilla, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Quito, Ecuador",
+      "coordinates": {
+        "x": -8.299499916107221,
+        "y": 42.690139798106784
+      },
+      "boundingbox": {
+        "xmin": -8.349501,
+        "ymin": 42.64014,
+        "xmax": -8.249501,
+        "ymax": 42.74014
+      },
+      "match": "Escuadro, Silleda, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Palma",
+      "coordinates": {
+        "x": 2.646939748052775,
+        "y": 39.57147994911504
+      },
+      "boundingbox": {
+        "xmin": 2.59694,
+        "ymin": 39.52148,
+        "xmax": 2.69694,
+        "ymax": 39.62148
+      },
+      "match": "Palma, Islas Baleares",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Lima",
+      "coordinates": {
+        "x": -6.765390138135472,
+        "y": 42.91973972749604
+      },
+      "boundingbox": {
+        "xmin": -6.815391,
+        "ymin": 42.86974,
+        "xmax": -6.715391,
+        "ymax": 42.96974
+      },
+      "match": "Luiña, Ibias, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Coyoacán, Distrito Federal",
+      "coordinates": {
+        "x": 1.3588799341220241,
+        "y": 41.144809923961034
+      },
+      "boundingbox": {
+        "xmin": 1.30888,
+        "ymin": 41.09481,
+        "xmax": 1.40888,
+        "ymax": 41.19481
+      },
+      "match": "Ferran, Tarragona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "San Martín de la Vega, España",
+      "coordinates": {
+        "x": -3.5724400088592234,
+        "y": 40.209719837157785
+      },
+      "boundingbox": {
+        "xmin": -3.622441,
+        "ymin": 40.15972,
+        "xmax": -3.522441,
+        "ymax": 40.25972
+      },
+      "match": "San Martín de la Vega, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Macondo",
+      "coordinates": {
+        "x": -6.403040078955972,
+        "y": 39.47090972517554
+      },
+      "boundingbox": {
+        "xmin": -6.453041,
+        "ymin": 39.42091,
+        "xmax": -6.353041,
+        "ymax": 39.52091
+      },
+      "match": "Macondo, Cáceres, Extremadura",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "entre ciel et terre",
+      "coordinates": {
+        "x": -1.7120401647417243,
+        "y": 41.32661996348754
+      },
+      "boundingbox": {
+        "xmin": -1.762041,
+        "ymin": 41.27662,
+        "xmax": -1.662041,
+        "ymax": 41.37662
+      },
+      "match": "Terrer, Zaragoza, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Narnia",
+      "coordinates": {
+        "x": -6.619600035876972,
+        "y": 43.075709876570286
+      },
+      "boundingbox": {
+        "xmin": -6.669601,
+        "ymin": 43.02571,
+        "xmax": -6.569601,
+        "ymax": 43.12571
+      },
+      "match": "Larna, Cangas del Narcea, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "SC de Tenerife y Barcelona",
+      "coordinates": {
+        "x": 2.168719843078774,
+        "y": 41.38560978158628
+      },
+      "boundingbox": {
+        "xmin": 2.11872,
+        "ymin": 41.33561,
+        "xmax": 2.21872,
+        "ymax": 41.43561
+      },
+      "match": "Barcelona, Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Cáceres, España",
+      "coordinates": {
+        "x": -6.369400238482222,
+        "y": 39.47828978993228
+      },
+      "boundingbox": {
+        "xmin": -6.419401,
+        "ymin": 39.42829,
+        "xmax": -6.319401,
+        "ymax": 39.52829
+      },
+      "match": "Cáceres, Extremadura",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Zamora",
+      "coordinates": {
+        "x": -5.741120230598723,
+        "y": 41.50704989981229
+      },
+      "boundingbox": {
+        "xmin": -5.791121,
+        "ymin": 41.45705,
+        "xmax": -5.691121,
+        "ymax": 41.55705
+      },
+      "match": "Zamora, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "San Francisco, CA",
+      "coordinates": {
+        "x": -5.012220139151223,
+        "y": 42.46275974244878
+      },
+      "boundingbox": {
+        "xmin": -5.062221,
+        "ymin": 42.41276,
+        "xmax": -4.962221,
+        "ymax": 42.51276
+      },
+      "match": "Cea, León, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Burguillos del Cerro, Extremadura",
+      "coordinates": {
+        "x": -6.591000219131472,
+        "y": 38.38070998798604
+      },
+      "boundingbox": {
+        "xmin": -6.641001,
+        "ymin": 38.33071,
+        "xmax": -6.541001,
+        "ymax": 38.43071
+      },
+      "match": "Burguillos del Cerro, Badajoz, Extremadura",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Caldes de Montbui, (Vallès Or)",
+      "coordinates": {
+        "x": -8.773229933883972,
+        "y": 42.664619793560036
+      },
+      "boundingbox": {
+        "xmin": -8.823231,
+        "ymin": 42.61462,
+        "xmax": -8.723231,
+        "ymax": 42.71462
+      },
+      "match": "Or, Rianxo, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "onde tu se perde ",
+      "coordinates": {
+        "x": -8.20436999344322,
+        "y": 42.893049982545286
+      },
+      "boundingbox": {
+        "xmin": -8.254371,
+        "ymin": 42.84305,
+        "xmax": -8.154371,
+        "ymax": 42.94305
+      },
+      "match": "Pedride, Arzúa, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Benito Juárez, Quintana Roo",
+      "coordinates": {
+        "x": -8.717169788889972,
+        "y": 43.253079888524034
+      },
+      "boundingbox": {
+        "xmin": -8.767171,
+        "ymin": 43.20308,
+        "xmax": -8.667171,
+        "ymax": 43.30308
+      },
+      "match": "O Rodo, Carballo, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Planeta Tierra.",
+      "coordinates": {
+        "x": -5.264240092950473,
+        "y": 41.653289859132286
+      },
+      "boundingbox": {
+        "xmin": -5.314241,
+        "ymin": 41.60329,
+        "xmax": -5.214241,
+        "ymax": 41.70329
+      },
+      "match": "Tiedra, Valladolid, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "None, Piemonte",
+      "coordinates": {
+        "x": -4.552910197044473,
+        "y": 36.68192983657504
+      },
+      "boundingbox": {
+        "xmin": -4.602911,
+        "ymin": 36.63193,
+        "xmax": -4.502911,
+        "ymax": 36.73193
+      },
+      "match": "Piamonte, Alhaurín de la Torre, Málaga, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Zaragoza ",
+      "coordinates": {
+        "x": -0.8811401666387244,
+        "y": 41.651829924509286
+      },
+      "boundingbox": {
+        "xmin": -0.931141,
+        "ymin": 41.60183,
+        "xmax": -0.831141,
+        "ymax": 41.70183
+      },
+      "match": "Zaragoza, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Boston, MA",
+      "coordinates": {
+        "x": -8.415539788823471,
+        "y": 42.86892996902803
+      },
+      "boundingbox": {
+        "xmin": -8.465541,
+        "ymin": 42.81893,
+        "xmax": -8.365541,
+        "ymax": 42.91893
+      },
+      "match": "Moa, Boqueixón, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "En un sitio de la Tierra ",
+      "coordinates": {
+        "x": -5.264240092950473,
+        "y": 41.653289859132286
+      },
+      "boundingbox": {
+        "xmin": -5.314241,
+        "ymin": 41.60329,
+        "xmax": -5.214241,
+        "ymax": 41.70329
+      },
+      "match": "Tiedra, Valladolid, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Atlanta, GA",
+      "coordinates": {
+        "x": -8.671139831727972,
+        "y": 42.43201988339328
+      },
+      "boundingbox": {
+        "xmin": -8.721141,
+        "ymin": 42.38202,
+        "xmax": -8.621141,
+        "ymax": 42.48202
+      },
+      "match": "A Goa, Poio, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Coyoacán, Distrito Federal",
+      "coordinates": {
+        "x": 1.3588799341220241,
+        "y": 41.144809923961034
+      },
+      "boundingbox": {
+        "xmin": 1.30888,
+        "ymin": 41.09481,
+        "xmax": 1.40888,
+        "ymax": 41.19481
+      },
+      "match": "Ferran, Tarragona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Florida",
+      "coordinates": {
+        "x": -8.552129950030972,
+        "y": 42.78242996305629
+      },
+      "boundingbox": {
+        "xmin": -8.602131,
+        "ymin": 42.73243,
+        "xmax": -8.502131,
+        "ymax": 42.83243
+      },
+      "match": "Florida, Teo, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "China",
+      "coordinates": {
+        "x": -5.045010125126472,
+        "y": 41.468629977922284
+      },
+      "boundingbox": {
+        "xmin": -5.095011,
+        "ymin": 41.41863,
+        "xmax": -4.995011,
+        "ymax": 41.51863
+      },
+      "match": "La China, Tordesillas, Valladolid, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Brasil",
+      "coordinates": {
+        "x": -17.754189754961967,
+        "y": 28.74625015255554
+      },
+      "boundingbox": {
+        "xmin": -17.804191,
+        "ymin": 28.69625,
+        "xmax": -17.704191,
+        "ymax": 28.79625
+      },
+      "match": "El Brasil, Puntallana, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "La Victoria, España",
+      "coordinates": {
+        "x": -4.852850011862473,
+        "y": 37.682129870329284
+      },
+      "boundingbox": {
+        "xmin": -4.902851,
+        "ymin": 37.63213,
+        "xmax": -4.802851,
+        "ymax": 37.73213
+      },
+      "match": "La Victoria, Córdoba, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Terrassa, Països Catalans.",
+      "coordinates": {
+        "x": -17.811729722406717,
+        "y": 28.82705019505004
+      },
+      "boundingbox": {
+        "xmin": -17.861731,
+        "ymin": 28.77705,
+        "xmax": -17.761731,
+        "ymax": 28.87705
+      },
+      "match": "Los Catalanes, Barlovento, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Ciudad Autónoma de Buenos Aire",
+      "coordinates": {
+        "x": -8.244999985205721,
+        "y": 43.42868996777703
+      },
+      "boundingbox": {
+        "xmin": -8.295001,
+        "ymin": 43.37869,
+        "xmax": -8.195001,
+        "ymax": 43.47869
+      },
+      "match": "Ares, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "California, USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Un hermoso lugar golpeado",
+      "coordinates": {
+        "x": -7.914909943408471,
+        "y": 43.727829787721035
+      },
+      "boundingbox": {
+        "xmin": -7.964911,
+        "ymin": 43.67783,
+        "xmax": -7.864911,
+        "ymax": 43.77783
+      },
+      "match": "Golpa, Cariño, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "San Cosme de Barreiros",
+      "coordinates": {
+        "x": -8.853469755878471,
+        "y": 42.04878984595828
+      },
+      "boundingbox": {
+        "xmin": -8.903471,
+        "ymin": 41.99879,
+        "xmax": -8.803471,
+        "ymax": 42.09879
+      },
+      "match": "San Cosme, Oia, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Toledo. Castilla, las Españas",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Ciudad Autónoma de Buenos Aire",
+      "coordinates": {
+        "x": -8.244999985205721,
+        "y": 43.42868996777703
+      },
+      "boundingbox": {
+        "xmin": -8.295001,
+        "ymin": 43.37869,
+        "xmax": -8.195001,
+        "ymax": 43.47869
+      },
+      "match": "Ares, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Sao Paulo, Brasil",
+      "coordinates": {
+        "x": -17.754189754961967,
+        "y": 28.74625015255554
+      },
+      "boundingbox": {
+        "xmin": -17.804191,
+        "ymin": 28.69625,
+        "xmax": -17.704191,
+        "ymax": 28.79625
+      },
+      "match": "El Brasil, Puntallana, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Parla, España",
+      "coordinates": {
+        "x": -3.773350206112723,
+        "y": 40.235839837860034
+      },
+      "boundingbox": {
+        "xmin": -3.823351,
+        "ymin": 40.18584,
+        "xmax": -3.723351,
+        "ymax": 40.28584
+      },
+      "match": "Parla, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Macondo",
+      "coordinates": {
+        "x": -6.403040078955972,
+        "y": 39.47090972517554
+      },
+      "boundingbox": {
+        "xmin": -6.453041,
+        "ymin": 39.42091,
+        "xmax": -6.353041,
+        "ymax": 39.52091
+      },
+      "match": "Macondo, Cáceres, Extremadura",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Halifax, NS",
+      "coordinates": {
+        "x": 1.744439928616524,
+        "y": 42.34914982615128
+      },
+      "boundingbox": {
+        "xmin": 1.69444,
+        "ymin": 42.29915,
+        "xmax": 1.79444,
+        "ymax": 42.39915
+      },
+      "match": "Nas, Bellver de Cerdanya, Lleida, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "La Habana, Cuba",
+      "coordinates": {
+        "x": -0.29676015757622487,
+        "y": 40.592489933562284
+      },
+      "boundingbox": {
+        "xmin": -0.346761,
+        "ymin": 40.54249,
+        "xmax": -0.246761,
+        "ymax": 40.64249
+      },
+      "match": "La Cuba, Teruel, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Cork, Irlanda",
+      "coordinates": {
+        "x": -2.9082302592082234,
+        "y": 40.18423988837679
+      },
+      "boundingbox": {
+        "xmin": -2.958231,
+        "ymin": 40.13424,
+        "xmax": -2.858231,
+        "ymax": 40.23424
+      },
+      "match": "Illana, Guadalajara, Castilla-La Mancha",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Donde sea feliz.",
+      "coordinates": {
+        "x": -1.635290236351974,
+        "y": 37.58426999316879
+      },
+      "boundingbox": {
+        "xmin": -1.685291,
+        "ymin": 37.53427,
+        "xmax": -1.585291,
+        "ymax": 37.63427
+      },
+      "match": "Feli, Lorca, Murcia, Región de Murcia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Ciudad Autónoma de Buenos Aire",
+      "coordinates": {
+        "x": -8.244999985205721,
+        "y": 43.42868996777703
+      },
+      "boundingbox": {
+        "xmin": -8.295001,
+        "ymin": 43.37869,
+        "xmax": -8.195001,
+        "ymax": 43.47869
+      },
+      "match": "Ares, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Gandia",
+      "coordinates": {
+        "x": -0.18210010795147458,
+        "y": 38.972679864382535
+      },
+      "boundingbox": {
+        "xmin": -0.232101,
+        "ymin": 38.92268,
+        "xmax": -0.132101,
+        "ymax": 39.02268
+      },
+      "match": "Gandia, València, Comunitat Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Boston, MA",
+      "coordinates": {
+        "x": -8.415539788823471,
+        "y": 42.86892996902803
+      },
+      "boundingbox": {
+        "xmin": -8.465541,
+        "ymin": 42.81893,
+        "xmax": -8.365541,
+        "ymax": 42.91893
+      },
+      "match": "Moa, Boqueixón, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Bilbao- España",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Los Urrutias",
+      "coordinates": {
+        "x": -0.8298900748577243,
+        "y": 37.680839962628035
+      },
+      "boundingbox": {
+        "xmin": -0.879891,
+        "ymin": 37.63084,
+        "xmax": -0.779891,
+        "ymax": 37.73084
+      },
+      "match": "Los Urrutias, Cartagena, Murcia, Región de Murcia",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Lanús, Pcia Bs As",
+      "coordinates": {
+        "x": -8.280139816068221,
+        "y": 43.307679818784784
+      },
+      "boundingbox": {
+        "xmin": -8.330141,
+        "ymin": 43.25768,
+        "xmax": -8.230141,
+        "ymax": 43.35768
+      },
+      "match": "Bos, Bergondo, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "China",
+      "coordinates": {
+        "x": -5.045010125126472,
+        "y": 41.468629977922284
+      },
+      "boundingbox": {
+        "xmin": -5.095011,
+        "ymin": 41.41863,
+        "xmax": -4.995011,
+        "ymax": 41.51863
+      },
+      "match": "La China, Tordesillas, Valladolid, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Los Urrutias",
+      "coordinates": {
+        "x": -0.8298900748577243,
+        "y": 37.680839962628035
+      },
+      "boundingbox": {
+        "xmin": -0.879891,
+        "ymin": 37.63084,
+        "xmax": -0.779891,
+        "ymax": 37.73084
+      },
+      "match": "Los Urrutias, Cartagena, Murcia, Región de Murcia",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Caldes de Montbui, (Vallès Or)",
+      "coordinates": {
+        "x": -8.773229933883972,
+        "y": 42.664619793560036
+      },
+      "boundingbox": {
+        "xmin": -8.823231,
+        "ymin": 42.61462,
+        "xmax": -8.723231,
+        "ymax": 42.71462
+      },
+      "match": "Or, Rianxo, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Guayaquil, Ecuador",
+      "coordinates": {
+        "x": -8.299499916107221,
+        "y": 42.690139798106784
+      },
+      "boundingbox": {
+        "xmin": -8.349501,
+        "ymin": 42.64014,
+        "xmax": -8.249501,
+        "ymax": 42.74014
+      },
+      "match": "Escuadro, Silleda, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Groningen, NL, EU, Terra",
+      "coordinates": {
+        "x": -2.040740019368224,
+        "y": 43.102219790740534
+      },
+      "boundingbox": {
+        "xmin": -2.090741,
+        "ymin": 43.05222,
+        "xmax": -1.990741,
+        "ymax": 43.15222
+      },
+      "match": "Eutera, Lizartza, Guipúzcoa, País Vasco",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "San Francisco, CA",
+      "coordinates": {
+        "x": -5.012220139151223,
+        "y": 42.46275974244878
+      },
+      "boundingbox": {
+        "xmin": -5.062221,
+        "ymin": 42.41276,
+        "xmax": -4.962221,
+        "ymax": 42.51276
+      },
+      "match": "Cea, León, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "VLL → BCN → TLL → ATH → SKG → AMS → MAD",
+      "coordinates": {
+        "x": -8.415539788823471,
+        "y": 42.86892996902803
+      },
+      "boundingbox": {
+        "xmin": -8.465541,
+        "ymin": 42.81893,
+        "xmax": -8.365541,
+        "ymax": 42.91893
+      },
+      "match": "Moa, Boqueixón, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Foz",
+      "coordinates": {
+        "x": -7.258159809825222,
+        "y": 43.56990979119654
+      },
+      "boundingbox": {
+        "xmin": -7.308161,
+        "ymin": 43.51991,
+        "xmax": -7.208161,
+        "ymax": 43.61991
+      },
+      "match": "Foz, Lugo, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Barranquilla",
+      "coordinates": {
+        "x": -4.1185802069224735,
+        "y": 40.398689774784536
+      },
+      "boundingbox": {
+        "xmin": -4.168581,
+        "ymin": 40.34869,
+        "xmax": -4.068581,
+        "ymax": 40.44869
+      },
+      "match": "Las Barranquillas, Navalagamella, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Medellín",
+      "coordinates": {
+        "x": -5.957700075347472,
+        "y": 38.96186984961454
+      },
+      "boundingbox": {
+        "xmin": -6.007701,
+        "ymin": 38.91187,
+        "xmax": -5.907701,
+        "ymax": 39.01187
+      },
+      "match": "Medellín, Badajoz, Extremadura",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Logroño, España",
+      "coordinates": {
+        "x": -2.451930101737724,
+        "y": 42.46590986232029
+      },
+      "boundingbox": {
+        "xmin": -2.501931,
+        "ymin": 42.41591,
+        "xmax": -2.401931,
+        "ymax": 42.51591
+      },
+      "match": "Logroño, La Rioja",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Houston, TX",
+      "coordinates": {
+        "x": -6.636550067324972,
+        "y": 43.55494994307478
+      },
+      "boundingbox": {
+        "xmin": -6.686551,
+        "ymin": 43.50495,
+        "xmax": -6.586551,
+        "ymax": 43.60495
+      },
+      "match": "Tox, Navia, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Distrito de Columbia, USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Georgia, USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Buenos Aires",
+      "coordinates": {
+        "x": -16.274669823281968,
+        "y": 28.44396021274004
+      },
+      "boundingbox": {
+        "xmin": -16.324671,
+        "ymin": 28.39396,
+        "xmax": -16.224671,
+        "ymax": 28.49396
+      },
+      "match": "Buenos Aires, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "barcelona",
+      "coordinates": {
+        "x": 2.168719843078774,
+        "y": 41.38560978158628
+      },
+      "boundingbox": {
+        "xmin": 2.11872,
+        "ymin": 41.33561,
+        "xmax": 2.21872,
+        "ymax": 41.43561
+      },
+      "match": "Barcelona, Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Pasadena, CA",
+      "coordinates": {
+        "x": -5.012220139151223,
+        "y": 42.46275974244878
+      },
+      "boundingbox": {
+        "xmin": -5.062221,
+        "ymin": 42.41276,
+        "xmax": -4.962221,
+        "ymax": 42.51276
+      },
+      "match": "Cea, León, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Valladolid, España",
+      "coordinates": {
+        "x": -4.732140141058222,
+        "y": 41.65418985336554
+      },
+      "boundingbox": {
+        "xmin": -4.782141,
+        "ymin": 41.60419,
+        "xmax": -4.682141,
+        "ymax": 41.70419
+      },
+      "match": "Valladolid, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Gran Canaria",
+      "coordinates": {
+        "x": -1.7683000283439743,
+        "y": 38.140989955374536
+      },
+      "boundingbox": {
+        "xmin": -1.818301,
+        "ymin": 38.09099,
+        "xmax": -1.718301,
+        "ymax": 38.19099
+      },
+      "match": "Canara, Cehegín, Murcia, Región de Murcia",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "East coast USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Fuenlabrada, Madrid",
+      "coordinates": {
+        "x": -3.7957601465537234,
+        "y": 40.283439812973285
+      },
+      "boundingbox": {
+        "xmin": -3.845761,
+        "ymin": 40.23344,
+        "xmax": -3.745761,
+        "ymax": 40.33344
+      },
+      "match": "Fuenlabrada, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Pontevedra",
+      "coordinates": {
+        "x": -8.652369923985722,
+        "y": 42.43245993659603
+      },
+      "boundingbox": {
+        "xmin": -8.702371,
+        "ymin": 42.38246,
+        "xmax": -8.602371,
+        "ymax": 42.48246
+      },
+      "match": "Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "barcelona",
+      "coordinates": {
+        "x": 2.168719843078774,
+        "y": 41.38560978158628
+      },
+      "boundingbox": {
+        "xmin": 2.11872,
+        "ymin": 41.33561,
+        "xmax": 2.21872,
+        "ymax": 41.43561
+      },
+      "match": "Barcelona, Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "PINTO  (MADRID)",
+      "coordinates": {
+        "lat": "40.240985",
+        "lon": "-3.7005072"
+      },
+      "boundingbox": {
+        "xmin": "-3.7412665",
+        "ymin": "40.198928",
+        "xmax": "-3.6224997",
+        "ymax": "40.2929152"
+      },
+      "match": "Pinto, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28320, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "África.",
+      "coordinates": {
+        "lat": "35.2834693",
+        "lon": "-2.9480163"
+      },
+      "boundingbox": {
+        "xmin": "-2.9490781",
+        "ymin": "35.2830723",
+        "xmax": "-2.9463804",
+        "ymax": "35.2837269"
+      },
+      "match": "África, Barrio de Alfonso XIII, Melilla, 52005, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Guadalajara, Jalisco",
+      "coordinates": {
+        "lat": "40.6533758",
+        "lon": "-3.1851399"
+      },
+      "boundingbox": {
+        "xmin": "-3.1851399",
+        "ymin": "40.6530748",
+        "xmax": "-3.1849463",
+        "ymax": "40.6538779"
+      },
+      "match": "Calle de Guadalajara-Jalisco, Polígono Industrial de Henares, La Estación, Guadalajara, Castilla-La Mancha, 19180, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "San Luis, Argentina",
+      "coordinates": {
+        "lat": "36.8565811",
+        "lon": "-2.4537631"
+      },
+      "boundingbox": {
+        "xmin": "-2.4538618",
+        "ymin": "36.8562463",
+        "xmax": "-2.4533319",
+        "ymax": "36.8579973"
+      },
+      "match": "Calle Imperio Argentina, El Eucalipto, Los Ángeles, Almería, Andalucía, 04009, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "San Luis, Argentina",
+      "coordinates": {
+        "lat": "36.8565811",
+        "lon": "-2.4537631"
+      },
+      "boundingbox": {
+        "xmin": "-2.4538618",
+        "ymin": "36.8562463",
+        "xmax": "-2.4533319",
+        "ymax": "36.8579973"
+      },
+      "match": "Calle Imperio Argentina, El Eucalipto, Los Ángeles, Almería, Andalucía, 04009, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Lima, Peru",
+      "coordinates": {
+        "lat": "39.4659184",
+        "lon": "-6.3851413"
+      },
+      "boundingbox": {
+        "xmin": "-6.3853142",
+        "ymin": "39.4658462",
+        "xmax": "-6.385012",
+        "ymax": "39.4659362"
+      },
+      "match": "Calle Lima, El Perú, Cáceres, Extremadura, 10195, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "NI",
+      "coordinates": {
+        "lat": "41.8523094",
+        "lon": "1.5745043"
+      },
+      "boundingbox": {
+        "xmin": "0.1594133",
+        "ymin": "40.5230524",
+        "xmax": "3.3222508",
+        "ymax": "42.8615226"
+      },
+      "match": "CAT, España",
+      "geocoder": "osm",
+      "admin_level": 4
+    },
+    {
+      "location": "Córdoba, Argentina",
+      "coordinates": {
+        "lat": "37.8805816",
+        "lon": "-4.7862451"
+      },
+      "boundingbox": {
+        "xmin": "-4.7864752",
+        "ymin": "37.8799056",
+        "xmax": "-4.7860075",
+        "ymax": "37.8812608"
+      },
+      "match": "Avenida del Flamenco;Avenida Republica Argentina, Ciudad Jardín, Distrito Poniente Sur, Córdoba, Andalucía, 14004, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Mexico",
+      "coordinates": {
+        "lat": "41.0900568",
+        "lon": "1.1592263"
+      },
+      "boundingbox": {
+        "xmin": "1.1492263",
+        "ymin": "41.0800568",
+        "xmax": "1.1692263",
+        "ymax": "41.1000568"
+      },
+      "match": "MÉXICO, Salou, Tarragonès, Tarragona, CAT, 43480, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Argentina ",
+      "coordinates": {
+        "lat": "39.467653",
+        "lon": "-6.3825175"
+      },
+      "boundingbox": {
+        "xmin": "-6.3847058",
+        "ymin": "39.4654949",
+        "xmax": "-6.3792746",
+        "ymax": "39.469439"
+      },
+      "match": "Argentina, Cáceres, Extremadura, España",
+      "geocoder": "osm",
+      "admin_level": 10
+    },
+    {
+      "location": "Michigan",
+      "coordinates": {
+        "lat": "40.3993898",
+        "lon": "-3.7028852"
+      },
+      "boundingbox": {
+        "xmin": "-3.7029352",
+        "ymin": "40.3993398",
+        "xmax": "-3.7028352",
+        "ymax": "40.3994398"
+      },
+      "match": "Michigan, Calle Carvajales, Las Acacias, Arganzuela, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Caracas",
+      "coordinates": {
+        "lat": "41.4087002",
+        "lon": "2.1859185"
+      },
+      "boundingbox": {
+        "xmin": "2.1858685",
+        "ymin": "41.4086502",
+        "xmax": "2.1859685",
+        "ymax": "41.4087502"
+      },
+      "match": "Caracas, 11, Carrer de Rogent, el Camp de l'Arpa del Clot, Sant Martí, Barcelona, BCN, CAT, 08026, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "sg",
+      "coordinates": {
+        "lat": "40.7587537",
+        "lon": "-4.2111491"
+      },
+      "boundingbox": {
+        "xmin": "-4.2112742",
+        "ymin": "40.7584428",
+        "xmax": "-4.2110738",
+        "ymax": "40.7591367"
+      },
+      "match": "SG-5171, Estación de El Espinar, El Espinar, Segovia, Castilla y León, 40424, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "United States",
+      "coordinates": {
+        "lat": "40.4347573",
+        "lon": "-3.68746040265101"
+      },
+      "boundingbox": {
+        "xmin": "-3.6876444",
+        "ymin": "40.4344044",
+        "xmax": "-3.6868251",
+        "ymax": "40.4351011"
+      },
+      "match": "Embajada de los Estados Unidos de América, 75, Calle de Serrano, Castellana, Salamanca, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28006, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Durango, México",
+      "coordinates": {
+        "lat": "43.1707065",
+        "lon": "-2.6334897"
+      },
+      "boundingbox": {
+        "xmin": "-2.696534",
+        "ymin": "43.1468132",
+        "xmax": "-2.6157937",
+        "ymax": "43.1751411"
+      },
+      "match": "Durango, Durangaldea, Bizkaia, Euskadi, 48200, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "São Paulo, Brasil",
+      "coordinates": {
+        "lat": "40.3040703",
+        "lon": "-0.058219"
+      },
+      "boundingbox": {
+        "xmin": "-0.078219",
+        "ymin": "40.2840703",
+        "xmax": "-0.038219",
+        "ymax": "40.3240703"
+      },
+      "match": "Paulo, l'Alt Maestrat, Castelló / Castellón, Comunitat Valenciana, 12162, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "San Martín, Mendoza",
+      "coordinates": {
+        "lat": "42.86230795",
+        "lon": "-2.79182247581054"
+      },
+      "boundingbox": {
+        "xmin": "-2.8516898",
+        "ymin": "42.8501888",
+        "xmax": "-2.7554804",
+        "ymax": "42.8743186"
+      },
+      "match": "Mendoza, Vitoria-Gasteiz, Vitoria-Gasteizko Eskualdea / Cuadrilla de Vitoria, Araba/Álava, Euskadi, España",
+      "geocoder": "osm",
+      "admin_level": 9
+    },
+    {
+      "location": "O Carballiño, España",
+      "coordinates": {
+        "lat": "42.430083",
+        "lon": "-8.0781189"
+      },
+      "boundingbox": {
+        "xmin": "-8.1397981",
+        "ymin": "42.3818479",
+        "xmax": "-8.0234001",
+        "ymax": "42.5116305"
+      },
+      "match": "O Carballiño, Ourense, Galicia, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Iberoamérica",
+      "coordinates": {
+        "lat": "37.6143266",
+        "lon": "-1.02079215"
+      },
+      "boundingbox": {
+        "xmin": "-1.0216432",
+        "ymin": "37.6139532",
+        "xmax": "-1.0199411",
+        "ymax": "37.6147"
+      },
+      "match": "Plaza de Iberoamérica, La Vaguada, Diputación de Canteras, Cartagena, Campo de Cartagena, Murcia, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "MANAGUA",
+      "coordinates": {
+        "lat": "36.7012222",
+        "lon": "-4.4765501"
+      },
+      "boundingbox": {
+        "xmin": "-4.4772069",
+        "ymin": "36.7011912",
+        "xmax": "-4.4763623",
+        "ymax": "36.7013793"
+      },
+      "match": "Calle Managua, Polígono Industrial San Luis, Cruz de Humilladero, Málaga, Andalucía, 29006, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Santiago, Chile",
+      "coordinates": {
+        "lat": "42.871642",
+        "lon": "-8.5501727"
+      },
+      "boundingbox": {
+        "xmin": "-8.5510635",
+        "ymin": "42.8706863",
+        "xmax": "-8.5494643",
+        "ymax": "42.8728617"
+      },
+      "match": "Rúa de Santiago de Chile, A Espiñeira, Villaldía, Santiago de Compostela, Santiago, A Coruña, Galicia, 15702, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Cádiz, Andalucía",
+      "coordinates": {
+        "lat": "36.5298292",
+        "lon": "-6.2925679"
+      },
+      "boundingbox": {
+        "xmin": "-6.3175068",
+        "ymin": "36.4436702",
+        "xmax": "-6.2256636",
+        "ymax": "36.5455042"
+      },
+      "match": "Cádiz, Andalucía, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Costa Rica",
+      "coordinates": {
+        "lat": "39.04574005",
+        "lon": "-0.192315315718489"
+      },
+      "boundingbox": {
+        "xmin": "-0.1926357",
+        "ymin": "39.0453862",
+        "xmax": "-0.1920155",
+        "ymax": "39.0459988"
+      },
+      "match": "Costa Rica, Platja de Xeraco, Xeraco, Safor, València / Valencia, Comunitat Valenciana, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Costa Brava",
+      "coordinates": {
+        "lat": "41.7037675",
+        "lon": "2.9415943"
+      },
+      "boundingbox": {
+        "xmin": "2.9215943",
+        "ymin": "41.6837675",
+        "xmax": "2.9615943",
+        "ymax": "41.7237675"
+      },
+      "match": "Costa Brava, 17320, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "BOGOTA",
+      "coordinates": {
+        "lat": "40.4242764",
+        "lon": "-3.695885"
+      },
+      "boundingbox": {
+        "xmin": "-3.695935",
+        "ymin": "40.4242264",
+        "xmax": "-3.695835",
+        "ymax": "40.4243264"
+      },
+      "match": "Bogotá, 20, Calle de Belén, Justicia, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28004, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "BOGOTA",
+      "coordinates": {
+        "lat": "40.4242764",
+        "lon": "-3.695885"
+      },
+      "boundingbox": {
+        "xmin": "-3.695935",
+        "ymin": "40.4242264",
+        "xmax": "-3.695835",
+        "ymax": "40.4243264"
+      },
+      "match": "Bogotá, 20, Calle de Belén, Justicia, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28004, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Santa Cruz de Tenerife, España",
+      "coordinates": {
+        "lat": "28.469648",
+        "lon": "-16.2540884"
+      },
+      "boundingbox": {
+        "xmin": "-16.3458288",
+        "ymin": "28.4097307",
+        "xmax": "-16.1193833",
+        "ymax": "28.6053951"
+      },
+      "match": "Santa Cruz de Tenerife, Canarias, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Ecuador-Santa Rosa",
+      "coordinates": {
+        "lat": "42.6415622",
+        "lon": "-7.755335"
+      },
+      "boundingbox": {
+        "xmin": "-7.775335",
+        "ymin": "42.6215622",
+        "xmax": "-7.735335",
+        "ymax": "42.6615622"
+      },
+      "match": "Santa Rosa, Chantada, Lugo, Galicia, 27517, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Ecuador-Santa Rosa",
+      "coordinates": {
+        "lat": "42.6415622",
+        "lon": "-7.755335"
+      },
+      "boundingbox": {
+        "xmin": "-7.775335",
+        "ymin": "42.6215622",
+        "xmax": "-7.735335",
+        "ymax": "42.6615622"
+      },
+      "match": "Santa Rosa, Chantada, Lugo, Galicia, 27517, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Argentina",
+      "coordinates": {
+        "lat": "39.467653",
+        "lon": "-6.3825175"
+      },
+      "boundingbox": {
+        "xmin": "-6.3847058",
+        "ymin": "39.4654949",
+        "xmax": "-6.3792746",
+        "ymax": "39.469439"
+      },
+      "match": "Argentina, Cáceres, Extremadura, España",
+      "geocoder": "osm",
+      "admin_level": 10
+    },
+    {
+      "location": "Bilbao, Euskal Herria ",
+      "coordinates": {
+        "lat": "43.2630051",
+        "lon": "-2.9349915"
+      },
+      "boundingbox": {
+        "xmin": "-2.9859808",
+        "ymin": "43.2137176",
+        "xmax": "-2.8802639",
+        "ymax": "43.2901315"
+      },
+      "match": "Bilbao, Bilboaldea, Bizkaia, Euskadi, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Merida-Venezuela",
+      "coordinates": {
+        "lat": "38.9133206",
+        "lon": "-6.3573054"
+      },
+      "boundingbox": {
+        "xmin": "-6.3579069",
+        "ymin": "38.9132765",
+        "xmax": "-6.3572863",
+        "ymax": "38.9142909"
+      },
+      "match": "Calle Venezuela, Nueva Ciudad, Distrito 6, Mérida, Badajoz, Extremadura, 06800, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Bogota",
+      "coordinates": {
+        "lat": "40.4242764",
+        "lon": "-3.695885"
+      },
+      "boundingbox": {
+        "xmin": "-3.695935",
+        "ymin": "40.4242264",
+        "xmax": "-3.695835",
+        "ymax": "40.4243264"
+      },
+      "match": "Bogotá, 20, Calle de Belén, Justicia, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28004, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Bogota",
+      "coordinates": {
+        "lat": "40.4242764",
+        "lon": "-3.695885"
+      },
+      "boundingbox": {
+        "xmin": "-3.695935",
+        "ymin": "40.4242264",
+        "xmax": "-3.695835",
+        "ymax": "40.4243264"
+      },
+      "match": "Bogotá, 20, Calle de Belén, Justicia, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28004, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Bogota",
+      "coordinates": {
+        "lat": "40.4242764",
+        "lon": "-3.695885"
+      },
+      "boundingbox": {
+        "xmin": "-3.695935",
+        "ymin": "40.4242264",
+        "xmax": "-3.695835",
+        "ymax": "40.4243264"
+      },
+      "match": "Bogotá, 20, Calle de Belén, Justicia, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28004, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Bogota",
+      "coordinates": {
+        "lat": "40.4242764",
+        "lon": "-3.695885"
+      },
+      "boundingbox": {
+        "xmin": "-3.695935",
+        "ymin": "40.4242264",
+        "xmax": "-3.695835",
+        "ymax": "40.4243264"
+      },
+      "match": "Bogotá, 20, Calle de Belén, Justicia, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28004, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Bogota",
+      "coordinates": {
+        "lat": "40.4242764",
+        "lon": "-3.695885"
+      },
+      "boundingbox": {
+        "xmin": "-3.695935",
+        "ymin": "40.4242264",
+        "xmax": "-3.695835",
+        "ymax": "40.4243264"
+      },
+      "match": "Bogotá, 20, Calle de Belén, Justicia, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28004, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Manhattan, NY",
+      "coordinates": {
+        "lat": "39.5460283",
+        "lon": "3.3387739"
+      },
+      "boundingbox": {
+        "xmin": "3.3387239",
+        "ymin": "39.5459783",
+        "xmax": "3.3388239",
+        "ymax": "39.5460783"
+      },
+      "match": "Manhattan, carretera de Son Servera, Portocristo, Manacor, Llevant, Illes Balears, 07680, 124",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "México",
+      "coordinates": {
+        "lat": "41.0900568",
+        "lon": "1.1592263"
+      },
+      "boundingbox": {
+        "xmin": "1.1492263",
+        "ymin": "41.0800568",
+        "xmax": "1.1692263",
+        "ymax": "41.1000568"
+      },
+      "match": "MÉXICO, Salou, Tarragonès, Tarragona, CAT, 43480, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Ejea de los Caballeros, España",
+      "coordinates": {
+        "lat": "42.1272823",
+        "lon": "-1.138433"
+      },
+      "boundingbox": {
+        "xmin": "-1.4133747",
+        "ymin": "41.9904276",
+        "xmax": "-1.01438",
+        "ymax": "42.2768911"
+      },
+      "match": "Ejea de los Caballeros, Cinco Villas, Zaragoza, Aragón, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Nicaragua",
+      "coordinates": {
+        "lat": "37.3507692",
+        "lon": "-6.0455857"
+      },
+      "boundingbox": {
+        "xmin": "-6.0460962",
+        "ymin": "37.3490318",
+        "xmax": "-6.0446074",
+        "ymax": "37.3507692"
+      },
+      "match": "Nicaragua, Simón Verde, Mairena del Aljarafe, Sevilla, Andalucía, 41927, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "colombia",
+      "coordinates": {
+        "lat": "40.4571156",
+        "lon": "-3.6769611"
+      },
+      "boundingbox": {
+        "xmin": "-3.6819611",
+        "ymin": "40.4521156",
+        "xmax": "-3.6719611",
+        "ymax": "40.4621156"
+      },
+      "match": "Colombia, Calle de Colombia, Chamartín, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "JAPAN",
+      "coordinates": {
+        "lat": "40.4106293",
+        "lon": "-3.6994828"
+      },
+      "boundingbox": {
+        "xmin": "-3.6995328",
+        "ymin": "40.4105793",
+        "xmax": "-3.6994328",
+        "ymax": "40.4106793"
+      },
+      "match": "Livin' Japan, 20, Calle de la Torrecilla del Leal, Embajadores, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "JAPAN",
+      "coordinates": {
+        "lat": "40.4106293",
+        "lon": "-3.6994828"
+      },
+      "boundingbox": {
+        "xmin": "-3.6995328",
+        "ymin": "40.4105793",
+        "xmax": "-3.6994328",
+        "ymax": "40.4106793"
+      },
+      "match": "Livin' Japan, 20, Calle de la Torrecilla del Leal, Embajadores, Centro, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Vilassar de Mar",
+      "coordinates": {
+        "lat": "41.5064041",
+        "lon": "2.3913883"
+      },
+      "boundingbox": {
+        "xmin": "2.3656203",
+        "ymin": "41.4938593",
+        "xmax": "2.4027493",
+        "ymax": "41.5162441"
+      },
+      "match": "Vilassar de Mar, Maresme, BCN, CAT, 08340, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Morón, Argentina",
+      "coordinates": {
+        "lat": "39.467653",
+        "lon": "-6.3825175"
+      },
+      "boundingbox": {
+        "xmin": "-6.3847058",
+        "ymin": "39.4654949",
+        "xmax": "-6.3792746",
+        "ymax": "39.469439"
+      },
+      "match": "Argentina, Cáceres, Extremadura, España",
+      "geocoder": "osm",
+      "admin_level": 10
+    },
+    {
+      "location": "DEL VISO-PILAR",
+      "coordinates": {
+        "lat": "40.1233926",
+        "lon": "-4.0203397"
+      },
+      "boundingbox": {
+        "xmin": "-4.0303397",
+        "ymin": "40.1133926",
+        "xmax": "-4.0103397",
+        "ymax": "40.1333926"
+      },
+      "match": "Vega del Pilar, El Viso de San Juan, Comarca de la Sagra, Toledo, Castilla-La Mancha, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Santiago Chile",
+      "coordinates": {
+        "lat": "42.871642",
+        "lon": "-8.5501727"
+      },
+      "boundingbox": {
+        "xmin": "-8.5510635",
+        "ymin": "42.8706863",
+        "xmax": "-8.5494643",
+        "ymax": "42.8728617"
+      },
+      "match": "Rúa de Santiago de Chile, A Espiñeira, Villaldía, Santiago de Compostela, Santiago, A Coruña, Galicia, 15702, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Santiago Chile",
+      "coordinates": {
+        "lat": "42.871642",
+        "lon": "-8.5501727"
+      },
+      "boundingbox": {
+        "xmin": "-8.5510635",
+        "ymin": "42.8706863",
+        "xmax": "-8.5494643",
+        "ymax": "42.8728617"
+      },
+      "match": "Rúa de Santiago de Chile, A Espiñeira, Villaldía, Santiago de Compostela, Santiago, A Coruña, Galicia, 15702, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Estepona, España",
+      "coordinates": {
+        "lat": "36.4268068",
+        "lon": "-5.1468484"
+      },
+      "boundingbox": {
+        "xmin": "-5.2196719",
+        "ymin": "36.3861294",
+        "xmax": "-5.0049214",
+        "ymax": "36.5357829"
+      },
+      "match": "Estepona, Málaga, Andalucía, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Merida, Venezuela",
+      "coordinates": {
+        "lat": "38.9133206",
+        "lon": "-6.3573054"
+      },
+      "boundingbox": {
+        "xmin": "-6.3579069",
+        "ymin": "38.9132765",
+        "xmax": "-6.3572863",
+        "ymax": "38.9142909"
+      },
+      "match": "Calle Venezuela, Nueva Ciudad, Distrito 6, Mérida, Badajoz, Extremadura, 06800, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Chicago, IL",
+      "coordinates": {
+        "lat": "40.6540094",
+        "lon": "0.7234448"
+      },
+      "boundingbox": {
+        "xmin": "0.7134448",
+        "ymin": "40.6440094",
+        "xmax": "0.7334448",
+        "ymax": "40.6640094"
+      },
+      "match": "Chicago, Amposta, Montsià, Tarragona, CAT, 43870, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Chicago, IL",
+      "coordinates": {
+        "lat": "40.6540094",
+        "lon": "0.7234448"
+      },
+      "boundingbox": {
+        "xmin": "0.7134448",
+        "ymin": "40.6440094",
+        "xmax": "0.7334448",
+        "ymax": "40.6640094"
+      },
+      "match": "Chicago, Amposta, Montsià, Tarragona, CAT, 43870, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Cancún ",
+      "coordinates": {
+        "lat": "39.04319465",
+        "lon": "-0.193019590360228"
+      },
+      "boundingbox": {
+        "xmin": "-0.193349",
+        "ymin": "39.0429678",
+        "xmax": "-0.1926965",
+        "ymax": "39.0434197"
+      },
+      "match": "Cancún, Platja de Xeraco, Xeraco, Safor, València / Valencia, Comunitat Valenciana, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Cantabria",
+      "coordinates": {
+        "lat": "43.135837",
+        "lon": "-4.26363267814683"
+      },
+      "boundingbox": {
+        "xmin": "-4.8517354",
+        "ymin": "42.7580499",
+        "xmax": "-3.149652",
+        "ymax": "43.5136234"
+      },
+      "match": "Cantabria, España",
+      "geocoder": "osm",
+      "admin_level": 6
+    },
+    {
+      "location": "Cantabria",
+      "coordinates": {
+        "lat": "43.135837",
+        "lon": "-4.26363267814683"
+      },
+      "boundingbox": {
+        "xmin": "-4.8517354",
+        "ymin": "42.7580499",
+        "xmax": "-3.149652",
+        "ymax": "43.5136234"
+      },
+      "match": "Cantabria, España",
+      "geocoder": "osm",
+      "admin_level": 6
+    },
+    {
+      "location": "sudamerica",
+      "coordinates": {
+        "lat": "41.5504136",
+        "lon": "2.3993442"
+      },
+      "boundingbox": {
+        "xmin": "2.3984956",
+        "ymin": "41.5502087",
+        "xmax": "2.3997577",
+        "ymax": "41.5505319"
+      },
+      "match": "Carrer Sudamèrica, Argentona, Maresme, BCN, CAT, 08310, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Colombia ☑",
+      "coordinates": {
+        "lat": "40.4571156",
+        "lon": "-3.6769611"
+      },
+      "boundingbox": {
+        "xmin": "-3.6819611",
+        "ymin": "40.4521156",
+        "xmax": "-3.6719611",
+        "ymax": "40.4621156"
+      },
+      "match": "Colombia, Calle de Colombia, Chamartín, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Puebla, México",
+      "coordinates": {
+        "lat": "37.7185363",
+        "lon": "-0.920214960519126"
+      },
+      "boundingbox": {
+        "xmin": "-0.9287485",
+        "ymin": "37.7132139",
+        "xmax": "-0.9140271",
+        "ymax": "37.7232626"
+      },
+      "match": "La Puebla, Diputación de Lentiscar, Cartagena, Campo de Cartagena, Murcia, 30395, España",
+      "geocoder": "osm",
+      "admin_level": 10
+    },
+    {
+      "location": "Colombia ☑",
+      "coordinates": {
+        "lat": "40.4571156",
+        "lon": "-3.6769611"
+      },
+      "boundingbox": {
+        "xmin": "-3.6819611",
+        "ymin": "40.4521156",
+        "xmax": "-3.6719611",
+        "ymax": "40.4621156"
+      },
+      "match": "Colombia, Calle de Colombia, Chamartín, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Region Caribe",
+      "coordinates": {
+        "x": -7.879789720263472,
+        "y": 42.60936972740903
+      },
+      "boundingbox": {
+        "xmin": -7.929791,
+        "ymin": 42.55937,
+        "xmax": -7.829791,
+        "ymax": 42.65937
+      },
+      "match": "Caibe, Chantada, Lugo, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Wa. State Usa",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Santa Tecla, El Salvador",
+      "coordinates": {
+        "x": -6.943699919977972,
+        "y": 43.02197996874604
+      },
+      "boundingbox": {
+        "xmin": -6.993701,
+        "ymin": 42.97198,
+        "xmax": -6.893701,
+        "ymax": 43.07198
+      },
+      "match": "Salvador, Ibias, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Telde",
+      "coordinates": {
+        "lat": "27.9984538",
+        "lon": "-15.4166761"
+      },
+      "boundingbox": {
+        "xmin": "-15.5298204",
+        "ymin": "27.9283414",
+        "xmax": "-15.358281",
+        "ymax": "28.0388161"
+      },
+      "match": "Telde, Las Palmas, Canarias, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Telde",
+      "coordinates": {
+        "lat": "27.9984538",
+        "lon": "-15.4166761"
+      },
+      "boundingbox": {
+        "xmin": "-15.5298204",
+        "ymin": "27.9283414",
+        "xmax": "-15.358281",
+        "ymax": "28.0388161"
+      },
+      "match": "Telde, Las Palmas, Canarias, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Bursa",
+      "coordinates": {
+        "x": 1.6395798161982746,
+        "y": 42.10111976275304
+      },
+      "boundingbox": {
+        "xmin": 1.58958,
+        "ymin": 42.05112,
+        "xmax": 1.68958,
+        "ymax": 42.15112
+      },
+      "match": "Busa, Navès, Lleida, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Telde",
+      "coordinates": {
+        "lat": "27.9984538",
+        "lon": "-15.4166761"
+      },
+      "boundingbox": {
+        "xmin": "-15.5298204",
+        "ymin": "27.9283414",
+        "xmax": "-15.358281",
+        "ymax": "28.0388161"
+      },
+      "match": "Telde, Las Palmas, Canarias, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Telde",
+      "coordinates": {
+        "x": -15.419559896271469,
+        "y": 27.99245022065479
+      },
+      "boundingbox": {
+        "xmin": -15.469561,
+        "ymin": 27.94245,
+        "xmax": -15.369561,
+        "ymax": 28.04245
+      },
+      "match": "Telde, Las Palmas, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Telde",
+      "coordinates": {
+        "lat": "27.9984538",
+        "lon": "-15.4166761"
+      },
+      "boundingbox": {
+        "xmin": "-15.5298204",
+        "ymin": "27.9283414",
+        "xmax": "-15.358281",
+        "ymax": "28.0388161"
+      },
+      "match": "Telde, Las Palmas, Canarias, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Telde",
+      "coordinates": {
+        "lat": "27.9984538",
+        "lon": "-15.4166761"
+      },
+      "boundingbox": {
+        "xmin": "-15.5298204",
+        "ymin": "27.9283414",
+        "xmax": "-15.358281",
+        "ymax": "28.0388161"
+      },
+      "match": "Telde, Las Palmas, Canarias, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Texas, USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "República catalana. Comarques",
+      "coordinates": {
+        "x": -4.247020000185723,
+        "y": 36.84872988824504
+      },
+      "boundingbox": {
+        "xmin": -4.297021,
+        "ymin": 36.79873,
+        "xmax": -4.197021,
+        "ymax": 36.89873
+      },
+      "match": "Comares, Málaga, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Choluteca, Honduras",
+      "coordinates": {
+        "x": -17.329969784093215,
+        "y": 28.168830042874788
+      },
+      "boundingbox": {
+        "xmin": -17.379971,
+        "ymin": 28.11883,
+        "xmax": -17.279971,
+        "ymax": 28.21883
+      },
+      "match": "Honduras, Vallehermoso, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Santo Domingo",
+      "coordinates": {
+        "x": -17.94699972400597,
+        "y": 28.828710128391542
+      },
+      "boundingbox": {
+        "xmin": -17.997001,
+        "ymin": 28.77871,
+        "xmax": -17.897001,
+        "ymax": 28.87871
+      },
+      "match": "Santo Domingo, Garafía, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Portland, OR",
+      "coordinates": {
+        "x": -8.773229933883972,
+        "y": 42.664619793560036
+      },
+      "boundingbox": {
+        "xmin": -8.823231,
+        "ymin": 42.61462,
+        "xmax": -8.723231,
+        "ymax": 42.71462
+      },
+      "match": "Or, Rianxo, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Carcaixent, España",
+      "coordinates": {
+        "x": -0.44984012909097437,
+        "y": 39.12591977885003
+      },
+      "boundingbox": {
+        "xmin": -0.499841,
+        "ymin": 39.07592,
+        "xmax": -0.399841,
+        "ymax": 39.17592
+      },
+      "match": "Carcaixent, València, Comunitat Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Santiago, Metropolitana de Santiago",
+      "coordinates": {
+        "x": -8.062299755304721,
+        "y": 42.85438972606079
+      },
+      "boundingbox": {
+        "xmin": -8.112301,
+        "ymin": 42.80439,
+        "xmax": -8.012301,
+        "ymax": 42.90439
+      },
+      "match": "Santiso, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Huelva (Nueva Extremadura)",
+      "coordinates": {
+        "x": -6.158215317148472,
+        "y": 38.97400226487279
+      },
+      "boundingbox": {
+        "xmin": -7.671216,
+        "ymin": 37.461002,
+        "xmax": -4.645216,
+        "ymax": 40.487002
+      },
+      "match": "Extremadura",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "Canada",
+      "coordinates": {
+        "x": -0.8143002587837245,
+        "y": 38.674019873296785
+      },
+      "boundingbox": {
+        "xmin": -0.864301,
+        "ymin": 38.62402,
+        "xmax": -0.764301,
+        "ymax": 38.72402
+      },
+      "match": "Cañada, Alicante, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Beverly Hills, CA",
+      "coordinates": {
+        "x": -5.012220139151223,
+        "y": 42.46275974244878
+      },
+      "boundingbox": {
+        "xmin": -5.062221,
+        "ymin": 42.41276,
+        "xmax": -4.962221,
+        "ymax": 42.51276
+      },
+      "match": "Cea, León, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Medellín, Colombia",
+      "coordinates": {
+        "lat": "38.9624536",
+        "lon": "-5.9581443"
+      },
+      "boundingbox": {
+        "xmin": "-5.9588269",
+        "ymin": "38.962449",
+        "xmax": "-5.957514",
+        "ymax": "38.9626846"
+      },
+      "match": "Calle Colombia, Medellín, Badajoz, Extremadura, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Rio de Janeiro",
+      "coordinates": {
+        "lat": "38.36775865",
+        "lon": "-0.41246331435992"
+      },
+      "boundingbox": {
+        "xmin": "-0.4128108",
+        "ymin": "38.3675422",
+        "xmax": "-0.4121148",
+        "ymax": "38.3679951"
+      },
+      "match": "Río de Janeiro, Playa de San Juan, Alacant, l'Alacantí, Alacant / Alicante, Comunitat Valenciana, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Medellín, Colombia",
+      "coordinates": {
+        "lat": "38.9624536",
+        "lon": "-5.9581443"
+      },
+      "boundingbox": {
+        "xmin": "-5.9588269",
+        "ymin": "38.962449",
+        "xmax": "-5.957514",
+        "ymax": "38.9626846"
+      },
+      "match": "Calle Colombia, Medellín, Badajoz, Extremadura, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "A Coruña, España",
+      "coordinates": {
+        "lat": "43.0565609",
+        "lon": "-8.5296941"
+      },
+      "boundingbox": {
+        "xmin": "-9.3015367",
+        "ymin": "42.4629169",
+        "xmax": "-7.661797",
+        "ymax": "43.790422"
+      },
+      "match": "A Coruña, Galicia, España",
+      "geocoder": "osm",
+      "admin_level": 6
+    },
+    {
+      "location": "Cd. de Las Flores. Xal.",
+      "coordinates": {
+        "x": -8.78781975636547,
+        "y": 42.45650992255079
+      },
+      "boundingbox": {
+        "xmin": -8.837821,
+        "ymin": 42.40651,
+        "xmax": -8.737821,
+        "ymax": 42.50651
+      },
+      "match": "Xil, Meaño, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Thousand Oaks, CA",
+      "coordinates": {
+        "x": -5.012220139151223,
+        "y": 42.46275974244878
+      },
+      "boundingbox": {
+        "xmin": -5.062221,
+        "ymin": 42.41276,
+        "xmax": -4.962221,
+        "ymax": 42.51276
+      },
+      "match": "Cea, León, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Santiago de Surco, Peru",
+      "coordinates": {
+        "x": -16.273739857251968,
+        "y": 28.46553010254129
+      },
+      "boundingbox": {
+        "xmin": -16.323741,
+        "ymin": 28.41553,
+        "xmax": -16.223741,
+        "ymax": 28.51553
+      },
+      "match": "El Perú, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Chone, Ecuador",
+      "coordinates": {
+        "x": -8.299499916107221,
+        "y": 42.690139798106784
+      },
+      "boundingbox": {
+        "xmin": -8.349501,
+        "ymin": 42.64014,
+        "xmax": -8.249501,
+        "ymax": 42.74014
+      },
+      "match": "Escuadro, Silleda, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "venezuela",
+      "coordinates": {
+        "lat": "36.8944422",
+        "lon": "-2.4475791"
+      },
+      "boundingbox": {
+        "xmin": "-2.4475791",
+        "ymin": "36.8935901",
+        "xmax": "-2.4474026",
+        "ymax": "36.8944422"
+      },
+      "match": "Venezuela, La Gloria, Huércal de Almería, Almería, Andalucía, 04230, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Cadiz, España",
+      "coordinates": {
+        "lat": "36.5298292",
+        "lon": "-6.2925679"
+      },
+      "boundingbox": {
+        "xmin": "-6.3175068",
+        "ymin": "36.4436702",
+        "xmax": "-6.2256636",
+        "ymax": "36.5455042"
+      },
+      "match": "Cádiz, Andalucía, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Colombia",
+      "coordinates": {
+        "lat": "40.4571156",
+        "lon": "-3.6769611"
+      },
+      "boundingbox": {
+        "xmin": "-3.6819611",
+        "ymin": "40.4521156",
+        "xmax": "-3.6719611",
+        "ymax": "40.4621156"
+      },
+      "match": "Colombia, Calle de Colombia, Chamartín, Madrid, Área metropolitana de Madrid y Corredor del Henares, Comunidad de Madrid, 28001, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Cuenca, Ecuador",
+      "coordinates": {
+        "lat": "36.50792975",
+        "lon": "-4.67353860556188"
+      },
+      "boundingbox": {
+        "xmin": "-4.6737969",
+        "ymin": "36.5077606",
+        "xmax": "-4.6732197",
+        "ymax": "36.5080865"
+      },
+      "match": "Ecuador, Calle Cuenca, Los Claveles III, Puebla Aida, Mijas, Málaga, Andalucía, 29649, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Malaysia",
+      "coordinates": {
+        "lat": "41.4000237",
+        "lon": "2.1507914"
+      },
+      "boundingbox": {
+        "xmin": "2.1507414",
+        "ymin": "41.3999737",
+        "xmax": "2.1508414",
+        "ymax": "41.4000737"
+      },
+      "match": "Malaysia, 8, Carrer de Laforja, Galvany, Sant Gervasi - Galvany, Gràcia, Barcelona, BCN, CAT, 08006, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Portoviejo, Ecuador",
+      "coordinates": {
+        "lat": "37.2230659",
+        "lon": "-7.4009029"
+      },
+      "boundingbox": {
+        "xmin": "-7.4010652",
+        "ymin": "37.2227791",
+        "xmax": "-7.4008575",
+        "ymax": "37.2232101"
+      },
+      "match": "Ecuador, Urbanizacion Costa Esuri, Ayamonte, Costa Occidental, Huelva, Andalucía, 21400, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Ciudad Blanca",
+      "coordinates": {
+        "lat": "37.2705881",
+        "lon": "-5.9254192"
+      },
+      "boundingbox": {
+        "xmin": "-5.9254692",
+        "ymin": "37.2705381",
+        "xmax": "-5.9253692",
+        "ymax": "37.2706381"
+      },
+      "match": "Ciudad Blanca, Dos Hermanas, Sevilla, Andalucía, 41703, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "NEW YORK",
+      "coordinates": {
+        "lat": "43.2616227",
+        "lon": "-2.9263868"
+      },
+      "boundingbox": {
+        "xmin": "-2.9264368",
+        "ymin": "43.2615727",
+        "xmax": "-2.9263368",
+        "ymax": "43.2616727"
+      },
+      "match": "New York, Buenos Aires kalea / Calle Buenos Aires, Abando, Bilbao, Bilboaldea, Bizkaia, Euskadi, 48001, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Caracas, el valle",
+      "coordinates": {
+        "x": -3.569490167816473,
+        "y": 36.93548983652879
+      },
+      "boundingbox": {
+        "xmin": -3.619491,
+        "ymin": 36.88549,
+        "xmax": -3.519491,
+        "ymax": 36.98549
+      },
+      "match": "El Valle, Granada, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Parque Perequê, Angra dos Reis",
+      "coordinates": {
+        "x": -8.793559775608472,
+        "y": 42.40360998139728
+      },
+      "boundingbox": {
+        "xmin": -8.843561,
+        "ymin": 42.35361,
+        "xmax": -8.743561,
+        "ymax": 42.45361
+      },
+      "match": "Reis, Sanxenxo, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Puerto del Rosario, España",
+      "coordinates": {
+        "x": -13.86405977916872,
+        "y": 28.50201026095004
+      },
+      "boundingbox": {
+        "xmin": -13.914061,
+        "ymin": 28.45201,
+        "xmax": -13.814061,
+        "ymax": 28.55201
+      },
+      "match": "Puerto del Rosario, Las Palmas, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Asuncion, Paraguay",
+      "coordinates": {
+        "lat": "43.2676843",
+        "lon": "-2.9162835"
+      },
+      "boundingbox": {
+        "xmin": "-2.9163335",
+        "ymin": "43.2676343",
+        "xmax": "-2.9162335",
+        "ymax": "43.2677343"
+      },
+      "match": "Asunción, Uribarri, Bilbao, Bilboaldea, Bizkaia, Euskadi, 48007, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Valencia del Cid",
+      "coordinates": {
+        "lat": "38.4535557",
+        "lon": "-0.7194175"
+      },
+      "boundingbox": {
+        "xmin": "-0.7194675",
+        "ymin": "38.4535057",
+        "xmax": "-0.7193675",
+        "ymax": "38.4536057"
+      },
+      "match": "Cid, Petrer, el Vinalopó Mitjà / El Vinalopó Medio, Alacant / Alicante, Comunitat Valenciana, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "nicaragua",
+      "coordinates": {
+        "lat": "37.3507692",
+        "lon": "-6.0455857"
+      },
+      "boundingbox": {
+        "xmin": "-6.0460962",
+        "ymin": "37.3490318",
+        "xmax": "-6.0446074",
+        "ymax": "37.3507692"
+      },
+      "match": "Nicaragua, Simón Verde, Mairena del Aljarafe, Sevilla, Andalucía, 41927, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Buenos Aires -Argentina ",
+      "coordinates": {
+        "lat": "28.4557326",
+        "lon": "-16.2668242"
+      },
+      "boundingbox": {
+        "xmin": "-16.2668742",
+        "ymin": "28.4556826",
+        "xmax": "-16.2667742",
+        "ymax": "28.4557826"
+      },
+      "match": "Buenos Aires, República Argentina, Polígono Buenos Aires, Buenos Aires, Ofra-Costa Sur, Santa Cruz de Tenerife, Canarias, 38071, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "El Chipote",
+      "coordinates": {
+        "x": -7.868439933043722,
+        "y": 43.17191990435828
+      },
+      "boundingbox": {
+        "xmin": -7.918441,
+        "ymin": 43.12192,
+        "xmax": -7.818441,
+        "ymax": 43.22192
+      },
+      "match": "O Chinote, Guitiriz, Lugo, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Mabalacat, Central Luzon",
+      "coordinates": {
+        "x": -2.276040192344974,
+        "y": 41.027479863433285
+      },
+      "boundingbox": {
+        "xmin": -2.326041,
+        "ymin": 40.97748,
+        "xmax": -2.226041,
+        "ymax": 41.07748
+      },
+      "match": "Luzón, Guadalajara, Castilla-La Mancha",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Queens, NY",
+      "coordinates": {
+        "lat": "39.5618074",
+        "lon": "2.60711820127686"
+      },
+      "boundingbox": {
+        "xmin": "2.6066816",
+        "ymin": "39.5613867",
+        "xmax": "2.6076187",
+        "ymax": "39.5623327"
+      },
+      "match": "Queens, Carrer de Saridakis, Gènova, Palma, Illes Balears, 07015, 124",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Chile",
+      "coordinates": {
+        "lat": "39.4603615",
+        "lon": "-6.3726259"
+      },
+      "boundingbox": {
+        "xmin": "-6.3732706",
+        "ymin": "39.4601469",
+        "xmax": "-6.3721907",
+        "ymax": "39.460623"
+      },
+      "match": "Chile, Llopis Ivorra, Cáceres, Extremadura, 10002, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "San Antonio De Los Altos, Vene",
+      "coordinates": {
+        "x": -8.71698995810947,
+        "y": 43.269979780237286
+      },
+      "boundingbox": {
+        "xmin": -8.766991,
+        "ymin": 43.21998,
+        "xmax": -8.666991,
+        "ymax": 43.31998
+      },
+      "match": "Vernes, Carballo, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Pennsylvania, USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Boston",
+      "coordinates": {
+        "lat": "37.1463914",
+        "lon": "-3.6135636"
+      },
+      "boundingbox": {
+        "xmin": "-3.6136136",
+        "ymin": "37.1463414",
+        "xmax": "-3.6135136",
+        "ymax": "37.1464414"
+      },
+      "match": "Boston, 75, Calle Hipócrates, Santa Juliana, Armilla, Comarca de la Vega de Granada, Granada, Andalucía, 18100, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Tampa",
+      "coordinates": {
+        "lat": "43.38360225",
+        "lon": "-5.81602556492472"
+      },
+      "boundingbox": {
+        "xmin": "-5.8170126",
+        "ymin": "43.3827223",
+        "xmax": "-5.8151835",
+        "ymax": "43.3845935"
+      },
+      "match": "Parque Ciudad de Tampa, Prado de la Vega, La Corredoria y Ventanielles, Oviedo, Asturias / Asturies, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "The Internet",
+      "coordinates": {
+        "lat": "28.6599318",
+        "lon": "-17.9166560176471"
+      },
+      "boundingbox": {
+        "xmin": "-17.9167579",
+        "ymin": "28.6598678",
+        "xmax": "-17.9165508",
+        "ymax": "28.6600472"
+      },
+      "match": "Internet, Avenida Enrique Mederos, Montaña Tenisca, Los Llanos, Santa Cruz de Tenerife, Canarias, 38760, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "PA",
+      "coordinates": {
+        "x": -8.444739881834721,
+        "y": 42.71913989239953
+      },
+      "boundingbox": {
+        "xmin": -8.494741,
+        "ymin": 42.66914,
+        "xmax": -8.394741,
+        "ymax": 42.76914
+      },
+      "match": "A Pia, A Estrada, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "pnt",
+      "coordinates": {
+        "x": 2.708279971259275,
+        "y": 42.198139869384036
+      },
+      "boundingbox": {
+        "xmin": 2.65828,
+        "ymin": 42.14814,
+        "xmax": 2.75828,
+        "ymax": 42.24814
+      },
+      "match": "El Pont, Besalú, Girona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "México D.F.",
+      "coordinates": {
+        "lat": "41.0900568",
+        "lon": "1.1592263"
+      },
+      "boundingbox": {
+        "xmin": "1.1492263",
+        "ymin": "41.0800568",
+        "xmax": "1.1692263",
+        "ymax": "41.1000568"
+      },
+      "match": "MÉXICO, Salou, Tarragonès, Tarragona, CAT, 43480, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Martinique",
+      "coordinates": {
+        "lat": "39.5033603",
+        "lon": "2.52995685922659"
+      },
+      "boundingbox": {
+        "xmin": "2.5290769",
+        "ymin": "39.5025688",
+        "xmax": "2.5307479",
+        "ymax": "39.5041645"
+      },
+      "match": "Martinique, Carrer de Tirso de Molina, Magaluf, Calvià, Serra de Tramuntana, Illes Balears, 07181, 124",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Medellín- Colombia",
+      "coordinates": {
+        "lat": "38.9624536",
+        "lon": "-5.9581443"
+      },
+      "boundingbox": {
+        "xmin": "-5.9588269",
+        "ymin": "38.962449",
+        "xmax": "-5.957514",
+        "ymax": "38.9626846"
+      },
+      "match": "Calle Colombia, Medellín, Badajoz, Extremadura, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Watertown, MA",
+      "coordinates": {
+        "x": -8.415539788823471,
+        "y": 42.86892996902803
+      },
+      "boundingbox": {
+        "xmin": -8.465541,
+        "ymin": 42.81893,
+        "xmax": -8.365541,
+        "ymax": 42.91893
+      },
+      "match": "Moa, Boqueixón, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Monterrey",
+      "coordinates": {
+        "x": -6.074450027547472,
+        "y": 43.503279966029034
+      },
+      "boundingbox": {
+        "xmin": -6.124451,
+        "ymin": 43.45328,
+        "xmax": -6.024451,
+        "ymax": 43.55328
+      },
+      "match": "Monterrey, Soto del Barco, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "iNDO",
+      "coordinates": {
+        "x": -8.722519894664972,
+        "y": 42.71321976226579
+      },
+      "boundingbox": {
+        "xmin": -8.772521,
+        "ymin": 42.66322,
+        "xmax": -8.672521,
+        "ymax": 42.76322
+      },
+      "match": "Imo, Dodro, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Paraguay",
+      "coordinates": {
+        "lat": "41.8388824",
+        "lon": "0.2562622"
+      },
+      "boundingbox": {
+        "xmin": "0.2462622",
+        "ymin": "41.8288824",
+        "xmax": "0.2662622",
+        "ymax": "41.8488824"
+      },
+      "match": "Paraguay, Binaced, Cinca Medio, Huesca, Aragón, 22500, España",
+      "geocoder": "osm",
+      "admin_level": 15
     }
   ]
 }

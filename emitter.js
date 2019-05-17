@@ -45,6 +45,12 @@ const csvWriter = createCsvWriter({
     append:true
 });
 
+function switchGeo () {
+  GEO_LIST.reverse();
+}
+
+var GEO_LIST = [ "arcgis","osm"];
+
 function mapTweet(tweet, callback) {
     var data = {
         'username': tweet.user.name,
@@ -66,7 +72,7 @@ function mapTweet(tweet, callback) {
 
     location = data.geo? data.geo : data.location;
 
-    geocode.find(location, EXTERNALGEOCODERNAME).then((results) => {
+    tryGeocoders([...GEO_LIST]).then((results) => {
       console.log(`geocoded [${location}] from [${results.source}]`.green);
       wsTweetData = virtualLocTweet(data, results.coordinates);
       let randomizeFailed = (wsTweetData.lat === 0 & wsTweetData.lon === 0);
@@ -77,9 +83,33 @@ function mapTweet(tweet, callback) {
       callback(null,new Buffer.from(JSON.stringify(wsTweetData)));
     }).catch(function(err){
       callback(null, new Buffer.from(JSON.stringify({ error: true })));
-    })
+    });
 
 }
+
+async function tryGeocoders(arr) {
+  var results,nextgeo;
+  while(arr.length > 0) {
+    nextgeo = arr.shift();
+    try {
+      results = await geocode.find(location, nextgeo);
+      if (results.hasOwnProperty("coordinates")){
+        break;
+      }
+    } catch(err) {
+      switchGeo();
+      continue;
+    }
+  }
+  return new Promise((resolve, reject) => {
+    if (results.hasOwnProperty("coordinates")){
+      resolve(results);
+    } else {
+      reject(`ERROR attempting to geocode [${location}] with [${nextgeo}]`.red);
+    }
+  });
+}
+
 
 function saveCsv(tdata) {
   csvWriter.writeRecords([tdata]).then(() => {

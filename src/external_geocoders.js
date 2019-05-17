@@ -8,15 +8,18 @@ const OSM_TYPES = {
   way : "W"
 }
 
-
-async function arcgis_geocode (loc,geocoderName) {
+function newTimeout(time){
   const controller = new AbortController()
   const signal = controller.signal
   setTimeout(() => {
     controller.abort()
-  }, GEOCODERS[geocoderName].timeout);
-  try {
+  }, time);
+  return signal;
+}
 
+async function arcgis_geocode (loc,geocoderName) {
+  let signal = newTimeout(GEOCODERS[geocoderName].timeout);
+  try {
    let res = await fetch(buildUrl({
      url : GEOCODERS[geocoderName].url,
      name : geocoderName,
@@ -34,19 +37,14 @@ async function arcgis_geocode (loc,geocoderName) {
  }
 }
 
-
 async function osm_geocode (loc,geocoderName) {
-  const controller = new AbortController()
-  const signal = controller.signal
-  setTimeout(() => {
-    controller.abort()
-  }, GEOCODERS[geocoderName].timeout);
+  let signal = newTimeout(GEOCODERS[geocoderName].timeout);
   try {
    let res = await fetch(buildUrl({
      url : GEOCODERS[geocoderName].url,
      loc : loc,
      name : geocoderName
-   })).then(checkStatus);
+   }),{ signal }).then(checkStatus);
    let candidates = await res.json();
    if (candidates.length > 0) {
      let json = candidates[0];
@@ -74,7 +72,7 @@ const GEOCODERS = {
   arcgis : {
     name : 'arcgis',
     url : 'https://cloudlab.esri.es/server/rest/services/ESP_AdminPlaces/GeocodeServer/findAddressCandidates',
-    timeout : 30000,
+    timeout : 1000,
     qs : function(location) {
       return {
         SingleLineCityName: location,
@@ -91,7 +89,7 @@ const GEOCODERS = {
   osm : {
     name : 'nominatim',
     url : 'https://nominatim.openstreetmap.org/search',
-    timeout : 30000,
+    timeout : 7000,
     qs : function(location) {
       return {
         q: location,
@@ -108,6 +106,7 @@ const GEOCODERS = {
   arcgisGlobal : {
     name : 'arcgisGlobal',
     url : 'https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates',
+    timeout : 30000,
     qs : function(location) {
       return {
         SingleLineCityName: location,

@@ -8506,6 +8506,198 @@
       "match": "Paraguay, Binaced, Cinca Medio, Huesca, Aragón, 22500, España",
       "geocoder": "osm",
       "admin_level": 15
+    },
+    {
+      "location": "republica dominicana",
+      "coordinates": {
+        "lat": "28.4628572",
+        "lon": "-16.2630232"
+      },
+      "boundingbox": {
+        "xmin": "-16.2630732",
+        "ymin": "28.4628072",
+        "xmax": "-16.2629732",
+        "ymax": "28.4629072"
+      },
+      "match": "Republica Dominicana, Avenida Reyes Católicos, El Chapatal, Salud-La Salle, Santa Cruz de Tenerife, Canarias, 38071, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "republica dominicana",
+      "coordinates": {
+        "lat": "28.4628572",
+        "lon": "-16.2630232"
+      },
+      "boundingbox": {
+        "xmin": "-16.2630732",
+        "ymin": "28.4628072",
+        "xmax": "-16.2629732",
+        "ymax": "28.4629072"
+      },
+      "match": "Republica Dominicana, Avenida Reyes Católicos, El Chapatal, Salud-La Salle, Santa Cruz de Tenerife, Canarias, 38071, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "republica dominicana",
+      "coordinates": {
+        "lat": "28.4628572",
+        "lon": "-16.2630232"
+      },
+      "boundingbox": {
+        "xmin": "-16.2630732",
+        "ymin": "28.4628072",
+        "xmax": "-16.2629732",
+        "ymax": "28.4629072"
+      },
+      "match": "Republica Dominicana, Avenida Reyes Católicos, El Chapatal, Salud-La Salle, Santa Cruz de Tenerife, Canarias, 38071, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Mx",
+      "coordinates": {
+        "lat": "42.149191",
+        "lon": "-8.44540740785298"
+      },
+      "boundingbox": {
+        "xmin": "-8.4470544",
+        "ymin": "42.1480466",
+        "xmax": "-8.441635",
+        "ymax": "42.1503642"
+      },
+      "match": "Circuito MX Dagan, Taboexa, As Neves, Pontevedra, Galicia, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Mx",
+      "coordinates": {
+        "lat": "42.149191",
+        "lon": "-8.44540740785298"
+      },
+      "boundingbox": {
+        "xmin": "-8.4470544",
+        "ymin": "42.1480466",
+        "xmax": "-8.441635",
+        "ymax": "42.1503642"
+      },
+      "match": "Circuito MX Dagan, Taboexa, As Neves, Pontevedra, Galicia, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Calpe, Comunidad Valenciana",
+      "coordinates": {
+        "lat": "38.6447979",
+        "lon": "0.0454139"
+      },
+      "boundingbox": {
+        "xmin": "-0.0066777",
+        "ymin": "38.625726",
+        "xmax": "0.0848434",
+        "ymax": "38.6805944"
+      },
+      "match": "Calp, la Marina Alta, Alacant / Alicante, Comunitat Valenciana, 03710, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Calpe, Comunidad Valenciana",
+      "coordinates": {
+        "lat": "38.6447979",
+        "lon": "0.0454139"
+      },
+      "boundingbox": {
+        "xmin": "-0.0066777",
+        "ymin": "38.625726",
+        "xmax": "0.0848434",
+        "ymax": "38.6805944"
+      },
+      "match": "Calp, la Marina Alta, Alacant / Alicante, Comunitat Valenciana, 03710, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Calpe, Comunidad Valenciana",
+      "coordinates": {
+        "lat": "38.6447979",
+        "lon": "0.0454139"
+      },
+      "boundingbox": {
+        "xmin": "-0.0066777",
+        "ymin": "38.625726",
+        "xmax": "0.0848434",
+        "ymax": "38.6805944"
+      },
+      "match": "Calp, la Marina Alta, Alacant / Alicante, Comunitat Valenciana, 03710, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Calpe, Comunidad Valenciana",
+      "coordinates": {
+        "lat": "38.6447979",
+        "lon": "0.0454139"
+      },
+      "boundingbox": {
+        "xmin": "-0.0066777",
+        "ymin": "38.625726",
+        "xmax": "0.0848434",
+        "ymax": "38.6805944"
+      },
+      "match": "Calp, la Marina Alta, Alacant / Alicante, Comunitat Valenciana, 03710, España",
+      "geocoder": "osm",
+      "admin_level": 8
+    },
+    {
+      "location": "Floridablanca",
+      "coordinates": {
+        "lat": "41.4408541",
+        "lon": "2.2255462"
+      },
+      "boundingbox": {
+        "xmin": "2.2254962",
+        "ymin": "41.4408041",
+        "xmax": "2.2255962",
+        "ymax": "41.4409041"
+      },
+      "match": "Floridablanca, carrer de Floridablanca, Pep Ventura, La Salut, Badalona, BCN, CAT, 08914, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Floridablanca",
+      "coordinates": {
+        "lat": "41.4408541",
+        "lon": "2.2255462"
+      },
+      "boundingbox": {
+        "xmin": "2.2254962",
+        "ymin": "41.4408041",
+        "xmax": "2.2255962",
+        "ymax": "41.4409041"
+      },
+      "match": "Floridablanca, carrer de Floridablanca, Pep Ventura, La Salut, Badalona, BCN, CAT, 08914, España",
+      "geocoder": "osm",
+      "admin_level": 15
+    },
+    {
+      "location": "Floridablanca",
+      "coordinates": {
+        "lat": "41.4408541",
+        "lon": "2.2255462"
+      },
+      "boundingbox": {
+        "xmin": "2.2254962",
+        "ymin": "41.4408041",
+        "xmax": "2.2255962",
+        "ymax": "41.4409041"
+      },
+      "match": "Floridablanca, carrer de Floridablanca, Pep Ventura, La Salut, Badalona, BCN, CAT, 08914, España",
+      "geocoder": "osm",
+      "admin_level": 15
     }
   ]
 }

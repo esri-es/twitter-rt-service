@@ -18,7 +18,8 @@ db.defaults({ "locations": [] }).write();
 const TRACK = process.argv[2] || "FelizJueves";
 const EXTERNALGEOCODERNAME = process.argv[3] || "arcgis";
 
-const WS_URL = 'ws://localhost:9000'
+const WS_PORT = process.argv[4] || 8888;
+const WS_URL = `ws://localhost:${WS_PORT}`
 var ws = websocket(WS_URL);
 
 const client = new twitterStream(config.twitter_credentials, true);
@@ -49,7 +50,7 @@ function switchGeo () {
   GEO_LIST.reverse();
 }
 
-var GEO_LIST = [ "arcgis","osm"];
+var GEO_LIST = [ "arcgis"];
 
 function mapTweet(tweet, callback) {
     var data = {
@@ -117,9 +118,17 @@ function saveCsv(tdata) {
   });
 }
 
-function virtualLocTweet (t, cords) {
-  let virtualLocation = locationUtils.randomize(cords);
-  return {...t, lat: virtualLocation.lat, lon: virtualLocation.lon};
+function virtualLocTweet (t, coords) {
+  let virtualLocation = locationUtils.randomize(coords);
+  return {...t,
+    lat: virtualLocation.lat,
+    lon: virtualLocation.lon,
+    admin_level : coords.admin_level,
+    geocoder : coords.geocoder,
+    location : coords.location,
+    match : coords.match,
+    boundingbox : coords.boundingbox
+  };
 }
 
 

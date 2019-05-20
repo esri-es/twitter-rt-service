@@ -71594,6 +71594,1574 @@
       "match": "Boadilla del Monte, Madrid, Comunidad de Madrid",
       "geocoder": "arcgis",
       "admin_level": 4
+    },
+    {
+      "location": "Bantry, Irlanda",
+      "coordinates": {
+        "x": -2.9082302592082234,
+        "y": 40.18423988837679
+      },
+      "boundingbox": {
+        "xmin": -2.958231,
+        "ymin": 40.13424,
+        "xmax": -2.858231,
+        "ymax": 40.23424
+      },
+      "match": "Illana, Guadalajara, Castilla-La Mancha",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Zaragoza,España",
+      "coordinates": {
+        "x": -0.8811401666387244,
+        "y": 41.651829924509286
+      },
+      "boundingbox": {
+        "xmin": -0.931141,
+        "ymin": 41.60183,
+        "xmax": -0.831141,
+        "ymax": 41.70183
+      },
+      "match": "Zaragoza, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "+34 91 445 96 97 Madrid, Spain",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "todo este pais",
+      "coordinates": {
+        "x": -4.878190185628723,
+        "y": 37.29393992069754
+      },
+      "boundingbox": {
+        "xmin": -4.928191,
+        "ymin": 37.24394,
+        "xmax": -4.828191,
+        "ymax": 37.34394
+      },
+      "match": "Estepa, Sevilla, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Cangas, España",
+      "coordinates": {
+        "x": -8.783409980699721,
+        "y": 42.263559898381786
+      },
+      "boundingbox": {
+        "xmin": -8.833411,
+        "ymin": 42.21356,
+        "xmax": -8.733411,
+        "ymax": 42.31356
+      },
+      "match": "Cangas, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Ciudad Real - España",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Andújar",
+      "coordinates": {
+        "x": -4.057530177934973,
+        "y": 38.03870993846903
+      },
+      "boundingbox": {
+        "xmin": -4.107531,
+        "ymin": 37.98871,
+        "xmax": -4.007531,
+        "ymax": 38.08871
+      },
+      "match": "Andújar, Jaén, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Valencia - España",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Iquitos-Perú-Río Amazonas",
+      "coordinates": {
+        "x": -4.246050258500222,
+        "y": 37.041859743194536
+      },
+      "boundingbox": {
+        "xmin": -4.296051,
+        "ymin": 36.99186,
+        "xmax": -4.196051,
+        "ymax": 37.09186
+      },
+      "match": "Los Alazones, Loja, Granada, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "República Bananera.",
+      "coordinates": {
+        "x": -2.9069801271624733,
+        "y": 36.74998990467903
+      },
+      "boundingbox": {
+        "xmin": -2.956981,
+        "ymin": 36.69999,
+        "xmax": -2.856981,
+        "ymax": 36.79999
+      },
+      "match": "Balanegra, Almería, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "En este asco de mundo ",
+      "coordinates": {
+        "x": -2.045400213597474,
+        "y": 37.474519996116285
+      },
+      "boundingbox": {
+        "xmin": -2.095401,
+        "ymin": 37.42452,
+        "xmax": -1.995401,
+        "ymax": 37.52452
+      },
+      "match": "Los Mundos, Taberno, Almería, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Canarias.",
+      "coordinates": {
+        "x": -16.55675653120597,
+        "y": 28.29053262440504
+      },
+      "boundingbox": {
+        "xmin": -19.778758,
+        "ymin": 25.068533,
+        "xmax": -13.334758,
+        "ymax": 31.512533
+      },
+      "match": "Illes Canàries",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "Los Alcázares, Murcia (Spain)",
+      "coordinates": {
+        "x": -0.8489902325847245,
+        "y": 37.74470986150229
+      },
+      "boundingbox": {
+        "xmin": -0.898991,
+        "ymin": 37.69471,
+        "xmax": -0.798991,
+        "ymax": 37.79471
+      },
+      "match": "Los Alcázares, Murcia, Región de Murcia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Borrassà, Espanya",
+      "coordinates": {
+        "x": 2.925799866007024,
+        "y": 42.22307976560303
+      },
+      "boundingbox": {
+        "xmin": 2.8758,
+        "ymin": 42.17308,
+        "xmax": 2.9758,
+        "ymax": 42.27308
+      },
+      "match": "Borrassà, Girona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Santa Cruz (Oleiros-A Coruña) ",
+      "coordinates": {
+        "x": -8.480694833524721,
+        "y": 43.05087782279753
+      },
+      "boundingbox": {
+        "xmin": -9.301696,
+        "ymin": 42.229878,
+        "xmax": -7.659696,
+        "ymax": 43.871878
+      },
+      "match": "A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 2
+    },
+    {
+      "location": "En el Mundo ",
+      "coordinates": {
+        "x": -2.045400213597474,
+        "y": 37.474519996116285
+      },
+      "boundingbox": {
+        "xmin": -2.095401,
+        "ymin": 37.42452,
+        "xmax": -1.995401,
+        "ymax": 37.52452
+      },
+      "match": "Los Mundos, Taberno, Almería, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Mijas (Málaga) - España",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "geneve.",
+      "coordinates": {
+        "x": -1.9075100607197237,
+        "y": 42.783249845758036
+      },
+      "boundingbox": {
+        "xmin": -1.957511,
+        "ymin": 42.73325,
+        "xmax": -1.857511,
+        "ymax": 42.83325
+      },
+      "match": "Genbe, Gesalatz, Nafarroa",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Egia",
+      "coordinates": {
+        "x": -2.766040133882724,
+        "y": 43.16052978126253
+      },
+      "boundingbox": {
+        "xmin": -2.816041,
+        "ymin": 43.11053,
+        "xmax": -2.716041,
+        "ymax": 43.21053
+      },
+      "match": "Egia, Igorre, Bizkaia, Euskadi",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "El Diario Digital de Utrera",
+      "coordinates": {
+        "x": -5.779300098004472,
+        "y": 37.18433978262879
+      },
+      "boundingbox": {
+        "xmin": -5.829301,
+        "ymin": 37.13434,
+        "xmax": -5.729301,
+        "ymax": 37.23434
+      },
+      "match": "Utrera, Sevilla, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Alt Penedès, Catalunya",
+      "coordinates": {
+        "x": 0.9332997478792748,
+        "y": 42.699569989783285
+      },
+      "boundingbox": {
+        "xmin": -1.215701,
+        "ymin": 40.55057,
+        "xmax": 3.0823,
+        "ymax": 44.84857
+      },
+      "match": "Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "solo stans layuan niyo ako",
+      "coordinates": {
+        "x": -6.571880173576722,
+        "y": 43.137209762619285
+      },
+      "boundingbox": {
+        "xmin": -6.621881,
+        "ymin": 43.08721,
+        "xmax": -6.521881,
+        "ymax": 43.18721
+      },
+      "match": "Acio, Cangas del Narcea, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Vilagarcía de Arousa, Galiza",
+      "coordinates": {
+        "x": -8.764739792206472,
+        "y": 42.59190989530603
+      },
+      "boundingbox": {
+        "xmin": -8.814741,
+        "ymin": 42.54191,
+        "xmax": -8.714741,
+        "ymax": 42.64191
+      },
+      "match": "Vilagarcía de Arousa, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Washington, DC; Valencia, ESP",
+      "coordinates": {
+        "x": -0.3769100641804748,
+        "y": 39.46867976747529
+      },
+      "boundingbox": {
+        "xmin": -0.426911,
+        "ymin": 39.41868,
+        "xmax": -0.326911,
+        "ymax": 39.51868
+      },
+      "match": "Valencia, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "La Azohia ",
+      "coordinates": {
+        "x": -1.1812600923474745,
+        "y": 37.57102974187178
+      },
+      "boundingbox": {
+        "xmin": -1.231261,
+        "ymin": 37.52103,
+        "xmax": -1.131261,
+        "ymax": 37.62103
+      },
+      "match": "La Azohía, Cartagena, Murcia, Región de Murcia",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "España .",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Madrid,Espinosa delos Monteros",
+      "coordinates": {
+        "x": -3.5516000863694734,
+        "y": 43.076239845163286
+      },
+      "boundingbox": {
+        "xmin": -3.601601,
+        "ymin": 43.02624,
+        "xmax": -3.501601,
+        "ymax": 43.12624
+      },
+      "match": "Espinosa de los Monteros, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Ciudadadano Del Mundo ",
+      "coordinates": {
+        "x": -2.045400213597474,
+        "y": 37.474519996116285
+      },
+      "boundingbox": {
+        "xmin": -2.095401,
+        "ymin": 37.42452,
+        "xmax": -1.995401,
+        "ymax": 37.52452
+      },
+      "match": "Los Mundos, Taberno, Almería, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Moratalaz, Madrid,España",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Ciudadadano Del Mundo ",
+      "coordinates": {
+        "x": -2.045400213597474,
+        "y": 37.474519996116285
+      },
+      "boundingbox": {
+        "xmin": -2.095401,
+        "ymin": 37.42452,
+        "xmax": -1.995401,
+        "ymax": 37.52452
+      },
+      "match": "Los Mundos, Taberno, Almería, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "San Cristóbal-Táchira,Vzla",
+      "coordinates": {
+        "x": -8.917649736799472,
+        "y": 43.05134980856879
+      },
+      "boundingbox": {
+        "xmin": -8.967651,
+        "ymin": 43.00135,
+        "xmax": -8.867651,
+        "ymax": 43.10135
+      },
+      "match": "Vila, Zas, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Leganes. Madrid. España",
+      "coordinates": {
+        "x": -3.7652502580134732,
+        "y": 40.328049891278035
+      },
+      "boundingbox": {
+        "xmin": -3.815251,
+        "ymin": 40.27805,
+        "xmax": -3.715251,
+        "ymax": 40.37805
+      },
+      "match": "Leganés, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Huelva",
+      "coordinates": {
+        "x": -6.945179742428722,
+        "y": 37.254549977011784
+      },
+      "boundingbox": {
+        "xmin": -6.995181,
+        "ymin": 37.20455,
+        "xmax": -6.895181,
+        "ymax": 37.30455
+      },
+      "match": "Huelva, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Consell de la Republica Catalana",
+      "coordinates": {
+        "x": 0.9332997478792748,
+        "y": 42.699569989783285
+      },
+      "boundingbox": {
+        "xmin": -1.215701,
+        "ymin": 40.55057,
+        "xmax": 3.0823,
+        "ymax": 44.84857
+      },
+      "match": "Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "Oviedo - Los Caleyos (Llanes)",
+      "coordinates": {
+        "x": -4.753330201360473,
+        "y": 43.415919741479534
+      },
+      "boundingbox": {
+        "xmin": -4.803331,
+        "ymin": 43.36592,
+        "xmax": -4.703331,
+        "ymax": 43.46592
+      },
+      "match": "Llanes, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Premià de Mar, Catalunya",
+      "coordinates": {
+        "x": 2.3522898153060243,
+        "y": 41.490779976051286
+      },
+      "boundingbox": {
+        "xmin": 2.30229,
+        "ymin": 41.44078,
+        "xmax": 2.40229,
+        "ymax": 41.54078
+      },
+      "match": "Premià de Mar, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Vitoria-Gasteiz, España",
+      "coordinates": {
+        "x": -2.6835902420157236,
+        "y": 42.84226991576379
+      },
+      "boundingbox": {
+        "xmin": -2.733591,
+        "ymin": 42.79227,
+        "xmax": -2.633591,
+        "ymax": 42.89227
+      },
+      "match": "Vitoria, Álava, País Vasco",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Latest News",
+      "coordinates": {
+        "x": -8.41230983753072,
+        "y": 42.088129930019534
+      },
+      "boundingbox": {
+        "xmin": -8.462311,
+        "ymin": 42.03813,
+        "xmax": -8.362311,
+        "ymax": 42.13813
+      },
+      "match": "As Neves, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "De estar por casa",
+      "coordinates": {
+        "x": -17.977249950344465,
+        "y": 27.711630171281293
+      },
+      "boundingbox": {
+        "xmin": -18.027251,
+        "ymin": 27.66163,
+        "xmax": -17.927251,
+        "ymax": 27.76163
+      },
+      "match": "Las Casas, El Pinar de El Hierro, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Comunidad Foral de Navarra",
+      "coordinates": {
+        "x": -2.1013513957042242,
+        "y": 42.82853975163953
+      },
+      "boundingbox": {
+        "xmin": -3.211352,
+        "ymin": 41.71854,
+        "xmax": -0.991352,
+        "ymax": 43.93854
+      },
+      "match": "Nafarroa",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "LLEIDA, ESPAÑA",
+      "coordinates": {
+        "x": 0.6275498862557747,
+        "y": 41.614949768663536
+      },
+      "boundingbox": {
+        "xmin": 0.57755,
+        "ymin": 41.56495,
+        "xmax": 0.67755,
+        "ymax": 41.66495
+      },
+      "match": "Lérida, Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "euskadi",
+      "coordinates": {
+        "x": -2.8839701905659734,
+        "y": 43.222879801920286
+      },
+      "boundingbox": {
+        "xmin": -3.979971,
+        "ymin": 42.12688,
+        "xmax": -1.787971,
+        "ymax": 44.31888
+      },
+      "match": "País Vasco",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "Valverde/Los Pinos/Valdelamusa",
+      "coordinates": {
+        "x": -1.042100199706474,
+        "y": 38.40182974061553
+      },
+      "boundingbox": {
+        "xmin": -1.092101,
+        "ymin": 38.35183,
+        "xmax": -0.992101,
+        "ymax": 38.45183
+      },
+      "match": "Pinoso, Alicante, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Ponferrada - El Bierzo",
+      "coordinates": {
+        "x": -2.1762500754517236,
+        "y": 38.71894983750703
+      },
+      "boundingbox": {
+        "xmin": -2.226251,
+        "ymin": 38.66895,
+        "xmax": -2.126251,
+        "ymax": 38.76895
+      },
+      "match": "Berro, Casas de Lázaro, Albacete, Castilla-La Mancha",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Llefià, Badalona",
+      "coordinates": {
+        "x": 2.244919915047774,
+        "y": 41.45048975802204
+      },
+      "boundingbox": {
+        "xmin": 2.19492,
+        "ymin": 41.40049,
+        "xmax": 2.29492,
+        "ymax": 41.50049
+      },
+      "match": "Badalona, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "La Guindalera",
+      "coordinates": {
+        "x": -3.666000193682223,
+        "y": 40.432409726789786
+      },
+      "boundingbox": {
+        "xmin": -3.716001,
+        "ymin": 40.38241,
+        "xmax": -3.616001,
+        "ymax": 40.48241
+      },
+      "match": "Guindalera, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Pedreguer, P.Valencià - Madrid",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Burgos, Castilla y León. España",
+      "coordinates": {
+        "x": -3.699920144405973,
+        "y": 42.341259960739535
+      },
+      "boundingbox": {
+        "xmin": -3.749921,
+        "ymin": 42.29126,
+        "xmax": -3.649921,
+        "ymax": 42.39126
+      },
+      "match": "Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Linares, España",
+      "coordinates": {
+        "x": -3.635730079515973,
+        "y": 38.093889977057536
+      },
+      "boundingbox": {
+        "xmin": -3.685731,
+        "ymin": 38.04389,
+        "xmax": -3.585731,
+        "ymax": 38.14389
+      },
+      "match": "Linares, Jaén, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Llefià, Badalona",
+      "coordinates": {
+        "x": 2.244919915047774,
+        "y": 41.45048975802204
+      },
+      "boundingbox": {
+        "xmin": 2.19492,
+        "ymin": 41.40049,
+        "xmax": 2.29492,
+        "ymax": 41.50049
+      },
+      "match": "Badalona, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Terrassa, Barcelona, Spain",
+      "coordinates": {
+        "x": 2.168719843078774,
+        "y": 41.38560978158628
+      },
+      "boundingbox": {
+        "xmin": 2.11872,
+        "ymin": 41.33561,
+        "xmax": 2.21872,
+        "ymax": 41.43561
+      },
+      "match": "Barcelona, Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Vilassar de Mar - Catalunya",
+      "coordinates": {
+        "x": 0.9332997478792748,
+        "y": 42.699569989783285
+      },
+      "boundingbox": {
+        "xmin": -1.215701,
+        "ymin": 40.55057,
+        "xmax": 3.0823,
+        "ymax": 44.84857
+      },
+      "match": "Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "BCN. República Catalana",
+      "coordinates": {
+        "x": 0.9332997478792748,
+        "y": 42.699569989783285
+      },
+      "boundingbox": {
+        "xmin": -1.215701,
+        "ymin": 40.55057,
+        "xmax": 3.0823,
+        "ymax": 44.84857
+      },
+      "match": "Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "Canyelles, Catalunya",
+      "coordinates": {
+        "x": 1.7238997240942737,
+        "y": 41.286679883270786
+      },
+      "boundingbox": {
+        "xmin": 1.6739,
+        "ymin": 41.23668,
+        "xmax": 1.7739,
+        "ymax": 41.33668
+      },
+      "match": "Canyelles, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "New England, USA",
+      "coordinates": {
+        "x": -3.551070117776473,
+        "y": 42.01345982023604
+      },
+      "boundingbox": {
+        "xmin": -3.601071,
+        "ymin": 41.96346,
+        "xmax": -3.501071,
+        "ymax": 42.06346
+      },
+      "match": "Ura, Covarrubias, Burgos, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "El Prat de Llobregat, España",
+      "coordinates": {
+        "x": 2.086309726867274,
+        "y": 41.32787989939204
+      },
+      "boundingbox": {
+        "xmin": 2.03631,
+        "ymin": 41.27788,
+        "xmax": 2.13631,
+        "ymax": 41.37788
+      },
+      "match": "El Prat de Llobregat, Barcelona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Lejos muy lejos",
+      "coordinates": {
+        "x": -5.076060066228723,
+        "y": 43.02485978222629
+      },
+      "boundingbox": {
+        "xmin": -5.126061,
+        "ymin": 42.97486,
+        "xmax": -5.026061,
+        "ymax": 43.07486
+      },
+      "match": "Liegos, Acebedo, León, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Fuente Carreteros",
+      "coordinates": {
+        "x": -5.1536200734614726,
+        "y": 37.666699997208035
+      },
+      "boundingbox": {
+        "xmin": -5.203621,
+        "ymin": 37.6167,
+        "xmax": -5.103621,
+        "ymax": 37.7167
+      },
+      "match": "Fuente Carreteros, Fuente Palmera, Córdoba, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "De aquí y de allí. ",
+      "coordinates": {
+        "x": -1.8956300247967244,
+        "y": 42.99106980265854
+      },
+      "boundingbox": {
+        "xmin": -1.945631,
+        "ymin": 42.94107,
+        "xmax": -1.845631,
+        "ymax": 43.04107
+      },
+      "match": "Allí, Larraun, Navarra, Comunidad Foral de Navarra",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Paris , 75018",
+      "coordinates": {
+        "x": -9.251329951670971,
+        "y": 42.971409984652034
+      },
+      "boundingbox": {
+        "xmin": -9.301331,
+        "ymin": 42.92141,
+        "xmax": -9.201331,
+        "ymax": 43.02141
+      },
+      "match": "Padris, Fisterra, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Entre Alicante y Caudete",
+      "coordinates": {
+        "x": -0.9857201688069743,
+        "y": 38.70852973620703
+      },
+      "boundingbox": {
+        "xmin": -1.035721,
+        "ymin": 38.65853,
+        "xmax": -0.935721,
+        "ymax": 38.75853
+      },
+      "match": "Caudete, Albacete, Castilla-La Mancha",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Toronto and Palm Beach Gardens",
+      "coordinates": {
+        "x": 1.2471798095090243,
+        "y": 41.207419886930786
+      },
+      "boundingbox": {
+        "xmin": 1.19718,
+        "ymin": 41.15742,
+        "xmax": 1.29718,
+        "ymax": 41.25742
+      },
+      "match": "els Garidells, Tarragona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "La maravilla",
+      "coordinates": {
+        "x": -5.737150228025472,
+        "y": 43.15763988381328
+      },
+      "boundingbox": {
+        "xmin": -5.787151,
+        "ymin": 43.10764,
+        "xmax": -5.687151,
+        "ymax": 43.20764
+      },
+      "match": "La Maravilla, Aller, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Tarragona , Catalunya",
+      "coordinates": {
+        "x": 1.2540598774695244,
+        "y": 41.11691990658903
+      },
+      "boundingbox": {
+        "xmin": 1.20406,
+        "ymin": 41.06692,
+        "xmax": 1.30406,
+        "ymax": 41.16692
+      },
+      "match": "Tarragona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Terres de l'Ebre - Catalunya",
+      "coordinates": {
+        "x": 0.9332997478792748,
+        "y": 42.699569989783285
+      },
+      "boundingbox": {
+        "xmin": -1.215701,
+        "ymin": 40.55057,
+        "xmax": 3.0823,
+        "ymax": 44.84857
+      },
+      "match": "Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "Montserrat, Comunidad Valencia",
+      "coordinates": {
+        "x": -0.3769100641804748,
+        "y": 39.46867976747529
+      },
+      "boundingbox": {
+        "xmin": -0.426911,
+        "ymin": 39.41868,
+        "xmax": -0.326911,
+        "ymax": 39.51868
+      },
+      "match": "Valencia, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Ceuta, España",
+      "coordinates": {
+        "x": -5.317840029618722,
+        "y": 35.889989812924036
+      },
+      "boundingbox": {
+        "xmin": -5.367841,
+        "ymin": 35.83999,
+        "xmax": -5.267841,
+        "ymax": 35.93999
+      },
+      "match": "Ceuta, Ciudad Autónoma de Ceuta",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "galiza",
+      "coordinates": {
+        "x": -8.544319916040472,
+        "y": 42.87682991840879
+      },
+      "boundingbox": {
+        "xmin": -8.594321,
+        "ymin": 42.82683,
+        "xmax": -8.494321,
+        "ymax": 42.92683
+      },
+      "match": "Galizia",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "vegeta ",
+      "coordinates": {
+        "x": -15.414599984074718,
+        "y": 28.09875009975804
+      },
+      "boundingbox": {
+        "xmin": -15.464601,
+        "ymin": 28.04875,
+        "xmax": -15.364601,
+        "ymax": 28.14875
+      },
+      "match": "Vegueta, Las Palmas de Gran Canaria, Las Palmas, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Aranjuez, España",
+      "coordinates": {
+        "x": -3.6049902204604733,
+        "y": 40.03649993866804
+      },
+      "boundingbox": {
+        "xmin": -3.654991,
+        "ymin": 39.9865,
+        "xmax": -3.554991,
+        "ymax": 40.0865
+      },
+      "match": "Aranjuez, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Getafe, Madrid.",
+      "coordinates": {
+        "x": -3.731080168836473,
+        "y": 40.30490998352553
+      },
+      "boundingbox": {
+        "xmin": -3.781081,
+        "ymin": 40.25491,
+        "xmax": -3.681081,
+        "ymax": 40.35491
+      },
+      "match": "Getafe, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Tarazona, España",
+      "coordinates": {
+        "x": -1.7232202051499739,
+        "y": 41.90456976165103
+      },
+      "boundingbox": {
+        "xmin": -1.773221,
+        "ymin": 41.85457,
+        "xmax": -1.673221,
+        "ymax": 41.95457
+      },
+      "match": "Tarazona, Zaragoza, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Palma de Mallorca, Baleares -ESPAÑA-",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Madrid capital",
+      "coordinates": {
+        "x": -17.264289812783467,
+        "y": 28.165630063378792
+      },
+      "boundingbox": {
+        "xmin": -17.314291,
+        "ymin": 28.11563,
+        "xmax": -17.214291,
+        "ymax": 28.21563
+      },
+      "match": "El Capitán, Vallehermoso, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "charrilandia - Babia.",
+      "coordinates": {
+        "x": -6.529800051049972,
+        "y": 43.207679899314286
+      },
+      "boundingbox": {
+        "xmin": -6.579801,
+        "ymin": 43.15768,
+        "xmax": -6.479801,
+        "ymax": 43.25768
+      },
+      "match": "La Bubia, Cangas del Narcea, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Jerez-Cádiz-Andalucia-España-Europa-Planeta Tierra-Sistema Solar",
+      "coordinates": {
+        "x": -7.832459771431221,
+        "y": 42.59502976327053
+      },
+      "boundingbox": {
+        "xmin": -7.882461,
+        "ymin": 42.54503,
+        "xmax": -7.782461,
+        "ymax": 42.64503
+      },
+      "match": "O Solar, Chantada, Lugo, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "El Gancho, Zaragoza, España.",
+      "coordinates": {
+        "x": -0.8811401666387244,
+        "y": 41.651829924509286
+      },
+      "boundingbox": {
+        "xmin": -0.931141,
+        "ymin": 41.60183,
+        "xmax": -0.831141,
+        "ymax": 41.70183
+      },
+      "match": "Zaragoza, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Guinardó, Barcelona",
+      "coordinates": {
+        "x": 2.168719843078774,
+        "y": 41.38560978158628
+      },
+      "boundingbox": {
+        "xmin": 2.11872,
+        "ymin": 41.33561,
+        "xmax": 2.21872,
+        "ymax": 41.43561
+      },
+      "match": "Barcelona, Cataluña",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Entre Alicante y Caudete",
+      "coordinates": {
+        "x": -0.9857201688069743,
+        "y": 38.70852973620703
+      },
+      "boundingbox": {
+        "xmin": -1.035721,
+        "ymin": 38.65853,
+        "xmax": -0.935721,
+        "ymax": 38.75853
+      },
+      "match": "Caudete, Albacete, Castilla-La Mancha",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Alcorcón, Madrid, España",
+      "coordinates": {
+        "x": -3.8242801318779733,
+        "y": 40.35142985351479
+      },
+      "boundingbox": {
+        "xmin": -3.874281,
+        "ymin": 40.30143,
+        "xmax": -3.774281,
+        "ymax": 40.40143
+      },
+      "match": "Alcorcón, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Valverde/Los Pinos/Valdelamusa",
+      "coordinates": {
+        "x": -1.042100199706474,
+        "y": 38.40182974061553
+      },
+      "boundingbox": {
+        "xmin": -1.092101,
+        "ymin": 38.35183,
+        "xmax": -0.992101,
+        "ymax": 38.45183
+      },
+      "match": "Pinoso, Alicante, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Sograndio, Oviedo, Asturias",
+      "coordinates": {
+        "x": -5.847680052013972,
+        "y": 43.36268983045154
+      },
+      "boundingbox": {
+        "xmin": -5.897681,
+        "ymin": 43.31269,
+        "xmax": -5.797681,
+        "ymax": 43.41269
+      },
+      "match": "Oviedo, Asturias, Principado de Asturias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Andorra, España",
+      "coordinates": {
+        "x": -0.4468900079379745,
+        "y": 40.97680987998004
+      },
+      "boundingbox": {
+        "xmin": -0.496891,
+        "ymin": 40.92681,
+        "xmax": -0.396891,
+        "ymax": 41.02681
+      },
+      "match": "Andorra, Teruel, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "En Madrid",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Andratx, España",
+      "coordinates": {
+        "x": 2.4214899321275247,
+        "y": 39.57469981643879
+      },
+      "boundingbox": {
+        "xmin": 2.37149,
+        "ymin": 39.5247,
+        "xmax": 2.47149,
+        "ymax": 39.6247
+      },
+      "match": "Andratx, Illes Balears",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "CÓRDOBA (Spain)",
+      "coordinates": {
+        "x": -4.778590263595223,
+        "y": 37.87067992269129
+      },
+      "boundingbox": {
+        "xmin": -4.828591,
+        "ymin": 37.82068,
+        "xmax": -4.728591,
+        "ymax": 37.92068
+      },
+      "match": "Córdoba, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Lititz, PA",
+      "coordinates": {
+        "x": -8.444739881834721,
+        "y": 42.71913989239953
+      },
+      "boundingbox": {
+        "xmin": -8.494741,
+        "ymin": 42.66914,
+        "xmax": -8.394741,
+        "ymax": 42.76914
+      },
+      "match": "A Pia, A Estrada, Pontevedra, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "SUECA",
+      "coordinates": {
+        "x": -0.3076001441409746,
+        "y": 39.20281984633379
+      },
+      "boundingbox": {
+        "xmin": -0.357601,
+        "ymin": 39.15282,
+        "xmax": -0.257601,
+        "ymax": 39.25282
+      },
+      "match": "Sueca, València, Comunitat Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Extremadura, Spain",
+      "coordinates": {
+        "x": -6.158215317148472,
+        "y": 38.97400226487279
+      },
+      "boundingbox": {
+        "xmin": -7.671216,
+        "ymin": 37.461002,
+        "xmax": -4.645216,
+        "ymax": 40.487002
+      },
+      "match": "Extremadura",
+      "geocoder": "arcgis",
+      "admin_level": 1
+    },
+    {
+      "location": "Las Gabias, España",
+      "coordinates": {
+        "x": -3.6614800545779733,
+        "y": 37.13733980367104
+      },
+      "boundingbox": {
+        "xmin": -3.711481,
+        "ymin": 37.08734,
+        "xmax": -3.611481,
+        "ymax": 37.18734
+      },
+      "match": "Las Gabias, Granada, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "San Fernando",
+      "coordinates": {
+        "x": -6.196890139365972,
+        "y": 36.46541973927854
+      },
+      "boundingbox": {
+        "xmin": -6.246891,
+        "ymin": 36.41542,
+        "xmax": -6.146891,
+        "ymax": 36.51542
+      },
+      "match": "San Fernando, Cádiz, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Tegucigalpa, Honduras; CA",
+      "coordinates": {
+        "x": -5.012220139151223,
+        "y": 42.46275974244878
+      },
+      "boundingbox": {
+        "xmin": -5.062221,
+        "ymin": 42.41276,
+        "xmax": -4.962221,
+        "ymax": 42.51276
+      },
+      "match": "Cea, León, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Sevillano en Madrid",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Terrassa, Tabarnia, ESPAÑA",
+      "coordinates": {
+        "x": -8.29674979367272,
+        "y": 43.08498992915278
+      },
+      "boundingbox": {
+        "xmin": -8.346751,
+        "ymin": 43.03499,
+        "xmax": -8.246751,
+        "ymax": 43.13499
+      },
+      "match": "A Taberna, Frades, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Madrid / Nottingham",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Madrid/Bilbo/Barna, España",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Mediterranean Sea",
+      "coordinates": {
+        "x": -0.24551006579522472,
+        "y": 41.994699996462785
+      },
+      "boundingbox": {
+        "xmin": -0.295511,
+        "ymin": 41.9447,
+        "xmax": -0.195511,
+        "ymax": 42.0447
+      },
+      "match": "Sesa, Huesca, Aragón",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Madriles",
+      "coordinates": {
+        "x": -1.7115802237112243,
+        "y": 38.19848986705354
+      },
+      "boundingbox": {
+        "xmin": -1.761581,
+        "ymin": 38.14849,
+        "xmax": -1.661581,
+        "ymax": 38.24849
+      },
+      "match": "Los Madriles, Calasparra, Murcia, Región de Murcia",
+      "geocoder": "arcgis",
+      "admin_level": 4
     }
   ]
 }

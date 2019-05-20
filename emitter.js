@@ -127,7 +127,12 @@ function virtualLocTweet (t, coords) {
     geocoder : coords.geocoder,
     location : coords.location,
     match : coords.match,
-    boundingbox : coords.boundingbox
+    boundingbox : {
+      xmin : parseFloat(coords.boundingbox.xmin),
+      ymin : parseFloat(coords.boundingbox.ymin),
+      xmax : parseFloat(coords.boundingbox.xmax),
+      ymax : parseFloat(coords.boundingbox.ymax)
+    }
   };
 }
 

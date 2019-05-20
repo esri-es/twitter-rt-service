@@ -73162,6 +73162,150 @@
       "match": "Los Madriles, Calasparra, Murcia, Región de Murcia",
       "geocoder": "arcgis",
       "admin_level": 4
+    },
+    {
+      "location": "Celrà",
+      "coordinates": {
+        "x": 2.8774898114100242,
+        "y": 42.028519947827284
+      },
+      "boundingbox": {
+        "xmin": 2.82749,
+        "ymin": 41.97852,
+        "xmax": 2.92749,
+        "ymax": 42.07852
+      },
+      "match": "Celrà, Girona, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Bontang, East Borneo",
+      "coordinates": {
+        "x": -5.745460258812223,
+        "y": 36.815589764457286
+      },
+      "boundingbox": {
+        "xmin": -5.795461,
+        "ymin": 36.76559,
+        "xmax": -5.695461,
+        "ymax": 36.86559
+      },
+      "match": "Bornos, Cádiz, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "MADRID- REP.DOMINICANA - IBIZA",
+      "coordinates": {
+        "x": 1.419529965672524,
+        "y": 38.90624975782329
+      },
+      "boundingbox": {
+        "xmin": 1.36953,
+        "ymin": 38.85625,
+        "xmax": 1.46953,
+        "ymax": 38.95625
+      },
+      "match": "Ibiza, Islas Baleares",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Rep. Plurimermada de Estepaís",
+      "coordinates": {
+        "x": 1.1135899091892743,
+        "y": 42.57488983629553
+      },
+      "boundingbox": {
+        "xmin": 1.06359,
+        "ymin": 42.52489,
+        "xmax": 1.16359,
+        "ymax": 42.62489
+      },
+      "match": "Estais, Espot, Lleida, Catalunya",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Barna city, Països Catalans",
+      "coordinates": {
+        "x": -17.811729722406717,
+        "y": 28.82705019505004
+      },
+      "boundingbox": {
+        "xmin": -17.861731,
+        "ymin": 28.77705,
+        "xmax": -17.761731,
+        "ymax": 28.87705
+      },
+      "match": "Los Catalanes, Barlovento, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Chamartín, España",
+      "coordinates": {
+        "x": -4.957290239015973,
+        "y": 40.70197998830278
+      },
+      "boundingbox": {
+        "xmin": -5.007291,
+        "ymin": 40.65198,
+        "xmax": -4.907291,
+        "ymax": 40.75198
+      },
+      "match": "Chamartín, Ávila, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Reino Bananero de España",
+      "coordinates": {
+        "x": -8.464729949825971,
+        "y": 43.11759980423729
+      },
+      "boundingbox": {
+        "xmin": -8.514731,
+        "ymin": 43.0676,
+        "xmax": -8.414731,
+        "ymax": 43.1676
+      },
+      "match": "Del, Ordes, A Coruña, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Valencia  España",
+      "coordinates": {
+        "x": -0.3769100641804748,
+        "y": 39.46867976747529
+      },
+      "boundingbox": {
+        "xmin": -0.426911,
+        "ymin": 39.41868,
+        "xmax": -0.326911,
+        "ymax": 39.51868
+      },
+      "match": "Valencia, Comunidad Valenciana",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Valle del Tiétar (España)",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
     }
   ]
 }

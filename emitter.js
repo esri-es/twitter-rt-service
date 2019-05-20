@@ -52,6 +52,11 @@ function switchGeo () {
 
 var GEO_LIST = [ "arcgis"];
 
+function isoDate(dateStr) {
+  let date = new Date(dateStr);
+  return new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString();
+}
+
 function mapTweet(tweet, callback) {
     var data = {
         'username': tweet.user.name,
@@ -60,7 +65,7 @@ function mapTweet(tweet, callback) {
         'profile_image_url_https': tweet.user.profile_image_url_https,
         'geo': tweet.geo,
         'location': tweet.user.location,
-        'created_at': tweet.created_at,
+        'created_at': isoDate(tweet.created_at),
         'id_str': tweet.id_str,
         'reply_count': tweet.reply_count,
         'retweet_count': tweet.retweet_count,

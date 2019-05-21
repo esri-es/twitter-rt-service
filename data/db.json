@@ -73306,6 +73306,150 @@
       "match": "España, Galapagar, Madrid, Comunidad de Madrid",
       "geocoder": "arcgis",
       "admin_level": 5
+    },
+    {
+      "location": "Campinas, Brasil",
+      "coordinates": {
+        "x": -17.754189754961967,
+        "y": 28.74625015255554
+      },
+      "boundingbox": {
+        "xmin": -17.804191,
+        "ymin": 28.69625,
+        "xmax": -17.704191,
+        "ymax": 28.79625
+      },
+      "match": "El Brasil, Puntallana, Santa Cruz de Tenerife, Islas Canarias",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Badajoz, Extremadura (España)",
+      "coordinates": {
+        "x": -6.972719902098472,
+        "y": 38.874829791080785
+      },
+      "boundingbox": {
+        "xmin": -7.022721,
+        "ymin": 38.82483,
+        "xmax": -6.922721,
+        "ymax": 38.92483
+      },
+      "match": "Badajoz, Extremadura",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "salamanca",
+      "coordinates": {
+        "x": -5.663850137474722,
+        "y": 40.96425982033904
+      },
+      "boundingbox": {
+        "xmin": -5.713851,
+        "ymin": 40.91426,
+        "xmax": -5.613851,
+        "ymax": 41.01426
+      },
+      "match": "Salamanca, Castilla y León",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Benalmádena, Andalucía",
+      "coordinates": {
+        "x": -4.573490177222222,
+        "y": 36.595159804322286
+      },
+      "boundingbox": {
+        "xmin": -4.623491,
+        "ymin": 36.54516,
+        "xmax": -4.523491,
+        "ymax": 36.64516
+      },
+      "match": "Benalmádena, Málaga, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Extremadura - Madrid",
+      "coordinates": {
+        "x": -3.7057702469772233,
+        "y": 40.42027983252378
+      },
+      "boundingbox": {
+        "xmin": -3.755771,
+        "ymin": 40.37028,
+        "xmax": -3.655771,
+        "ymax": 40.47028
+      },
+      "match": "Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "España/Cataluña",
+      "coordinates": {
+        "x": -4.033410164417723,
+        "y": 40.62277993555629
+      },
+      "boundingbox": {
+        "xmin": -4.083411,
+        "ymin": 40.57278,
+        "xmax": -3.983411,
+        "ymax": 40.67278
+      },
+      "match": "España, Galapagar, Madrid, Comunidad de Madrid",
+      "geocoder": "arcgis",
+      "admin_level": 5
+    },
+    {
+      "location": "Ciudad del Betis",
+      "coordinates": {
+        "x": -5.7168301901597225,
+        "y": 36.09004987556879
+      },
+      "boundingbox": {
+        "xmin": -5.766831,
+        "ymin": 36.04005,
+        "xmax": -5.666831,
+        "ymax": 36.14005
+      },
+      "match": "Betis, Tarifa, Cádiz, Andalucía",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Panama",
+      "coordinates": {
+        "x": 2.646939748052775,
+        "y": 39.57147994911504
+      },
+      "boundingbox": {
+        "xmin": 2.59694,
+        "ymin": 39.52148,
+        "xmax": 2.69694,
+        "ymax": 39.62148
+      },
+      "match": "Palma, Islas Baleares",
+      "geocoder": "arcgis",
+      "admin_level": 4
+    },
+    {
+      "location": "Campo Grande, Rio de Janeiro",
+      "coordinates": {
+        "x": -8.06286977966347,
+        "y": 41.917399931542036
+      },
+      "boundingbox": {
+        "xmin": -8.112871,
+        "ymin": 41.8674,
+        "xmax": -8.012871,
+        "ymax": 41.9674
+      },
+      "match": "Ganceiros, Lobios, Ourense, Galicia",
+      "geocoder": "arcgis",
+      "admin_level": 5
     }
   ]
 }

@@ -1,4 +1,5 @@
 config.json
+config/twitter_credentials.json
 node_modules/
 tweets.csv
 data/unlocated.js

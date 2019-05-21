@@ -1,0 +1,37 @@
+{
+ "words" : {
+    "pp": [
+      "PP",
+      "pablocasado_",
+      "Casado",
+      "ppopular"
+    ],
+    "psoe": [
+      "PSOE",
+      "sanchezcastejon",
+      "Sanchez"
+    ],
+    "podemos": [
+      "Podemos",
+      "pablo_iglesias_",
+      "ahorapodemos"
+    ],
+    "ciudadanos": [
+      "Ciudadanos",
+      "Albert_Rivera",
+      "Rivera",
+      "ciudadanoscs"
+    ],
+    "vox": [
+      "VOX",
+      "santi_abascal",
+      "Abascal",
+      "vox_es"
+    ]
+  },
+  "ws" : {
+    "host" : "localhost",
+    "port" : 8888,
+    "protocol" : "ws"
+  }
+}

@@ -1,6 +1,6 @@
 # twitter-rt-service
 
-Este script se conecta a la [Stream API de Twitter](https://developer.twitter.com/en/docs) para recibir tweets en tiempo real e intentar geocodificarlos. Si lo consigue los envía a la dirección indicada por la variable `WS_URL` del fichero `emitter.js` (por defecto lo envía a `'ws://localhost:9000'`).
+Este script se conecta a la [Stream API de Twitter](https://developer.twitter.com/en/docs) para recibir tweets en tiempo real e intentar geocodificarlos. Si lo consigue los envía a la dirección indicada por la variable `WS_URL` del fichero `emitter.js` (por defecto lo envía a `'ws://localhost:8888'`).
 
 > **Relacionado**: Este proyecto en combinación con [arcgis_websocket_server](https://github.com/esri-es/arcgis_websocket_server) permite servir estos datos haciéndose pasar por Stream Layer, y por tanto cargar los tweets en tiempo real en un webmap/webscene y/ cualquier<sup>1</sup> SDK/API de ArcGIS (<sup>1</sup> se ha detectado alguna [limitación](https://github.com/hhkaos/arcgis_websocket_server#known-issues)).
 
@@ -34,25 +34,73 @@ Para instalar sólo es necesario ejecutar tener NodeJS instalado y ejecutar desd
 
 ## Configuración y ejecución
 
-Crear un fichero de configuración llamado `config.json`
+1. Crear un fichero de configuración llamado `config/twitter_credentials.json`
 ```
 {
-    "twitter_credentials":{
-        "consumer_key": "YOUR_CONSUMER_KEY",
-        "consumer_secret": "YOUR_CONSUMER_SECRET",
-        "token": "YOUR_TOKEN",
-        "token_secret": "YOUR_TOKE_SECRET"
-    }
+  "consumer_key": "YOUR_CONSUMER_KEY",
+  "consumer_secret": "YOUR_CONSUMER_SECRET",
+  "token": "YOUR_TOKEN",
+  "token_secret": "YOUR_TOKEN_SECRET"
 }
 ```
 
 E introduce los valores de una Twitter app (esta puedes crearla en [dev.twitter.com](https://developer.twitter.com/en/apps))
 
-También puedes configurar los geocodificacodes modificando el fichero **[src/geocoders.js](./src/geocoders.js)**:
+> También puedes configurar los geocodificacodes modificando el fichero **[src/geocoders.js](./src/geocoders.js)**:
 
-Y por último, para la iniciar el script tan sólo es necesario ejecutar desde la consola de comandos:
+2. Edita el fichero `config/elections.json` a tu gusto. Esta es la configuración que viene por defecto:
 
-`$ node emitter.js "PP,PSOE,VOX,CIUDADANOS" <geocoder>`
+```
+{
+ "words" : {
+    "pp": [
+      "PP",
+      "pablocasado_",
+      "Casado",
+      "ppopular"
+    ],
+    "psoe": [
+      "PSOE",
+      "sanchezcastejon",
+      "Sanchez"
+    ],
+    "podemos": [
+      "Podemos",
+      "pablo_iglesias_",
+      "ahorapodemos"
+    ],
+    "ciudadanos": [
+      "Ciudadanos",
+      "Albert_Rivera",
+      "Rivera",
+      "ciudadanoscs"
+    ],
+    "vox": [
+      "VOX",
+      "santi_abascal",
+      "Abascal",
+      "vox_es"
+    ]
+  },
+  "ws" : {
+    "host" : "localhost",
+    "port" : 8888,
+    "protocol" : "ws"
+  }
+}
+```
+
+3. Edita a tu gusto en init, la lista de **geocoders** . Por defecto están ["arcgis", "osm"]
+
+4. Abre un terminal nuevo y levanta un servidor de websockets que escuche en el puerto que has configurado en `config/elections.json`. Puedes usar [websocat](https://github.com/vi/websocat) para ello:
+
+```bash
+websocat -E -t ws-l:127.0.0.1:8888 broadcast:mirror:
+```
+
+5. Por último, para la iniciar el script tan sólo es necesario ejecutar desde la consola de comandos:
+
+`$ node emitter.js "PP,PSOE,CIUDADANOS,PODEMOS,VOX"`
 
 > Nota: <geocoder> puede contener el valor `name` de cualquiera de los geocodificadores de src/external_geocoders.js (nominatim, arcgis, arcgisGlobal)
 

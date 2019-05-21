@@ -25,7 +25,7 @@ function randomize(location){
         }while(!isInsideSpain(lon, lat) && i < 3);
 
         if(i === 3){
-            throw "Geolocation attempts exceeded";
+            throw "Randomize Geolocation attempts exceeded";
         }
     }catch(err){
         console.log(`${err}\nRandomzing location: ${JSON.stringify(location)}`.red);

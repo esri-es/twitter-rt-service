@@ -1,6 +1,7 @@
 const colors = require('colors');
 const turf = require('@turf/turf');
 const spain = require('../data/spain-boundaries.json')
+const ccaa = require('../data/spanish-ccaa-boundaries.json')
 
 function randomize(location){
     let lat, lon;
@@ -46,12 +47,12 @@ function isInsideSpain(lon, lat){
     var is_in = false;
     var numPolygons = spain.features[0].geometry.coordinates.length;
     var i = 0;
-    var points = turf.points([[lon, lat]]);
+    var point = turf.points([[lon, lat]]);
 
     do{
         let coords = spain.features[0].geometry.coordinates[i],
             searchWithin = turf.polygon(coords);
-            ptsWithin = turf.pointsWithinPolygon(points, searchWithin);
+            ptsWithin = turf.pointsWithinPolygon(point, searchWithin);
 
         if(ptsWithin.features.length > 0){
             is_in = true;
@@ -63,6 +64,50 @@ function isInsideSpain(lon, lat){
     return is_in;
 }
 
+function findCCAA(tweet){
+    var is_in = null,
+        c = tweet.match_coords; // Check agains coords returned by the geocoder (not random)
+
+    var numCCAAs = ccaa.features.length;
+    var ccaaIndex = 0;
+    
+    var point = turf.points([[c.lon, c.lat]]);
+
+    do{
+        var ccaaCoords = ccaa.features[ccaaIndex].geometry.coordinates;
+        var numPolygons = ccaaCoords.length;
+        var polygonIndex = 0;
+
+        do{
+            let coords = ccaaCoords[polygonIndex];
+            // while(coords.indexOf(null) != -1){
+            //     //For some reason the layer have rings with null values on it that makes turf to fails
+            //     coords.splice(coords.indexOf(null),1)
+            // }
+            let searchWithin = turf.polygon(coords);
+                ptsWithin = turf.pointsWithinPolygon(point, searchWithin);
+
+            if(ptsWithin.features.length > 0){
+                var prop = ccaa.features[ccaaIndex].properties;
+                is_in = {
+                    index: ccaaIndex,
+                    OBJECTID: prop.OBJECTID,
+                    Nombre: prop.Nombre,
+                    cod_CCAA: prop.cod_CCAA
+                    // ....cod_CCAA
+                };
+                // console.log(`Point found inside Spain (${i} iterations needed)`.green);
+            }
+            polygonIndex++;
+        }while(!is_in && polygonIndex < numPolygons);
+        
+        ccaaIndex++;
+    }while(!is_in && ccaaIndex < numCCAAs);
+
+    return is_in;
+}
+
 module.exports = {
-    randomize: randomize
+    randomize: randomize,
+    findCCAA: findCCAA
 }

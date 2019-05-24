@@ -1,5 +1,5 @@
 const colors = require('colors');
-const {randomPoint} = require('@turf/random');
+const {randomPosition} = require('@turf/random');
 const PolygonLookup = require('polygon-lookup');
 const spain = require('../data/spain-boundaries.json')
 const ccaa = require('../data/spanish-ccaa-boundaries.json')
@@ -8,10 +8,10 @@ const LOOKUP_SPAIN = new PolygonLookup(spain);
 
 function randomize(location){
   let {xmin,ymin,xmax,ymax} = location.boundingbox;
-  let [lon,lat] =randomPoint(1, {bbox : [xmin,ymin,xmax,ymax]}).features[0].geometry.coordinates;
+  let [lon,lat] = randomPosition([xmin,ymin,xmax,ymax]);
   return {
-    lat : lat,
-    lon : lon
+    lat : parseFloat(lat),
+    lon : parseFloat(lon)
   };
 }
 

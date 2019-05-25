@@ -42,13 +42,7 @@ function geocode(location, geocoderName = 'arcgis'){
       resolve({ coordinates : cached, source : "cached"});
     });
   } else {
-    if (ALLOW_EXTERNAL_GEOCODING && !cached) {
-      // let options = {
-      //   name : GEOCODERS[geocoderName].name,
-      //   url  : GEOCODERS[geocoderName].url,
-      //   qs   : GEOCODERS[geocoderName].qs(location)
-      // };
-      
+    if (ALLOW_EXTERNAL_GEOCODING && !cached) {      
       return GEOCODERS[geocoderName].geocode(location);
     } else {
       return new Promise(function(resolve,reject){

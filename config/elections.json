@@ -4,20 +4,25 @@
       "PP",
       "pablocasado_",
       "Casado",
-      "ppopular"
+      "ppopular",
+      "populares"
     ],
     "psoe": [
       "PSOE",
       "sanchezcastejon",
-      "Sanchez"
+      "Sanchez",
+      "socialistas"
     ],
     "podemos": [
       "Podemos",
       "pablo_iglesias_",
-      "ahorapodemos"
+      "ahorapodemos",
+      "unidaspodemos",
+      "unidas podemos"
     ],
     "ciudadanos": [
       "Ciudadanos",
+      "Cs",
       "Albert_Rivera",
       "Rivera",
       "ciudadanoscs"

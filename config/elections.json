@@ -2,6 +2,7 @@
  "words" : {
     "pp": [
       "PP",
+      "@populares",
       "pablocasado_",
       "Casado",
       "ppopular",
@@ -9,12 +10,13 @@
     ],
     "psoe": [
       "PSOE",
+      "@PSOE",
       "sanchezcastejon",
       "Sanchez",
       "socialistas"
     ],
     "podemos": [
-      "Podemos",
+      "@ahorapodemos",
       "pablo_iglesias_",
       "ahorapodemos",
       "unidaspodemos",
@@ -22,6 +24,7 @@
     ],
     "ciudadanos": [
       "Ciudadanos",
+      "@CiudadanosCs",
       "Cs",
       "Albert_Rivera",
       "Rivera",
@@ -29,9 +32,9 @@
     ],
     "vox": [
       "VOX",
+      "@vox_es",
       "santi_abascal",
-      "Abascal",
-      "vox_es"
+      "Abascal"
     ]
   },
   "ws" : {

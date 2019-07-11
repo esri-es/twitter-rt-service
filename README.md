@@ -46,8 +46,6 @@ Para instalar sólo es necesario ejecutar tener NodeJS instalado y ejecutar desd
 
 E introduce los valores de una Twitter app (esta puedes crearla en [dev.twitter.com](https://developer.twitter.com/en/apps))
 
-> También puedes configurar los geocodificacodes modificando el fichero **[src/geocoders.js](./src/geocoders.js)**:
-
 2. Edita el fichero `config/elections.json` a tu gusto. Esta es la configuración que viene por defecto:
 
 ```
@@ -90,7 +88,9 @@ E introduce los valores de una Twitter app (esta puedes crearla en [dev.twitter.
 }
 ```
 
-3. Edita a tu gusto en init, la lista de **geocoders** . Por defecto están ["arcgis", "osm"]
+3. Edita a tu gusto en emmiter.js, la lista de **geocoders** . Por defecto están ["arcgis", "osm"]
+
+> También puedes añadir nuevos geocodificacodes modificando el fichero **[src/external_geocoders.js](./src/external_geocoders.js)**: 
 
 4. Abre un terminal nuevo y levanta un servidor de websockets que escuche en el puerto que has configurado en `config/elections.json`. Puedes usar [websocat](https://github.com/vi/websocat) para ello:
 

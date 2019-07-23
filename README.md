@@ -1,32 +1,12 @@
 # twitter-rt-service
 
-Este script se conecta a la [Stream API de Twitter](https://developer.twitter.com/en/docs) para recibir tweets en tiempo real e intentar geocodificarlos. Si lo consigue los envía a la dirección indicada por la variable `WS_URL` del fichero `emitter.js` (por defecto lo envía a `'ws://localhost:8888'`).
+Este script se conecta a la [Stream API de Twitter](https://developer.twitter.com/en/docs) para recibir tweets en tiempo real e intentar geocodificarlos. Si lo consigue los envía a la dirección indicada por la variable `ws` del fichero `config/elections.json` (por defecto lo envía a `'ws://localhost:8888'`).
 
 > **Relacionado**: Este proyecto en combinación con [arcgis_websocket_server](https://github.com/esri-es/arcgis_websocket_server) permite servir estos datos haciéndose pasar por Stream Layer, y por tanto cargar los tweets en tiempo real en un webmap/webscene y/ cualquier<sup>1</sup> SDK/API de ArcGIS (<sup>1</sup> se ha detectado alguna [limitación](https://github.com/hhkaos/arcgis_websocket_server#known-issues)).
 
 ![animation](./img/console-animation.gif)
 
-Y la información enviada tiene un aspecto similar a este:
-
-```
-{
-  "username": "Jurado",
-  "screename": "Jurado___",
-  "text": "@Morfeiu @edugalan En ningún momento dice que el motivo sea exclusivo. Que haya gente como tú que vea xenofobia en… https://t.co/nkAK1NPNzQ",
-  "profile_image_url_https": "https://pbs.twimg.com/profile_images/954418199805726721/LZaAP2qG_normal.jpg",
-  "geo": null,
-  "location": "Comunidad de Madrid, España",
-  "created_at": "Fri Apr 26 16:24:30 +0000 2019",
-  "id_str": "1121812304071413761",
-  "reply_count": 0,
-  "retweet_count": 0,
-  "favorite_count": 0,
-  "tweet_url": "https://twitter.com/Jurado___/status/1121812304071413761",
-  "is_rt": false,
-  "lat": 40.3991990891055,
-  "lon": -3.681170514432476
-}
-```
+La estructura de la información enviada se puede ver al final de esta documentación.
 
 ## Instalación
 
@@ -43,6 +23,9 @@ Para instalar sólo es necesario ejecutar tener NodeJS instalado y ejecutar desd
   "token_secret": "YOUR_TOKEN_SECRET"
 }
 ```
+
+> Tambien puedes hacerlo desde la consola ejecutando: `$ touch ~/twitter_credentials2.json
+echo '{\n  "consumer_key": "YOUR_CONSUMER_KEY",\n  "consumer_secret": "YOUR_CONSUMER_SECRET",\n  "token": "YOUR_TOKEN",\n  "token_secret": "YOUR_TOKEN_SECRET"\n}' >> ./config/twitter_credentials2.json`
 
 E introduce los valores de una Twitter app (esta puedes crearla en [dev.twitter.com](https://developer.twitter.com/en/apps))
 
@@ -95,7 +78,7 @@ E introduce los valores de una Twitter app (esta puedes crearla en [dev.twitter.
 4. Abre un terminal nuevo y levanta un servidor de websockets que escuche en el puerto que has configurado en `config/elections.json`. Puedes usar [websocat](https://github.com/vi/websocat) para ello:
 
 ```bash
-websocat -E -t ws-l:127.0.0.1:8888 broadcast:mirror:
+$ websocat -E -t ws-l:127.0.0.1:8888 broadcast:mirror:
 ```
 
 5. Por último, para la iniciar el script tan sólo es necesario ejecutar desde la consola de comandos:
@@ -105,16 +88,6 @@ websocat -E -t ws-l:127.0.0.1:8888 broadcast:mirror:
 > Nota: <geocoder> puede contener el valor `name` de cualquiera de los geocodificadores de src/external_geocoders.js (nominatim, arcgis, arcgisGlobal)
 
 Donde el segundo parámetro el un hashtag o varios separados por comas.
-
-## Cómo geolocaliza los tweets
-
-A grandes rasgos el procedimiento que sigue este servicio es:
-
-1.- Geocodifica la cadena de texto que el usuario tenga en el campo "location"
-
-2.- Para evitar que los puntos con la misma cadena o mismo resultado de geocodificación se superpongan se introduce un valor aleatorio controlando que caiga dentro del boundingbox devuelto por el geocodificador
-
-3.- Se comprueba que el punto se encuentre dentro de territorio Español, para ello se utiliza la capa simplificada [spain-boundaries.json](./data/spain-boundaries.json) que se puede ver en [http://geojson.io](http://geojson.io).
 
 ### Mejorar la precisión de la geocodificación
 
@@ -133,7 +106,7 @@ Recuerda que además de cambiar el valor del boundingbox por el nuevo (más prec
 > Nota: <geocoder> puede contener el valor `name` de cualquiera de los geocodificadores de src/external_geocoders.js (nominatim, arcgis, arcgisGlobal)``
 > Nota: <geocoder> puede contener el valor `name` de cualquiera de los geocodificadores de src/external_geocoders.js (nominatim, arcgis, arcgisGlobal)
 
-### Diagrama de flujo completo
+### Diagrama de flujo del procesamiento de los tweets
 
 En el siguiente diagrama se puede ver a alto nivel las operaciones que se realizan sobre el tweet recibido a través de la API de twitter:
 

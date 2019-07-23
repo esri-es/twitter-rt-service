@@ -1,4 +1,4 @@
-let {ws,geocoders} = require('./config/elections.json');
+let {ws} = require('./config/elections.json');
 
 const WORDS_TO_TRACK = "#PP,#PSOE,#CIUDADANOS,#VOX,#PODEMOS,#26M";
 

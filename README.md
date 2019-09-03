@@ -3,10 +3,12 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-  - [Instalación](#instalaci%C3%B3n)
-  - [Configuración y ejecución](#configuraci%C3%B3n-y-ejecuci%C3%B3n)
-    - [Mejorar la precisión de la geocodificación](#mejorar-la-precisi%C3%B3n-de-la-geocodificaci%C3%B3n)
-    - [Diagrama de flujo del procesamiento de los tweets](#diagrama-de-flujo-del-procesamiento-de-los-tweets)
+
+- [Instalación](#instalaci%C3%B3n)
+- [Configuración y ejecución](#configuraci%C3%B3n-y-ejecuci%C3%B3n)
+  - [Mejorar la precisión de la geocodificación](#mejorar-la-precisi%C3%B3n-de-la-geocodificaci%C3%B3n)
+  - [Diagrama de flujo del procesamiento de los tweets](#diagrama-de-flujo-del-procesamiento-de-los-tweets)
+- [Charla: Geolocalizando tweets en tiempo real](#charla-geolocalizando-tweets-en-tiempo-real)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -181,7 +183,7 @@ La salida final es algo como lo siguiente:
 }
 ```
 
-## Documentación
+## Charla: Geolocalizando tweets en tiempo real
 
 En la charla [Geolocalizando tweets en tiempo real](http://slides.com/hhkaos/geolocalizando-tweets#/) del día día 24 de Julio de 2019 se explicó:
 

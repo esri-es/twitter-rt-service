@@ -1,5 +1,15 @@
 # twitter-rt-service
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [Instalación](#instalaci%C3%B3n)
+  - [Configuración y ejecución](#configuraci%C3%B3n-y-ejecuci%C3%B3n)
+    - [Mejorar la precisión de la geocodificación](#mejorar-la-precisi%C3%B3n-de-la-geocodificaci%C3%B3n)
+    - [Diagrama de flujo del procesamiento de los tweets](#diagrama-de-flujo-del-procesamiento-de-los-tweets)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Este script se conecta a la [Stream API de Twitter](https://developer.twitter.com/en/docs) para recibir tweets en tiempo real e intentar geocodificarlos. Si lo consigue los envía a la dirección indicada por la variable `ws` del fichero `config/elections.json` (por defecto lo envía a `'ws://localhost:8888'`).
 
 > **Relacionado**: Este proyecto en combinación con [arcgis_websocket_server](https://github.com/esri-es/arcgis_websocket_server) permite servir estos datos haciéndose pasar por Stream Layer, y por tanto cargar los tweets en tiempo real en un webmap/webscene y/ cualquier<sup>1</sup> SDK/API de ArcGIS (<sup>1</sup> se ha detectado alguna [limitación](https://github.com/hhkaos/arcgis_websocket_server#known-issues)).
@@ -73,7 +83,7 @@ E introduce los valores de una Twitter app (esta puedes crearla en [dev.twitter.
 
 3. Edita a tu gusto en emmiter.js, la lista de **geocoders** . Por defecto están ["arcgis", "osm"]
 
-> También puedes añadir nuevos geocodificacodes modificando el fichero **[src/external_geocoders.js](./src/external_geocoders.js)**: 
+> También puedes añadir nuevos geocodificacodes modificando el fichero **[src/external_geocoders.js](./src/external_geocoders.js)**:
 
 4. Abre un terminal nuevo y levanta un servidor de websockets que escuche en el puerto que has configurado en `config/elections.json`. Puedes usar [websocat](https://github.com/vi/websocat) para ello:
 
@@ -170,3 +180,26 @@ La salida final es algo como lo siguiente:
   }
 }
 ```
+
+## Documentación
+
+En la charla [Geolocalizando tweets en tiempo real](http://slides.com/hhkaos/geolocalizando-tweets#/) del día día 24 de Julio de 2019 se explicó:
+
+* Objetivos y resultados del experimento
+* Cómo lanzar el proyecto
+* Demo: Cargar los tweets en una StreamLayer
+* Demo: Cargar los tweets en un Web map
+* Demo: Cargar los tweets con gráficar en tº real
+* Diagrama del comportamiento de [twitter-rt-service](https://github.com/esri-es/twitter-rt-service)
+* Mejoras pendientes en [twitter-rt-service](https://github.com/esri-es/twitter-rt-service)
+* Diagrama del comportamiento de [arcgis_websocket_server](https://github.com/esri-es/arcgis_websocket_server)
+* Mejoras pendientes en [arcgis_websocket_server](https://github.com/esri-es/arcgis_websocket_server)
+* Estructura de ficheros del proyecto: [twitter-rt-service](https://github.com/esri-es/twitter-rt-service)
+* Explicación del código: [twitter-rt-service](https://github.com/esri-es/twitter-rt-service)
+* Estructura de ficheros del proyecto: [arcgis_websocket_server](https://github.com/esri-es/arcgis_websocket_server)
+* Explicación del código: [arcgis_websocket_server](https://github.com/esri-es/arcgis_websocket_server)
+* Despedida, preguntas y agracedimientos
+
+A continuación puede encontrar el vídeo en Youtube con un índice interactivo en la descripción del vídeo:
+
+[![](http://i3.ytimg.com/vi/PeTzi-ficFo/hqdefault.jpg)](https://www.youtube.com/watch?v=PeTzi-ficFo)

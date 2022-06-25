@@ -31,7 +31,7 @@
     "event-stream": "^4.0.1",
     "jsonpath": "^1.0.1",
     "lowdb": "^1.0.0",
-    "node-fetch": "^2.4.0",
+    "node-fetch": "^2.6.7",
     "polygon-lookup": "ntkog/polygon-lookup",
     "regexgen": "^1.3.0",
     "twitter-stream-api": "^0.5.2",
